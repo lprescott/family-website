@@ -128,7 +128,7 @@ body {
     margin-bottom: 0;
 } 
 nav {
-    margin: 8px 25px 8px 22px;
+    margin: 8px 0px 8px 0px;
     background-color: #fff;
     border: 1px solid #dedede;
     border-radius: 4px;
@@ -242,8 +242,11 @@ nav > ul > li > div ul > li:hover > a {
    ========================================================================== */
 
 .iframe{
-    margin: 8px 22px 8px 22px;
-
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    border-radius: 4px;
+    margin: 0 0 15px 10px;
+    max-width: 890px !important;
+    width: 100%; 
 }
 
 /* center, justify and set max width */
@@ -320,16 +323,24 @@ input[type=submit]{
     }
 
     @media only screen and (max-width: 1000px) {
-        .halfBox{
+        .content-container50{
             width: 100% !important;
         }
     }
 
-    @media only screen and (max-width: 1520px) {
-        .box40, .box60{
+    @media only screen and (max-width: 1517px) {
+        .iframe{
+            max-width: none !important; 
+            margin: 0 !important;
+        }
+
+        .content-container100, .content-container40, .content-container60{
             width: 100% !important;
         }
-       
+
+        .whiteBox{
+            margin: 15px 0px 15px 0px !important; 
+        }
     }
 
     /* ==========================================================================
@@ -353,50 +364,45 @@ input[type=submit]{
 /* ==========================================================================
     Text Box
     ========================================================================== */
-      
-    #contentBox {
+    
+    #content {
         margin: 0 auto;
     }
     
-    #contentBox .whiteBox {
+    #contentBox .content-container40 {
         float: left;
+        display: block;
+        width: 40%;
+    }
+
+    #contentBox .content-container60 {
+        float: left;
+        display: block;
+        width: 60%;
+    }
+
+    #contentBox .content-container100 {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+
+    #contentBox .content-container50 {
+        float: left;
+        display: block;
+        width: 50%;
+    }
+
+    .whiteBox {
         background-color: #fff;
         border: 1px solid #dedede;
         border-radius: 4px;
         box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
         color: #888;
         display: block;
-        margin: 10px 22px 10px 22px;
         overflow: hidden;
-    }
-    
-    .halfBox {
-        width: 49.9%;
-        float: left;   
-    }
-
-    .box40 {
-        width: 39.9%;
-        float: left;   
-    }
-
-    .box60 {
-        width: 59.9%;
-        float: left;   
-    }
-
-    .box100{
-        width: 100%;
-        float: left;   
-        display: block;
-    }
-
-    .textBox {
-        width: 95%;
-        font-size: 16px;
-        color: rgb(65, 65, 65);
+        margin: 15px 0px 15px 0px;
         padding: 0px 15px 15px 15px;
-        line-height: 1.61;
     }
 
 /* ==========================================================================
