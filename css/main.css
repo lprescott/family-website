@@ -109,6 +109,7 @@ html, body {
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
 
+
 ul {
     font-size: 0;
 }
@@ -129,13 +130,13 @@ body {
     margin-left: auto;
 } 
 nav {
+    margin: 8px 25px 8px 22px;
     background-color: #fff;
     border: 1px solid #dedede;
     border-radius: 4px;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     color: #888;
     display: block;
-    margin: 8px 22px 8px 22px;
     overflow: hidden;
 }
 nav ul {
@@ -173,7 +174,7 @@ nav > ul > li > div ul > li > a > .caret {
     margin: 0 0 0 8px;
 }
 nav > ul > li > a {
-    color: rgb(75, 75, 75); /** Fond color for nav bar */
+    color: rgb(75, 75, 75); /** Font color for nav bar */
     display: block;
     line-height: 56px;
     padding: 0 24px;
@@ -209,7 +210,7 @@ nav > ul > li > div, nav > ul > li > div ul > li > div {
     -transition: opacity 0.2s;
 }
 nav > ul > li > div ul > li > div {
-    background-color: #86a3d5;
+    background-color: #768fb9;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     margin-top: -44px;
     border-radius: 0 0 4px 4px;
@@ -231,31 +232,43 @@ nav > ul > li > div ul > li > a, nav > ul > li > div ul > li > div ul > li > a {
     text-decoration: none;
 }
 nav > ul > li > div ul > li:hover > a {
-    background-color: rgba( 255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1); /** Color of hover on drop down */
 }
 
 .inquiry-button {
     float: right;
 }
 
-
-
-
-
-
-
 /* ==========================================================================
    Centering content
    ========================================================================== */
 
+.iframe{
+    margin: 8px 22px 8px 22px;
+
+}
 
 /* center, justify and set max width */
 .center-justified {
     /*text-align: justify;*/
     margin: 0 auto;
     max-width: 1500px;
+    min-width: 300px;
     word-break: break;
     /**min-height: 80%;*/
+}
+
+.header-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 10px 0 10px 0;
+}
+
+.center {
+    text-align:center;
+
 }
 
 /* ==========================================================================
@@ -269,11 +282,101 @@ nav > ul > li > div ul > li:hover > a {
         }
     }
 
+    @media only screen and (max-width: 703px) {
+        .halfBox{
+            width: 100% !important;
+        }
+    }
 
+    @media only screen and (max-width: 1520px) {
+        .box40, .box60{
+            width: 100% !important;
+        }
+       
+    }
 
+    /* ==========================================================================
+    Links
+    ========================================================================== */
+      
 
+    .link-style{
+        color: #86a3d5;
+        text-decoration:none
+    }   
+    .link-style:hover{
+        color: #4c80da;
+        text-decoration: underline;
+    }
+    .link-style:visited{
+        color: #4c80da;
+        text-decoration: underline;
+    }
 
+/* ==========================================================================
+    Text Box
+    ========================================================================== */
+      
+    #contentBox {
+        margin: 0 auto;
+    }
+    
+    #contentBox .whiteBox {
+        float: left;
+        background-color: #fff;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+        color: #888;
+        display: block;
+        margin: 10px 22px 10px 22px;
+        overflow: hidden;
+    }
+    
+    .halfBox {
+        width: 49.9%;
+        float: left;   
+    }
 
+    .box40 {
+        width: 39.9%;
+        float: left;   
+    }
+
+    .box60 {
+        width: 59.9%;
+        float: left;   
+    }
+
+    .box100{
+        width: 100%;
+        float: left;   
+        display: block;
+    }
+
+    .textBox {
+        width: 95%;
+        font-size: 16px;
+        color: rgb(65, 65, 65);
+        padding: 0px 15px 15px 15px;
+        line-height: 1.61;
+    }
+
+/* ==========================================================================
+   Footer 
+   ========================================================================== */
+
+.footer-container{
+    margin: 8px 22px 8px 22px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    display: block;
+    overflow: hidden;
+}
+   
 
 
 /* ==========================================================================
