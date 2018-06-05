@@ -125,9 +125,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     margin-top: 0;
-    margin-right: auto;
     margin-bottom: 0;
-    margin-left: auto;
 } 
 nav {
     margin: 8px 25px 8px 22px;
@@ -181,7 +179,7 @@ nav > ul > li > a {
     text-decoration: none;
 }
 nav > ul > li:hover {
-    background-color: #86a3d5;
+    background-color: #abc3ec;
 }
 nav > ul > li:hover > a {
     color: rgb( 255, 255, 255 );
@@ -193,7 +191,7 @@ nav > ul > li > div ul > li:hover > a > .caret {
     border-left-color: rgb(255,255,255);
 }
 nav > ul > li > div, nav > ul > li > div ul > li > div {
-    background-color: #7e99c7;
+    background-color: #9bb2da;
     border-top: 0;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -269,6 +267,45 @@ nav > ul > li > div ul > li:hover > a {
 .center {
     text-align:center;
 
+}
+
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f5f5f5;
+}
+
+input[type=submit] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #90afe4;
+}
+
+input[type=submit]{
+    background-color: #abc3ec;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
 }
 
 /* ==========================================================================
