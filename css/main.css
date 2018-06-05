@@ -282,7 +282,7 @@ nav > ul > li > div ul > li:hover > a {
         }
     }
 
-    @media only screen and (max-width: 703px) {
+    @media only screen and (max-width: 1000px) {
         .halfBox{
             width: 100% !important;
         }
