@@ -2,6 +2,11 @@
  Based on: https://codepen.io/amr-adel/pen/xzVjPG?editors=1100
 */
 
+#recaptcha-container{
+    float: left;
+    width: 100%;
+}
+
 .form-container *,
 .form-container *:after,
 .form-container *:before {
