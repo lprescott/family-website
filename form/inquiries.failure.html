@@ -120,12 +120,14 @@
 
 						<form method="POST" action="../php/contact-form.php" id="contact-form">
 							<label for="name" id="name-label">
-								Name: <div style="display: inline; color:red">*</div>
+								Name:
+								<div style="display: inline; color:red">*</div>
 								<input type="text" id="name" name="name" required>
 							</label>
 
 							<label for="email" id="email-label">
-								E-mail: <div style="display: inline; color:red">*</div>
+								E-mail:
+								<div style="display: inline; color:red">*</div>
 								<input type="email" id="email" name="email" required>
 							</label>
 
@@ -141,13 +143,15 @@
 							</label>
 
 							<label for="comment" id="comment-label">
-								Message: <div style="display: inline; color:red">*</div>
+								Message:
+								<div style="display: inline; color:red">*</div>
 								<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 							</label>
-							<div style="display: inline-block;"><div style="display: inline; color:red">*</div> denotes required.</div>
+							<div style="display: inline-block;">
+								<div style="display: inline; color:red">*</div> denotes required.</div>
 							<br/>
 							<div style="padding: 15px 0 15px 0;">
-							<input type="submit" id="submit" name="formSubmit" value="Submit">
+								<input type="submit" id="submit" name="formSubmit" value="Submit">
 							</div>
 							<form method="get" action="contact-form.php"></form>
 						</form>
@@ -160,8 +164,8 @@
 				Powered by
 				<a class="link-style" href="https://p5js.org/">p5.js</a> and started with
 				<a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>. General questions, comments, or concerns?
-				<a class="link-style" href="mailto:info@presport.us?subject=General%20question,%20comment,%20or%20concern."> Contact us!</a> This website was designed and built by Luke Prescott. <p>Any and all trademarks or logos used throughout
-				this website are the property of their respective owners.</p>
+				<a class="link-style" href="mailto:info@presport.us?subject=General%20question,%20comment,%20or%20concern."> Contact us!</a> This website was designed and built by Luke Prescott.
+				<p>Any and all trademarks or logos used throughout this website are the property of their respective owners.</p>
 
 			</div>
 		</div>
@@ -181,13 +185,13 @@
 	<script src="../js/addons/p5.sound.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script>
-	window.onload = function() {
-		swal({
-			title: "Error!",
-			text: "Your message has not been sent. \n Please try again.",
-			icon: "error",
-		});
-	}
+		window.onload = function () {
+			swal({
+				title: "Error!",
+				text: "Your message has not been sent. \n Please try again.",
+				icon: "error",
+			});
+		}
 	</script>
 </body>
 

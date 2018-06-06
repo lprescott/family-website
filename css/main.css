@@ -97,27 +97,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
-
-
 
 /* ==========================================================================
    Navbar
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
 
-
 ul {
     font-size: 0;
 }
+
 ul li {
     font-size: 16px;
     display: inline-block;
     color: rgb(0, 0, 0);
 }
+
 body {
     background-color: #EBE8E4;
     color: #222;
@@ -126,7 +126,8 @@ body {
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
-} 
+}
+
 nav {
     margin: 8px 0px 8px 0px;
     background-color: #fff;
@@ -137,10 +138,12 @@ nav {
     display: block;
     overflow: hidden;
 }
+
 nav ul {
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     display: inline-block;
     list-style-type: none;
@@ -150,7 +153,9 @@ nav ul li {
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
-nav > ul > li > a > .caret, nav > ul > li > div ul > li > a > .caret {
+
+nav>ul>li>a>.caret,
+nav>ul>li>div ul>li>a>.caret {
     border-top: 4px solid #aaa;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
@@ -164,33 +169,42 @@ nav > ul > li > a > .caret, nav > ul > li > div ul > li > a > .caret {
     -o-transition: color 0.1s linear;
     transition: color 0.1s linear;
 }
-nav > ul > li > div ul > li > a > .caret {
+
+nav>ul>li>div ul>li>a>.caret {
     border-bottom: 4px solid transparent;
     border-top: 4px solid transparent;
     border-right: 4px solid transparent;
     border-left: 4px solid #f2f2f2;
     margin: 0 0 0 8px;
 }
-nav > ul > li > a {
-    color: rgb(75, 75, 75); /** Font color for nav bar */
+
+nav>ul>li>a {
+    color: rgb(75, 75, 75);
+    /** Font color for nav bar */
     display: block;
     line-height: 56px;
     padding: 0 24px;
     text-decoration: none;
 }
-nav > ul > li:hover {
+
+nav>ul>li:hover {
     background-color: #abc3ec;
 }
-nav > ul > li:hover > a {
-    color: rgb( 255, 255, 255 );
+
+nav>ul>li:hover>a {
+    color: rgb( 255, 255, 255);
 }
-nav > ul > li:hover > a > .caret {
-    border-top-color: rgb( 255, 255, 255 );
+
+nav>ul>li:hover>a>.caret {
+    border-top-color: rgb( 255, 255, 255);
 }
-nav > ul > li > div ul > li:hover > a > .caret {
-    border-left-color: rgb(255,255,255);
+
+nav>ul>li>div ul>li:hover>a>.caret {
+    border-left-color: rgb(255, 255, 255);
 }
-nav > ul > li > div, nav > ul > li > div ul > li > div {
+
+nav>ul>li>div,
+nav>ul>li>div ul>li>div {
     background-color: #9bb2da;
     border-top: 0;
     border-radius: 0 0 4px 4px;
@@ -207,30 +221,39 @@ nav > ul > li > div, nav > ul > li > div ul > li > div {
     -o-transition: opacity 0.2s;
     -transition: opacity 0.2s;
 }
-nav > ul > li > div ul > li > div {
+
+nav>ul>li>div ul>li>div {
     background-color: #768fb9;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     margin-top: -44px;
     border-radius: 0 0 4px 4px;
     right: -162px;
 }
-nav > ul > li:hover > div, nav > ul > li > div ul > li:hover > div {
+
+nav>ul>li:hover>div,
+nav>ul>li>div ul>li:hover>div {
     display: block;
     opacity: 1;
     visibility: visible;
 }
-nav > ul > li > div ul > li, nav > ul > li > div ul > li > div ul > li {
+
+nav>ul>li>div ul>li,
+nav>ul>li>div ul>li>div ul>li {
     display: block;
     position: relative;
 }
-nav > ul > li > div ul > li > a, nav > ul > li > div ul > li > div ul > li > a {
+
+nav>ul>li>div ul>li>a,
+nav>ul>li>div ul>li>div ul>li>a {
     color: #fff;
     display: block;
     padding: 12px 24px;
     text-decoration: none;
 }
-nav > ul > li > div ul > li:hover > a {
-    background-color: rgba(0, 0, 0, 0.1); /** Color of hover on drop down */
+
+nav>ul>li>div ul>li:hover>a {
+    background-color: rgba(0, 0, 0, 0.1);
+    /** Color of hover on drop down */
 }
 
 .inquiry-button {
@@ -241,15 +264,16 @@ nav > ul > li > div ul > li:hover > a {
    Centering content
    ========================================================================== */
 
-.iframe{
+.iframe {
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     border-radius: 4px;
     margin: 0 0 15px 10px;
     max-width: 890px !important;
-    width: 100%; 
+    width: 100%;
 }
 
 /* center, justify and set max width */
+
 .center-justified {
     /*text-align: justify;*/
     margin: 0 auto;
@@ -268,16 +292,18 @@ nav > ul > li > div ul > li:hover > a {
 }
 
 .center {
-    text-align:center;
-
+    text-align: center;
 }
-
 
 /* ==========================================================================
    Form
    ========================================================================== */
 
-input[type=text], input[type=tel], input[type=email], select, textarea {
+input[type=text],
+input[type=tel],
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -288,8 +314,6 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     resize: vertical;
     background-color: #f5f5f5;
 }
-
-
 
 input[type=submit] {
     color: white;
@@ -303,111 +327,109 @@ input[type=submit]:hover {
     background-color: #90afe4;
 }
 
-input[type=submit]{
+input[type=submit] {
     background-color: #abc3ec;
 }
-
-
 
 /* ==========================================================================
    Media Qeueries
    ========================================================================== */
 
-
-    @media only screen and (max-width: 603px) {
-        .inquiry-button{
-            float: none;
-        }
+@media only screen and (max-width: 603px) {
+    .inquiry-button {
+        float: none;
     }
+}
 
-    @media only screen and (max-width: 1000px) {
-        .content-container50{
-            width: 100% !important;
-        }
+@media only screen and (max-width: 1000px) {
+    .content-container50 {
+        width: 100% !important;
     }
+}
 
-    @media only screen and (max-width: 1517px) {
-        .iframe{
-            max-width: none !important; 
-            margin: 0 !important;
-        }
-
-        .content-container100, .content-container40, .content-container60{
-            width: 100% !important;
-        }
-
-        .whiteBox{
-            margin: 15px 0px 15px 0px !important; 
-        }
+@media only screen and (max-width: 1517px) {
+    .iframe {
+        max-width: none !important;
+        margin: 0 !important;
     }
+    .content-container100,
+    .content-container40,
+    .content-container60 {
+        width: 100% !important;
+    }
+    .whiteBox {
+        margin: 15px 0px 15px 0px !important;
+    }
+}
 
 /* ==========================================================================
     Links
     ========================================================================== */
-      
 
-    .link-style{
-        color: #86a3d5;
-        text-decoration:none
-    }   
-    .link-style:hover{
-        color: #4c80da;
-        text-decoration: underline;
-    }
-    .link-style:visited{
-        color: #4c80da;
-        text-decoration: underline;
-    }
+.link-style {
+    color: #86a3d5;
+    text-decoration: none
+}
+
+.link-style:hover {
+    color: #4c80da;
+    text-decoration: underline;
+}
+
+.link-style:visited {
+    color: #4c80da;
+    text-decoration: underline;
+}
 
 /* ==========================================================================
     Text Box
     ========================================================================== */
-    
-    #content {
-        margin: 0 auto;
-    }
-    
-    #contentBox .content-container40 {
-        float: left;
-        display: block;
-        width: 40%;
-    }
 
-    #contentBox .content-container60 {
-        float: left;
-        display: block;
-        width: 60%;
-    }
+#content {
+    margin: 0 auto;
+}
 
-    #contentBox .content-container100 {
-        float: left;
-        display: block;
-        width: 100%;
-    }
+#contentBox .content-container40 {
+    float: left;
+    display: block;
+    width: 40%;
+}
 
-    #contentBox .content-container50 {
-        float: left;
-        display: block;
-        width: 50%;
-    }
+#contentBox .content-container60 {
+    float: left;
+    display: block;
+    width: 60%;
+}
 
-    .whiteBox {
-        background-color: #fff;
-        border: 1px solid #dedede;
-        border-radius: 4px;
-        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-        color: rgb(75, 75, 75);
-        display: block;
-        overflow: hidden;
-        margin: 15px 0px 15px 0px;
-        padding: 0px 15px 15px 15px;
-    }
+#contentBox .content-container100 {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+#contentBox .content-container50 {
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+.whiteBox {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: rgb(75, 75, 75);
+    display: block;
+    overflow: hidden;
+    margin: 15px 0px 15px 0px;
+    padding: 0px 15px 15px 15px;
+}
 
 /* ==========================================================================
    Footer 
    ========================================================================== */
 
-.footer-container{
+.footer-container {
     margin: 8px 22px 8px 22px;
     background-color: #fff;
     border: 1px solid #dedede;
@@ -417,8 +439,6 @@ input[type=submit]{
     display: block;
     overflow: hidden;
 }
-   
-
 
 /* ==========================================================================
    Helper classes
@@ -452,7 +472,8 @@ input[type=submit]{
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -496,8 +517,10 @@ input[type=submit]{
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -515,9 +538,9 @@ input[type=submit]{
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -532,35 +555,30 @@ input[type=submit]{
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -569,28 +587,23 @@ input[type=submit]{
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
