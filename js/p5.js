@@ -46431,7 +46431,7 @@ module.exports = p5;
 var p5 = _dereq_('./core');
 var doFriendlyWelcome = false; // TEMP until we get it all working LM
 // for parameter validation
-var dataDoc = _dereq_('../../docs/reference/data.json');
+var dataDoc = _dereq_('http://www.presport.us/docs/reference/data.json');
 var arrDoc = JSON.parse(JSON.stringify(dataDoc));
 
 // -- Borrowed from jQuery 1.11.3 --
@@ -46836,7 +46836,7 @@ if (document.readyState !== 'complete') {
 
 module.exports = p5;
 
-},{"../../docs/reference/data.json":1,"./constants":54,"./core":55}],59:[function(_dereq_,module,exports){
+},{"http://www.presport.us/docs/reference/data.json":1,"./constants":54,"./core":55}],59:[function(_dereq_,module,exports){
 
 var p5 = _dereq_('../core/core');
 
