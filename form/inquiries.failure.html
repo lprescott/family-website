@@ -180,8 +180,15 @@
 	<script src="../js/addons/p5.dom.min.js"></script>
 	<script src="../js/addons/p5.sound.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	
-	<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+	<script>
+	window.onload = function() {
+		swal({
+			title: "Error!",
+			text: "Your message has not been sent. \n Please try again.",
+			icon: "error",
+		});
+	}
+	</script>
 </body>
 
 </html>

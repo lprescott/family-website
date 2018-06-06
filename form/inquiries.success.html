@@ -98,25 +98,90 @@
 					<a href="inquiries.html">Inquiries</a>
 				</li>
 			</ul>
-        </nav>
+		</nav>
+		<div id="contentBox">
+			<div class="content-container100">
+				<div class="whiteBox">
+					<h2>Say Hello!</h2>
+					<p>
+						We would love to hear from you; send us a letter to: 1169 Mohawk Road, Schenectady N.Y. 12309 or email us at
+						<a class="link-style" href="mailto:info@presport.us">info@presport.us</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="contentBox">
+			<div class="content-container100">
+				<div class="whiteBox" style="padding-bottom: 0 !important;">
+					<div class="form-container">
+						<h2 id="title">
+							Contact Form
+						</h2>
 
+						<form method="POST" action="../php/contact-form.php" id="contact-form">
+							<label for="name" id="name-label">
+								Name: <div style="display: inline; color:red">*</div>
+								<input type="text" id="name" name="name" required>
+							</label>
+
+							<label for="email" id="email-label">
+								E-mail: <div style="display: inline; color:red">*</div>
+								<input type="email" id="email" name="email" required>
+							</label>
+
+							<label for="phone" id="phone-label">
+								Phone #:
+								<input type="tel" id="phone" name="phone">
+							</label>
+
+
+							<label for="subject" id="subject-label">
+								Subject:
+								<input type="text" id="subject" name="subject">
+							</label>
+
+							<label for="comment" id="comment-label">
+								Message: <div style="display: inline; color:red">*</div>
+								<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+							</label>
+							<div style="display: inline-block;"><div style="display: inline; color:red">*</div> denotes required.</div>
+							<br/>
+							<div style="padding: 15px 0 15px 0;">
+							<input type="submit" id="submit" name="formSubmit" value="Submit">
+							</div>
+							<form method="get" action="contact-form.php"></form>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-container100">
+			<div class="whiteBox" style="text-align: center; margin-top:15px; padding-top: 25px; padding-bottom: 25px; font-size: 14px;  ">
+				Powered by
+				<a class="link-style" href="https://p5js.org/">p5.js</a> and started with
+				<a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>. General questions, comments, or concerns?
+				<a class="link-style" href="mailto:info@presport.us?subject=General%20question,%20comment,%20or%20concern."> Contact us!</a> This website was designed and built by Luke Prescott. <p>Any and all trademarks or logos used throughout
+				this website are the property of their respective owners.</p>
+
+			</div>
+		</div>
 		<!-- end centering-->
 	</div>
 	<!-- End your site or application content here -->
 	<!-- End site or application content here -->
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
 	</script>
-	<script src="js/plugins.js"></script>
+	<script src="../js/plugins.js"></script>
 	<!-- link to p5.js -->
-	<script src="js/p5.min.js"></script>
-	<script src="js/addons/p5.dom.min.js"></script>
-	<script src="js/addons/p5.sound.min.js"></script>
+	<script src="../js/p5.min.js"></script>
+	<script src="../js/addons/p5.dom.min.js"></script>
+	<script src="../js/addons/p5.sound.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-    window.onload = function() {
+	<script>
+	window.onload = function() {
 		swal({
             title: "Success!",
             text: "Your message has been sent.",
