@@ -12,7 +12,7 @@
         }
         
         if(!empty($errorMessage)) {
-            header('Location: http://www.presport.us/form/inquiries/failure.html');  
+            header('Location: /../form/inquiries/failure.html');  
             exit;
         } 
 
@@ -54,7 +54,7 @@
             mail($to,"PresPort Contact Form",$msg,$header);
         }
 
-        header('Location: http://www.presport.us/form/inquiries/success.html');  
+        header('Location: /../form/inquiries/success.html');  
         exit;
     }
 ?>
