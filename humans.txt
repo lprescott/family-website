@@ -3,13 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Luke Prescott> -- <Design and Development> -- <lprescott @ github>
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    PHP, p5.js, HTML5Boilerplate, animate.css, Google Maps
