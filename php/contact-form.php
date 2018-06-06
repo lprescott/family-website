@@ -27,28 +27,26 @@
     if(!empty($_POST['telephone']) && !empty($_POST['subject'])){
         $msg .= "\n\n$varName\n$varEmail\n$varPhone";
         mail($to,$varSubject,$msg,$header);
-        echo "Your message was sent successfully. Thank You!";
     }
 
     /* missing telephone */
     if(empty($_POST['telephone']) && !empty($_POST['subject'])){
         $msg .= "\n\n$varName\n$varEmail";
         mail($to,$varSubject,$msg,$header);
-        echo "Your message was sent successfully. Thank You!";
     }
 
     /* missing subject */
     if(empty($_POST['subject']) && !empty($_POST['telephone'])){
         $msg .= "\n\n$varName\n$varEmail\n$varPhone";
         mail($to,"PresPort Contact Form",$msg,$header);
-        echo "Your message was sent successfully. Thank You!";
     }
 
     /* missing telephone and subject */
     if(empty($_POST['telephone']) && empty($_POST['subject'])){
         $msg .= "\n\n$varName\n$varEmail";
         mail($to,"PresPort Contact Form",$msg,$header);
-        echo "Your message was sent successfully. Thank You!";
     }
+
+    header('Location: ../form/thankyou.html');  
 }
 ?>
