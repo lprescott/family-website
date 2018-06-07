@@ -131,6 +131,20 @@ textarea {
 }
 
 /* ==========================================================================
+  titles
+    ========================================================================== */
+
+h2{
+  font-weight: 500;
+  font-size: 28px;
+}
+
+b{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ==========================================================================
    Navbar
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
@@ -140,8 +154,8 @@ ul {
 }
 
 ul li {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   display: inline-block;
   color: rgb(0, 0, 0);
 }
@@ -150,7 +164,6 @@ body {
   background-color: #EBE8E4;
   color: #222;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -158,10 +171,11 @@ body {
 
 nav {
   background-color: #fff;
-  border-radius: 4pt;
   color: #888;
   display: block;
   overflow: hidden;
+  border-radius: 4pt;
+
 }
 
 nav ul {
@@ -178,7 +192,7 @@ nav ul li {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-  
+
 }
 
 nav>ul>li>a>.caret,
@@ -213,7 +227,6 @@ nav>ul>li>a {
   line-height: 60px;
   padding: 0 24px;
   text-decoration: none;
-  
 }
 
 nav>ul>li:hover {
@@ -230,18 +243,19 @@ nav>ul>li:hover>a>.caret {
 
 nav>ul>li>div ul>li:hover>a>.caret {
   border-left-color: rgb(255, 255, 255);
+  
 }
 
 nav>ul>li>div,
 nav>ul>li>div ul>li>div {
-  background-color: #9eb6df;
+  background-color: #9cb0d3;
   border-top: 0;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   display: none;
   margin: 0;
   opacity: 0;
   position: absolute;
-  width: 210px;
+  min-width: 142.27px;
   visibility: hidden;
   -webkit-transiton: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -251,10 +265,7 @@ nav>ul>li>div ul>li>div {
 
   border-radius: 0 0 4pt 4pt;
 
-  -moz-box-shadow: 2px 2px 3px rgba(136, 136, 136, 0.5), -2px 2px 3px rgba(136, 136, 136, 0.5);
-  -webkit-box-shadow: 2px 2px 3px rgba(136, 136, 136, 0.5), -2px 2px 3px rgba(136, 136, 136, 0.5);
-  box-shadow: 2px 2px 3px rgba(136, 136, 136, 0.5), -2px 2px 3px rgba(136, 136, 136, 0.5);
-
+  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0,0,0,0.75);
 }
 
 nav>ul>li>div ul>li>div {
@@ -262,6 +273,7 @@ nav>ul>li>div ul>li>div {
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   margin-top: -44px;
   right: -162px;
+  
 }
 
 nav>ul>li:hover>div,
@@ -269,15 +281,13 @@ nav>ul>li>div ul>li:hover>div {
   display: block;
   opacity: 1;
   visibility: visible;
-
-  
-  
 }
 
 nav>ul>li>div ul>li,
 nav>ul>li>div ul>li>div ul>li {
   display: block;
   position: relative;
+   
 }
 
 nav>ul>li>div ul>li>a,
@@ -289,9 +299,8 @@ nav>ul>li>div ul>li>div ul>li>a {
 }
 
 nav>ul>li>div ul>li:hover>a {
-  background-color: rgba(0, 0, 0, 0.1);
   /** Color of hover on drop down */
-  
+  background-color: rgb(131, 153, 192);
 }
 
 .inquiry-button {
@@ -376,22 +385,22 @@ body {
 
 #main>upperhalf {
   margin-bottom: 10px;
-  flex: 1 1 10%;
-  -webkit-flex: 1 1 10%;
-  padding-bottom: 20px;
+  flex: 1 1 20%;
+  -webkit-flex: 1 1 20%;
+  padding-bottom: 20px
 }
 
 #main>lowerhalf {
   margin-top: 10px;
-  flex: 1 1 40%;
-  -webkit-flex: 1 1 70%;
+  flex: 1 1 45%;
+  -webkit-flex: 1 1 45%;
   padding-bottom: 15px;
 }
 
 #main>middle {
   margin-bottom: 10px;
-  flex: 1 1 10%;
-  -webkit-flex: 1 1 10%;
+  flex: 1 1 35%;
+  -webkit-flex: 1 1 35%;
   padding-bottom: 15px;
 }
 
@@ -460,7 +469,7 @@ footer {
 }
 
 .inner-left {
-  padding: 1px 25px 0 0!important;
+  padding: 2px 25px 0 0!important;
   margin: 0 !important;
   box-shadow: none !important;
   flex: 1 1 50% !important;
@@ -526,6 +535,12 @@ footer {
   }
   iframe {
     height: 400px;
+  }
+  header{
+    size: 12px !important;
+  }
+  ul li{
+    font-size: 16px
   }
 }
 
