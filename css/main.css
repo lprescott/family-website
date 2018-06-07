@@ -97,8 +97,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.center-text {
+.center-image {
   text-align: center;
+}
+
+.no-underline{
+  text-decoration: none;
+
 }
 
 .footer-container {
@@ -434,14 +439,14 @@ footer {
 }
 
 .inner-right {
-  padding: 0 10px 0 10px !important;
+  padding: 0 25px 0 0!important;
   margin: 0 !important;
   box-shadow: none !important;
   flex: 1 1 50% !important;
 }
 
 .inner-left {
-  padding: 0 10px 0 10px!important;
+  padding: 1px 25px 0 0!important;
   margin: 0 !important;
   box-shadow: none !important;
   flex: 1 1 50% !important;
