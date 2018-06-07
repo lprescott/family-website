@@ -330,7 +330,7 @@ footer,
   padding: 5px;
 }
 
-iframe:hover,
+#main>middle:hover,
 header:hover,
 footer:hover,
 #main>rightside>upperhalf:hover,
