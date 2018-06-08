@@ -11,7 +11,7 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     resize: vertical;
     background-color: #ffffff;
     line-height: 1.6;
-    font-size:24px;
+    font-size:20px;
 }
 
 
@@ -39,3 +39,8 @@ input[type=submit]{
 .ck-editor__editable {
     min-height: 400px;
 }
+
+.ck-editor__editable {
+    min-height: 400px;
+}
+
