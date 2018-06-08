@@ -97,11 +97,93 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   Flexbox layout
+   Based on:
+   https://codepen.io/cchambers/pen/KdBpa
+   https://codepen.io/sdthornton/pen/wBZdXq
+   ========================================================================== */
+
+footer {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  padding: 5px;
+}
+
+header {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+header:hover {
+  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+footer:hover {
+  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+header,
+footer {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4pt;
+  background: white;
+}
+
+header {
+  min-height: 60px
+}
+
+footer {
+  min-height: 120px;
+  padding: 5px;
+}
+
+/* Mobile view */
+
+@media all and (max-width: 640px) {
+  /* header and footer */
+  footer {
+    padding: 15px 15px 15px 15px;
+  }
+  header,
+  footer {
+    margin: 0;
+  }
+  footer {
+    margin-top: 10px;
+  }
+  header {
+    size: 12px !important;
+  }
+}
+
+.main-col {
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+
+.main-row {
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+#main-container {
+  margin: 0 auto;
+  max-width: 1550px;
+  min-width: 300px;
+  word-break: break;
+}
+
 .center-image {
   text-align: center;
 }
 
-.crest-style{
+.crest-style {
   text-decoration: none;
 }
 
@@ -134,12 +216,12 @@ textarea {
   titles
     ========================================================================== */
 
-h2{
+h2 {
   font-weight: 500;
   font-size: 28px;
 }
 
-b{
+b {
   font-weight: 600;
   font-size: 18px;
 }
@@ -175,13 +257,11 @@ nav {
   display: block;
   overflow: hidden;
   border-radius: 4pt;
-
 }
 
 nav ul {
   margin: 0;
   padding: 0;
-  
 }
 
 nav ul li {
@@ -192,7 +272,6 @@ nav ul li {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-
 }
 
 nav>ul>li>a>.caret,
@@ -209,7 +288,6 @@ nav>ul>li>div ul>li>a>.caret {
   -moz-transition: color 0.1s linear;
   -o-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  
 }
 
 nav>ul>li>div ul>li>a>.caret {
@@ -243,7 +321,6 @@ nav>ul>li:hover>a>.caret {
 
 nav>ul>li>div ul>li:hover>a>.caret {
   border-left-color: rgb(255, 255, 255);
-  
 }
 
 nav>ul>li>div,
@@ -262,10 +339,8 @@ nav>ul>li>div ul>li>div {
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
-
   border-radius: 0 0 4pt 4pt;
-
-  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0,0,0,0.75);
+  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
 }
 
 nav>ul>li>div ul>li>div {
@@ -273,7 +348,6 @@ nav>ul>li>div ul>li>div {
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   margin-top: -44px;
   right: -162px;
-  
 }
 
 nav>ul>li:hover>div,
@@ -287,7 +361,6 @@ nav>ul>li>div ul>li,
 nav>ul>li>div ul>li>div ul>li {
   display: block;
   position: relative;
-   
 }
 
 nav>ul>li>div ul>li>a,
@@ -308,243 +381,6 @@ nav>ul>li>div ul>li:hover>a {
 }
 
 /* ==========================================================================
-   Flexbox layout
-   Based on:
-   https://codepen.io/cchambers/pen/KdBpa
-   https://codepen.io/sdthornton/pen/wBZdXq
-   ========================================================================== */
-
-header {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-footer,
-#main>upperhalf,
-#main>lowerhalf,
-#main>leftside,
-#main>middle,
-#main>aside {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  padding: 5px;
-}
-
-#main>middle:hover,
-header:hover,
-footer:hover,
-#main>rightside>upperhalf:hover,
-#main>rightside>lowerhalf:hover,
-#main>leftside:hover,
-#main>aside:hover {
-  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-body {
-  background-color: #EBE8E4;
-  color: #222;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-#main-container {
-  margin: 0 auto;
-  max-width: 1550px;
-  min-width: 300px;
-  word-break: break;
-}
-
-#main {
-  min-height: 800px;
-  margin: 0px;
-  padding: 0px;
-  display: -webkit-flex;
-  display: flex;
-}
-
-#main>rightside {
-  margin: 10px;
-  border-radius: 4pt;
-  -webkit-flex: 3 1 60%;
-  flex: 3 1 60%;
-  -webkit-order: 2;
-  order: 2;
-}
-
-#main>upperhalf,
-#main>lowerhalf,
-#main>middle {
-  border-radius: 4pt;
-  background: white;
-  -webkit-order: 2;
-  order: 2;
-  padding-left: 25px;
-  padding-right: 20px;
-}
-
-#main>upperhalf {
-  margin-bottom: 10px;
-  flex: 1 1 20%;
-  -webkit-flex: 1 1 20%;
-  padding-bottom: 20px
-}
-
-#main>lowerhalf {
-  margin-top: 10px;
-  flex: 1 1 45%;
-  -webkit-flex: 1 1 45%;
-  padding-bottom: 15px;
-}
-
-#main>middle {
-  margin-bottom: 10px;
-  flex: 1 1 35%;
-  -webkit-flex: 1 1 35%;
-  padding-bottom: 15px;
-}
-
-#main>leftside {
-  margin: 10px;
-  padding-left: 25px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  border-radius: 4pt;
-  background: white;
-  -webkit-flex: 1 6 20%;
-  flex: 1 6 30%;
-  -webkit-order: 1;
-  order: 1;
-}
-
-#main>aside {
-  margin: 10px;
-  padding: 5px;
-  border-radius: 4pt;
-  background: white;
-  -webkit-flex: 1 6 20%;
-  flex: 1 6 20%;
-  -webkit-order: 3;
-  order: 3;
-}
-
-footer {
-  padding: 5px;
-}
-
-header,
-footer {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 4pt;
-  background: white;
-}
-
-header {
-  min-height: 60px
-}
-
-footer {
-  min-height: 120px;
-}
-
-.main-col {
-  -webkit-flex-flow: column;
-  flex-flow: column;
-}
-
-.main-row {
-  -webkit-flex-flow: row;
-  flex-flow: row;
-}
-
-.inner-right {
-  padding: 0 25px 0 0!important;
-  margin: 0 !important;
-  box-shadow: none !important;
-  flex: 1 1 50% !important;
-}
-
-.inner-left {
-  padding: 2px 25px 0 0!important;
-  margin: 0 !important;
-  box-shadow: none !important;
-  flex: 1 1 50% !important;
-}
-
-/* Mobile view */
-
-@media all and (max-width: 640px) {
-  #main,
-  #page {
-    -webkit-flex-flow: column-reverse;
-    flex-flow: column-reverse;
-  }
-  /* Order */
-  #main>rightside {
-    -webkit-order: 1;
-    order: 1;
-  }
-  #main>aside {
-    -webkit-order: 1;
-    order: 1;
-  }
-  #main>leftside,
-    {
-    -webkit-order: -1;
-    order: -1;
-  }
-  /* Margin and order*/
-  #main>leftside,
-  #main>aside,
-  #main>rightside {
-    margin-top: 10px ;
-    margin-left: 0px ;
-    margin-bottom: 0px ;
-    margin-right: 0px ;
-  }
-  #main>upperhalf {
-    margin: 0px ;
-    order: 2;
-  }
-  #main>lowerhalf {
-    margin: 0px ;
-    order: 0;
-  }
-  #main>middle {
-    order: 1;
-    margin-top: 10px ;
-  }
-  /* header and footer */
-  footer {
-    padding: 15px 15px 15px 15px;
-  }
-  header,
-  footer {
-    margin: 0;
-  }
-  footer {
-    margin-top: 10px;
-  }
-  /* inquiry-button */
-  .inquiry-button {
-    float: none;
-  }
-  iframe {
-    height: 400px;
-  }
-  header{
-    size: 12px !important;
-  }
-  ul li{
-    font-size: 16px
-  }
-}
-
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -553,7 +389,7 @@ footer {
  */
 
 .hidden {
-  display: none ;
+  display: none;
 }
 
 /*
@@ -654,12 +490,12 @@ footer {
   *,
   *:before,
   *:after {
-    background: transparent ;
-    color: #000 ;
+    background: transparent;
+    color: #000;
     /* Black prints faster */
-    -webkit-box-shadow: none ;
-    box-shadow: none ;
-    text-shadow: none ;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
   }
   a,
   a:visited {
@@ -680,7 +516,7 @@ footer {
     content: "";
   }
   pre {
-    white-space: pre-wrap ;
+    white-space: pre-wrap;
   }
   pre,
   blockquote {
