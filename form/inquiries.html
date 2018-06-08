@@ -2,189 +2,179 @@
 <html class="no-js" lang="eng">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Inquiries</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="apple-touch-icon" href="icon.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/../img/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/x-icon" sizes="32x32" href="/../img/icons/favicon-32x32.png">
-	<link rel="icon" type="image/x-icon" sizes="16x16" href="/../img/icons/favicon-16x16.png">
-	<link rel="manifest" href="/../img/icons/site.webmanifest">
-	<link rel="mask-icon" href="/../img/icons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="/../img/icons/favicon.ico" type="image/x-icon">
-	<meta name="msapplication-TileColor" content="#2b5797">
-	<meta name="msapplication-config" content="/../img/icons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="/../css/normalize.css">
-	<link rel="stylesheet" href="/../css/main.css">
-	<link rel="stylesheet" href="/../css/form.css">
-	<link rel="stylesheet" href="/../css/opensans.css" />
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>PresPort</title>
+  <meta name="description" content="Prescott family website.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script src="../js/p5.min.js"></script>
+  <script src="../js/addons/p5.dom.min.js"></script>
+  <script src="../js/addons/p5.sound.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="../img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="../img/icons/favicon-16x16.png">
+  <link rel="manifest" href="../img/icons/site.webmanifest">
+  <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="../img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/inquiries-flex.css">
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
 </head>
 
 <body>
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-		<![endif]-->
-	<!-- Add your site or application content here -->
-	<!-- start centering-->
-	<div class="center-justified">
-		<!-- Navbar -->
-		<nav>
-			<ul>
-				<li>
-					<!-- Home Button -->
-					<a title="Home" href="/../index.html">
-						<img border="0" alt="Home" src="/../img/Home.png" height="40">
-					</a>
-				</li>
-				<li>
-					<a>People
-						<span class="caret"></span>
-					</a>
-					<div>
-						<ul>
-							<li>
-								<a href="/../people/drewprescottsr.html">Drew Prescott, Sr.</a>
-							</li>
-							<li>
-								<a href="/../people/karenprescott.html">Karen Prescott</a>
-							</li>
-							<li>
-								<!-- <a href="/../people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
-							</li>
-							<li>
-								<a href="/../people/barbaraprescott.html">Barbara Prescott</a>
-							</li>
-							<li>
-								<a href="/../people/lukeprescott.html">Luke Prescott</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a>Property
-						<span class="caret"></span>
-					</a>
-					<div>
-						<ul>
-							<li>
-								<a href="/../property/inside.html">Inside</a>
-							</li>
-							<li>
-								<a href="/../property/outside.html">Outside</a>
-							</li>
-							<li>
-								<a href="/../property/location.html">Location</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a>Projects
-						<span class="caret"></span>
-					</a>
-					<div>
-						<ul>
-						</ul>
-					</div>
-				</li>
-				<li class="inquiry-button">
-					<a href="inquiries.html">Inquiries</a>
-				</li>
-			</ul>
-		</nav>
-		<div id="contentBox">
-			<div class="content-container100">
-				<div class="whiteBox">
-					<h2>Say Hello!</h2>
-					<p>
-						We would love to hear from you; send a letter to 1169 Mohawk Road, Schenectady N.Y. 12309 or email us at
-						<a class="link-style" href="mailto:info@presport.us">info@presport.us</a>.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div id="contentBox">
-			<div class="content-container100">
-				<div class="whiteBox" style="padding-bottom: 0 !important;">
-					<div class="form-container">
-						<h2 id="title">
-							Contact Form
-						</h2>
 
-						<form method="POST" action="/../php/contact-form.php" id="contact-form">
-							<label for="name" id="name-label">
-								Name:
-								<div style="display: inline; color:red">*</div>
-								<input type="text" id="name" name="name" required>
-							</label>
+  <!-- Start -->
+  <div id="main-container">
 
-							<label for="email" id="email-label">
-								E-mail:
-								<div style="display: inline; color:red">*</div>
-								<input type="email" id="email" name="email" required>
-							</label>
+    <!-- heading/navbar-->
+    <header>
+      <nav>
+        <ul>
 
-							<label for="phone" id="phone-label">
-								Phone #:
-								<input type="tel" id="phone" name="phone">
-							</label>
+          <!-- Home Button -->
+          <li>
+            <a title="Home" href="../index.html">
+              <img border="0" alt="Home" src="../img/Home.png" height="40">
+            </a>
+          </li>
+
+          <!-- people dropdown -->
+          <li>
+            <a>People
+              <span class="caret"></span>
+            </a>
+            <div>
+              <ul>
+                <li>
+                  <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                </li>
+                <li>
+                  <a href="../people/karenprescott.html">Karen Prescott</a>
+                </li>
+                <li>
+                  <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
+                </li>
+                <li>
+                  <a href="../people/barbaraprescott.html">Barbara Prescott</a>
+                </li>
+                <li>
+                  <a href="../people/lukeprescott.html">Luke Prescott</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- property dropdown-->
+          <li>
+            <a>Property
+              <span class="caret"></span>
+            </a>
+            <div>
+              <ul>
+                <li>
+                  <a href="../property/inside.html">Inside</a>
+                </li>
+                <li>
+                  <a href="../property/outside.html">Outside</a>
+                </li>
+                <li>
+                  <a href="../property/location.html">Location</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- projects dropdown-->
+          <li>
+            <a>Projects
+              <span class="caret"></span>
+            </a>
+            <div>
+              <ul>
+              </ul>
+            </div>
+          </li>
+
+          <!-- floating inquiry button-->
+          <li class="inquiry-button">
+            <a href="../form/inquiries.html">Inquiries</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- outer most flex container -->
+    <div id='main' class="main-col">
+
+      <half1 id='main' class="main-row" style="padding:0; background: none; box-shadow: none !important;">
+        <half1 style="margin: 0 10px 0 0;">
+          upper left
+        </half1>
+        <half2 style="margin: 0 0 0 10px;">
+          upper right
+        </half2>
+      </half1>
+
+      <half2>
+        lower half
+      </half2>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        Powered by
+        <a class="link-style" href="https://p5js.org/">p5.js</a> and started with
+        <a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>. </br> General questions, comments, or concerns?
+        <a class="link-style" href="mailto:info@presport.us?subject=General%20question,%20comment,%20or%20concern."> Contact us!</a>
+        This website was designed and built by Luke Prescott.
+        </br> Any and all trademarks or logos used throughout this website are the property of their respective owners.
+      </div>
+    </footer>
+  </div>
+  <!-- /Start-->
 
 
-							<label for="subject" id="subject-label">
-								Subject:
-								<input type="text" id="subject" name="subject">
-							</label>
+  <!-- scripts -->
+  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')
 
-							<label for="comment" id="comment-label">
-								Message:
-								<div style="display: inline; color:red">*</div>
-								<textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
-							</label>
+  </script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
 
-							<!-- Bottom form. -->
-							<div style="padding: 10px 0 30px 0" class="g-recaptcha" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
 
-							<div style="display: inline-block;">
-								<div style="display: inline; color:red">*</div> denotes required.</div>
-							<br/>
-							<div style="padding: 15px 0 15px 0;">
-								<input type="submit" id="submit" name="formSubmit" value="Submit">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="content-container100">
-			<div class="whiteBox" style="text-align: center; margin-top:15px; padding-top: 25px; padding-bottom: 25px; font-size: 14px;  ">
-				Powered by
-				<a class="link-style" href="https://p5js.org/">p5.js</a> and started with
-				<a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>. General questions, comments, or concerns?
-				<a class="link-style" href="mailto:info@presport.us?subject=General%20question,%20comment,%20or%20concern."> Contact us!</a> This website was designed and built by Luke Prescott.
-				<p>Any and all trademarks or logos used throughout this website are the property of their respective owners.</p>
-
-			</div>
-		</div>
-		<!-- end centering-->
-	</div>
-	<!-- End your site or application content here -->
-	<!-- End site or application content here -->
-	<script src="/../js/vendor/modernizr-3.5.0.min.js"></script>
-	<script src="/../js/jquery-3.2.1.min.js"></script>
-	<script>
-		window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
-	</script>
-	<script src="/../js/plugins.js"></script>
-	<!-- link to p5.js -->
-	<script src="/../js/p5.min.js"></script>
-	<script src="/../js/addons/p5.dom.min.js"></script>
-	<script src="/../js/addons/p5.sound.min.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
+
+</html>
+
 
 </html>
