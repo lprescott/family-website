@@ -1,0 +1,8 @@
+/* Contents of styles.css. */
+:root {
+    --color: red;
+}
+
+.ck-editor {
+    color: var(--color);
+}
