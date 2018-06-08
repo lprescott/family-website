@@ -55,8 +55,22 @@
     float: none;
   }
 
-  #main>half1, #main>half2 {
-    margin: 10px 0 10px 0 !important;
+  .outer-flex-box{
+    margin: 5px 0 5px 0 !important;
+  }
+
+  .outer-flex-box-no-bottom{
+    margin: 5px 0 0 0 !important;
+  }
+
+  
+  .outer-flex-box-no-top{
+    margin: 0 0 5px 0 !important;
+  }
+
+  .inner-flex-box{
+    margin: 0 0 10px 0 !important;
+
   }
 }
 
@@ -72,5 +86,8 @@
   input[type=text],
   input[type=email] {
     min-height: 150px
+  }
+  #top-flex-container{
+    margin: 0 !important;
   }
 }
