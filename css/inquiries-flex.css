@@ -5,6 +5,7 @@
   display: flex;
 }
 
+
 #main>half2 {
   margin: 10px;
   background: white;
@@ -24,6 +25,22 @@
   flex: 1 1 50%;
   -webkit-order: 1;
   order: 1;
+}
+
+#main>innerhalf1 {
+  border-radius: 4pt;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 1;
+  order: 1;
+}
+
+#main>innerhalf2 {
+  border-radius: 4pt;
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -webkit-order: 2;
+  order: 2;
 }
 
 #main>half2,
@@ -83,14 +100,11 @@
   #top-flex-container {
     margin: 0 !important;
   }
-  header, footer{
+  header{
     margin: 5px 0px 5px 0 !important; 
   }
-}
+  footer{
+    margin: 10px 0px 5px 0 !important; 
 
-@media all and (max-width: 800px) {
-  .wide-container {
-    -webkit-flex-flow: column;
-    flex-flow: column;
   }
 }
