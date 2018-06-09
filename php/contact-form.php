@@ -27,19 +27,30 @@
         $varSubject = $_POST['subject'];
         $varComment = $_POST['comment'];
         $to = "info@presport.us";
-        $msg = wordwrap($varComment,70);
-        $header = "From: $varEmail"; 
+
+        $varToday = date("F j, Y, g:i a");
+         
+        /* Derive message */
+        $varMessage = "From: " . $varName . " (" . $varEmail . ")<br>"
+            . "Sent: " . $varToday . "<br>"
+            . "To: " . $to . " (PresPort)<br>"
+            . "Subject: " . $varSubject . "<br><hr>";
+
+        $headers = "From: " . $varEmail . "\r\n";
+        $headers .= "Reply-To: ".  $varEmail . "\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
         /* not missing subject */
         if( !empty($_POST['subject'])){
-            $msg .= "\n\n$varName\n$varEmail\n$varPhone";
-            mail($to,$varSubject,$msg,$header);
+            $varMessage.=$varComment;
+            mail($to,$varSubject,$varMessage,$headers);
         }
 
         /* missing subject */
         if(empty($_POST['subject'])){
-            $msg .= "\n\n$varName\n$varEmail\n$varPhone";
-            mail($to,"PresPort Contact Form",$msg,$header);
+            $varMessage.=$varComment;
+            mail($to,"PresPort Contact Form",$varMessage,$headers);
         }
 
         header('Location: /../form/success.html');  
