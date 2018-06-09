@@ -160,6 +160,7 @@ footer {
   header {
     size: 12px !important;
   }
+  
 }
 
 .main-col {
@@ -230,6 +231,14 @@ b {
    Navbar
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
+
+   
+@media all and (max-width: 640px) {
+  nav>ul>li>div,
+  nav>ul>li>div ul>li>div {
+    box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+  }
+}
 
 ul {
   font-size: 0;

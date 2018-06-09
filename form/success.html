@@ -123,11 +123,11 @@
 
 
     <!-- outer most flex container -->
-    <form id='main' class="main-col" method="POST" action="../php/contact-form.php" id="contact-form" >
+    <form id='main' class="main-col" method="POST" action="/../../php/contact-form.php" id="contact-form" fcomment>
       <half1 id='main' class="main-row outer-flex-box-no-bottom" style="padding:0; background: none; box-shadow: none;">
         <half1 id='main' class="main-col outer-flex-box-no-bottom after" style="background: none; box-shadow: none; margin: 0 20px 0 0; padding: 0;">
           <half1 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 0 10px 0;">
-            <label for="name" id="name-label" style="padding-left: 10px; font-size: 16px;">
+            <label for="name" id="name-label" style="padding-left: 10px; font-size: 14px;">
               Your Name:
               <input type="text" id="name" name="name" required>
             </label>
@@ -162,7 +162,6 @@
           <input type="text" id="subject" name="subject" required>
         </label>
       </half1>
-
 
       <half2 class="outer-flex-box-no-bottom" style="padding: 0; overflow: hidden;">
         <label for="comment" id="comment-label">
@@ -217,6 +216,19 @@
 
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <!-- Sweetalert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    window.onload = function () {
+      swal({
+        title: "Success!",
+        text: "Your message has been sent.",
+        icon: "success",
+      });
+    }
+
+  </script>
 </body>
 
 </html>

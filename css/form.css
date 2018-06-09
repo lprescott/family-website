@@ -11,7 +11,7 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     resize: vertical;
     background-color: #ffffff;
     line-height: 1.6;
-    font-size:20px;
+    font-size:26px;
 }
 
 
@@ -42,5 +42,26 @@ input[type=submit]{
 
 .ck-editor__editable {
     min-height: 400px;
+    font-size:24px;
 }
+
+
+/*
+
+ SweetAlert
+
+ */
+
+ .swal-button {
+    background-color: rgb(231, 231, 231);
+    font-size: 16px;
+  }
+
+  .swal-button:hover {
+    background-color: #abc3ec;
+  }
+
+  .swal-modal{
+    font-family: 'Open Sans', sans-serif;
+  }
 

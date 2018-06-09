@@ -1,5 +1,5 @@
 <?php
-  if($_POST['formSubmit'] == "Submit")
+  if($_POST['formSubmit'] == "Send Message")
     {
         $errorMessage = "";
         $captcha = $_POST["g-recaptcha-response"];
@@ -12,7 +12,8 @@
         }
         
         if(!empty($errorMessage)) {
-            header('Location: /../form/inquiries/failure.html');  
+            echo $errorMessage;
+            header('Location: /../form/failure.html');  
             exit;
         } 
 
@@ -23,38 +24,25 @@
 
         $varName = $_POST['name'];
         $varEmail = $_POST['email'];
-        $varPhone = $_POST['phone'];
         $varSubject = $_POST['subject'];
         $varComment = $_POST['comment'];
         $to = "info@presport.us";
         $msg = wordwrap($varComment,70);
         $header = "From: $varEmail"; 
 
-        /* All data */
-        if(!empty($_POST['telephone']) && !empty($_POST['subject'])){
+        /* not missing subject */
+        if( !empty($_POST['subject'])){
             $msg .= "\n\n$varName\n$varEmail\n$varPhone";
-            mail($to,$varSubject,$msg,$header);
-        }
-
-        /* missing telephone */
-        if(empty($_POST['telephone']) && !empty($_POST['subject'])){
-            $msg .= "\n\n$varName\n$varEmail";
             mail($to,$varSubject,$msg,$header);
         }
 
         /* missing subject */
-        if(empty($_POST['subject']) && !empty($_POST['telephone'])){
+        if(empty($_POST['subject'])){
             $msg .= "\n\n$varName\n$varEmail\n$varPhone";
             mail($to,"PresPort Contact Form",$msg,$header);
         }
 
-        /* missing telephone and subject */
-        if(empty($_POST['telephone']) && empty($_POST['subject'])){
-            $msg .= "\n\n$varName\n$varEmail";
-            mail($to,"PresPort Contact Form",$msg,$header);
-        }
-
-        header('Location: /../form/inquiries/success.html');  
+        header('Location: /../form/success.html');  
         exit;
     }
 ?>

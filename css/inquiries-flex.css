@@ -40,7 +40,7 @@
 
 /* Mobile view */
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 1000px) {
   #main,
   #page {
     -webkit-flex-flow: column;
@@ -80,9 +80,7 @@
   .after{
     order: 2 !important;
   }
-}
 
-@media all and (max-width: 1000px) {
   .wide-container {
     -webkit-flex-flow: column;
     flex-flow: column;
