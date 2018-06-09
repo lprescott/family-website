@@ -5,7 +5,6 @@
    https://codepen.io/sdthornton/pen/wBZdXq
    ========================================================================== */
 
-
 #main>upperhalf,
 #main>lowerhalf,
 #main>leftside,
@@ -31,7 +30,6 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
-
 
 #main {
   margin: 0px;
@@ -105,9 +103,6 @@ body {
   order: 3;
 }
 
-
-
-
 .inner-right {
   padding: 0 25px 0 0 !important;
   margin: 0 !important;
@@ -169,7 +164,6 @@ body {
     order: 1;
     margin-top: 10px;
   }
-  
   /* inquiry-button */
   .inquiry-button {
     float: none;

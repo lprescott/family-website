@@ -54,33 +54,24 @@
   .inquiry-button {
     float: none;
   }
-
-  .outer-flex-box{
+  .outer-flex-box {
     margin: 5px 0 5px 0 !important;
   }
-
-  .outer-flex-box-no-bottom{
+  .outer-flex-box-no-bottom {
     margin: 5px 0 0 0 !important;
   }
-
-  
-  .outer-flex-box-no-top{
+  .outer-flex-box-no-top {
     margin: 0 0 5px 0 !important;
   }
-
-  .inner-flex-box{
+  .inner-flex-box {
     margin: 0 0 10px 0 !important;
-
   }
-
-  .before{
+  .before {
     order: 1 !important;
   }
-
-  .after{
+  .after {
     order: 2 !important;
   }
-
   .wide-container {
     -webkit-flex-flow: column;
     flex-flow: column;
@@ -93,7 +84,7 @@
   input[type=email] {
     min-height: 150px
   }
-  #top-flex-container{
+  #top-flex-container {
     margin: 0 !important;
   }
 }

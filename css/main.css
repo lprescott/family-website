@@ -160,7 +160,6 @@ footer {
   header {
     size: 12px !important;
   }
-  
 }
 
 .main-col {
@@ -232,7 +231,6 @@ b {
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
 
-   
 @media all and (max-width: 640px) {
   nav>ul>li>div,
   nav>ul>li>div ul>li>div {
@@ -343,6 +341,7 @@ nav>ul>li>div ul>li>div {
   position: absolute;
   min-width: 142.27px;
   visibility: hidden;
+  transition: opacity 0.2s;
   -webkit-transiton: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
