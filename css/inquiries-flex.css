@@ -72,10 +72,6 @@
   .after {
     order: 2 !important;
   }
-  .wide-container {
-    -webkit-flex-flow: column;
-    flex-flow: column;
-  }
   #form-message {
     -webkit-flex: 1 1 25% !important;
     flex: 1 1 25%;
@@ -86,5 +82,15 @@
   }
   #top-flex-container {
     margin: 0 !important;
+  }
+  header, footer{
+    margin: 20px 0px 20px 0 !important; 
+  }
+}
+
+@media all and (max-width: 800px) {
+  .wide-container {
+    -webkit-flex-flow: column;
+    flex-flow: column;
   }
 }
