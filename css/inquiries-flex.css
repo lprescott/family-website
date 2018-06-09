@@ -72,6 +72,14 @@
     margin: 0 0 10px 0 !important;
 
   }
+
+  .before{
+    order: 1 !important;
+  }
+
+  .after{
+    order: 2 !important;
+  }
 }
 
 @media all and (max-width: 1000px) {
