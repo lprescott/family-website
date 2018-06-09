@@ -123,17 +123,17 @@
 
 
     <!-- outer most flex container -->
-    <form id='main' class="main-col" method="POST" action="/../../php/contact-form.php" id="contact-form" fcomment>
+    <form id='main' class="main-col" method="POST" action="../php/contact-form.php" id="contact-form">
       <half1 id='main' class="main-row outer-flex-box-no-bottom" style="padding:0; background: none; box-shadow: none;">
         <half1 id='main' class="main-col outer-flex-box-no-bottom after" style="background: none; box-shadow: none; margin: 0 20px 0 0; padding: 0;">
           <half1 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 0 10px 0;">
-            <label for="name" id="name-label" style="padding-left: 10px; font-size: 14px;">
+            <label for="name" id="name-label" style="padding-left: 10px; font-size: 16px;">
               Your Name:
               <input type="text" id="name" name="name" required>
             </label>
           </half1>
           <half2 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 10px 0 0 0;">
-            <label for="email" id="email-label" style="padding-left: 10px; font-size: 14px;">
+            <label for="email" id="email-label" style="padding-left: 10px; font-size: 16px;">
               Your E-mail:
               <input type="email" id="email" name="email" required>
             </label>
@@ -157,7 +157,7 @@
       </half1>
 
       <half1 class="outer-flex-box-no-top" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 10px 0 10px;">
-        <label for="subject" id="subject-label" style="padding-left: 10px; font-size: 14px;">
+        <label for="subject" id="subject-label" style="padding-left: 10px; font-size: 16px;">
           Subject:
           <input type="text" id="subject" name="subject" required>
         </label>
@@ -168,7 +168,11 @@
           <textarea name="comment" id="comment"></textarea>
           <script>
             ClassicEditor
-              .create(document.querySelector('#comment'), {})
+              .create(document.querySelector('#comment'), {
+                toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote',
+                  'undo', 'redo'
+                ]
+              })
               .catch(error => {
                 console.log(error);
               });
@@ -211,25 +215,13 @@
     };
     ga.q = [];
     ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('create', 'UA-111332341-1', 'auto');
     ga('send', 'pageview')
 
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
   <!-- Sweetalert -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script>
-    window.onload = function () {
-      swal({
-        title: "Success!",
-        text: "Your message has been sent.",
-        icon: "success",
-      });
-    }
-
-  </script>
-
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script>
     window.onload = function () {
@@ -241,8 +233,7 @@
     }
 
   </script>
-</body>
 
-</html>
+</body>
 
 </html>
