@@ -1,3 +1,103 @@
+<?php
+
+  //global vars
+  global $title;  global $icon; 
+
+  /*
+      L.R.Prescott
+      A PHP script to collect a client side form submission and email it to info@presport.us.
+      6/9/2018
+  */
+  if($_POST['formSubmit'] == "Send Message") {
+
+    $message = "";
+    $title = "";
+    $icon = "";
+
+    $captcha = $_POST["g-recaptcha-response"]; //google recaptcha
+
+    //if google recaptcha is empty or name, email or comment werent supplied set error message
+    if(empty($_POST["g-recaptcha-response"])){
+      $message = "Empty Google recaptcha.";
+      $title = "Error!";
+      $icon = "error";
+    } 
+    else if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['comment'])) {
+      $message = "Required information missing.";
+      $title = "Error!";
+      $icon = "error";
+    }
+
+    //check google recaptcha, if bot
+    $recaptchaResponse=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcTgV0UAAAAADTU_7kiaFHUA6GI2Aq4JrsR6bLa&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+    if($recaptchaResponse.success==false){
+      $message = "Recaptcha failed to authenticate.";
+      $title = "Error!";
+      $icon = "error";
+    }
+
+    //if error message isnt empty, exit
+    if(!empty($message)) {
+      header("Location: error.php");
+      exit;
+    } 
+
+    $varSubject = "";
+
+    //store supplied info
+    $varName = $_POST['name'];
+    $varEmail = $_POST['email'];
+    $varSubject .= $_POST['subject'];
+    $varComment = $_POST['comment'];
+
+    
+    //if subject message isnt empty, set
+    if(empty($varSubject)) {
+      $varSubject .= "PresPort Contact Form";
+    } 
+
+    //dest
+    $to = "info@presport.us";
+
+    //today
+    $varToday = date("F j, Y, g:i a");
+    
+    /* start message with header */
+    $varMessage = "<i>Automatically generated header</i><br>" 
+      . "From: " . $varName . " (" . $varEmail . ")<br>"
+      . "Sent: " . $varToday . "<br>"
+      . "To: " . $to . " (PresPort)<br>"
+      . "Subject: " . $varSubject . "<br><hr>";
+
+    // create headers for mail func
+    $headers = "From: " . $varEmail . "\r\n";
+    $headers .= "Reply-To: ".  $varEmail . "\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+    $varMessage.=$varComment;
+
+    if(mail($to,$varSubject,$varMessage,$headers)){
+      //success here
+      $title .= "Success!";
+      $message .= "Your message has sent successfully.";
+      $icon .= "success";
+
+      header("Location: success.php");
+      exit;
+
+    } else{
+      //error
+      $message .= "Could not send email.";
+      $title .= "Error!";
+      $icon .= "error";
+
+      header("Location: error.php");  
+      exit; 
+    }
+  }
+?>
+
 <!doctype html>
 <html class="no-js" lang="eng">
 
@@ -115,7 +215,7 @@
 
           <!-- floating inquiry button-->
           <li class="inquiry-button">
-            <a href="inquiries.html">Inquiries</a>
+            <a href="contact.php">Inquiries</a>
           </li>
         </ul>
       </nav>
@@ -123,7 +223,7 @@
 
 
     <!-- outer most flex container -->
-    <form id='main' class="main-col" method="POST" action="../php/contact-form.php" id="contact-form">
+    <form id='main' class="main-col" method="POST" action="" id="contact-form">
       <half1 id='main' class="main-row outer-flex-box-no-bottom" style="padding:0; background: none; box-shadow: none;">
         <half1 id='main' class="main-col outer-flex-box-no-bottom after" style="background: none; box-shadow: none; margin: 0 20px 0 0; padding: 0;">
           <half1 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 0 10px 0;">
@@ -196,7 +296,6 @@
   </div>
   <!-- /Start-->
 
-
   <!-- scripts -->
   <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -220,6 +319,7 @@
 
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
 </body>
 
 </html>

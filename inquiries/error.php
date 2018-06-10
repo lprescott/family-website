@@ -1,3 +1,5 @@
+<?php ?>
+
 <!doctype html>
 <html class="no-js" lang="eng">
 
@@ -115,7 +117,7 @@
 
           <!-- floating inquiry button-->
           <li class="inquiry-button">
-            <a href="../inquiries.html">Inquiries</a>
+            <a href="contact.php">Inquiries</a>
           </li>
         </ul>
       </nav>
@@ -123,18 +125,18 @@
 
 
     <!-- outer most flex container -->
-    <form id='main' class="main-col" method="POST" action="../php/contact-form.php" id="contact-form">
+    <form id='main' class="main-col" method="POST" action="" id="contact-form">
       <half1 id='main' class="main-row outer-flex-box-no-bottom" style="padding:0; background: none; box-shadow: none;">
         <half1 id='main' class="main-col outer-flex-box-no-bottom after" style="background: none; box-shadow: none; margin: 0 20px 0 0; padding: 0;">
           <half1 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 0 10px 0;">
-            <label for="name" id="name-label" style="padding-left: 10px; font-size: 16px;">
-              Your Name:
+            <label for="name" id="name-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
+              Name
               <input type="text" id="name" name="name" required>
             </label>
           </half1>
-          <half2 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 10px 0 0 0;">
-            <label for="email" id="email-label" style="padding-left: 10px; font-size: 16px;">
-              Your E-mail:
+          <half2 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 0 0 0;">
+            <label for="email" id="email-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
+              E-mail
               <input type="email" id="email" name="email" required>
             </label>
           </half2>
@@ -144,21 +146,21 @@
             <h2 style="margin-left: 5px; margin-right: 5px;text-align: center; color: rgb(78, 78, 78);"> Say hi! We would love to hear from you. </h2>
           </half1>
           <half2 id='main' class='main-row wide-container' style="padding:0; margin-top: 0; background: none; box-shadow: none;">
-            <half1 style="padding:0; background: none; box-shadow: none;">
+            <innerhalf1 style="padding:5px; background: none; box-shadow: none;">
               <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
-            </half1>
-            <half2 style="padding:0; background: none; box-shadow: none;">
+            </innerhalf1>
+            <innerhalf2 style="padding:5px; background: none; box-shadow: none;">
               <div id="submit-container" style=" display: inline-block; font-size: 20px;">
                 <input type="submit" id="submit" name="formSubmit" value="Send Message">
               </div>
-            </half2>
+            </innerhalf2>
           </half2>
         </half2>
       </half1>
 
       <half1 class="outer-flex-box-no-top" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 10px 0 10px;">
-        <label for="subject" id="subject-label" style="padding-left: 10px; font-size: 16px;">
-          Subject:
+        <label for="subject" id="subject-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
+          Subject
           <input type="text" id="subject" name="subject" required>
         </label>
       </half1>
@@ -196,7 +198,6 @@
   </div>
   <!-- /Start-->
 
-
   <!-- scripts -->
   <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -225,9 +226,10 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script>
     window.onload = function () {
+      
       swal({
         title: "Error!",
-        text: "Your message has not been sent. \n Please try again.",
+        text: "Your message was not sent.",
         icon: "error",
       });
     }
