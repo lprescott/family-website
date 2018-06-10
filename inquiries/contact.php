@@ -7,19 +7,18 @@
       A PHP script to collect a client side form submission and email it to info@presport.us.
       6/9/2018
   */
+  
   if($_POST['formSubmit'] == "Send Message") {
 
     $message = "";
     $title = "";
     $icon = "";
 
-    $captcha = $_POST["g-recaptcha-response"]; //google recaptcha
-
     //if google recaptcha is empty or name, email or comment werent supplied set error message
-    if(empty($_POST["g-recaptcha-response"])){
+    if(!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
       $message = "Empty Google recaptcha.";
       $title = "Error!";
-      $icon = "error";
+      $icon = "error";      
     } 
     else if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['comment'])) {
       $message = "Required information missing.";
@@ -41,6 +40,7 @@
       $_SESSION['sessionTitle'] = $title;
       $_SESSION['sessionIcon'] = $icon;
       header("Location: submit.php");
+      exit;
     } 
 
     $varSubject = "";
@@ -48,13 +48,13 @@
     //store supplied info
     $varName = $_POST['name'];
     $varEmail = $_POST['email'];
-    $varSubject .= $_POST['subject'];
+    $varSubject = $_POST['subject'];
     $varComment = $_POST['comment'];
 
     
     //if subject message isnt empty, set
     if(empty($varSubject)) {
-      $varSubject .= "PresPort Contact Form";
+      $varSubject = "PresPort Contact Form";
     } 
 
     //dest
@@ -80,27 +80,29 @@
 
     if(mail($to,$varSubject,$varMessage,$headers)){
       //success here
-      $title .= "Success!";
-      $message .= "Your message has sent successfully.";
-      $icon .= "success";
+      $title = "Success!";
+      $message = "Your message has sent successfully.";
+      $icon = "success";
 
       $_SESSION['sessionMessage'] = $message;
       $_SESSION['sessionTitle'] = $title;
       $_SESSION['sessionIcon'] = $icon;
 
       header("Location: submit.php");
+      exit;
 
     } else{
       //error
-      $message .= "Could not send email.";
-      $title .= "Error!";
-      $icon .= "error";
+      $message = "Could not send email.";
+      $title = "Error!";
+      $icon = "error";
 
       $_SESSION['sessionMessage'] = $message;
       $_SESSION['sessionTitle'] = $title;
       $_SESSION['sessionIcon'] = $icon;
 
-      header("Location: submit.php");  
+      header("Location: submit.php"); 
+      exit; 
     }
   }
 ?>
@@ -266,7 +268,7 @@
       <half1 class="outer-flex-box-no-top" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 10px 0 10px;">
         <label for="subject" id="subject-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
           Subject
-          <input type="text" id="subject" name="subject" required>
+          <input type="text" id="subject" name="subject"s>
         </label>
       </half1>
 

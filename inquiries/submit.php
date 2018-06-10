@@ -171,7 +171,7 @@
       <half1 class="outer-flex-box-no-top" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 10px 0 10px;">
         <label for="subject" id="subject-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
           Subject
-          <input type="text" id="subject" name="subject" required>
+          <input type="text" id="subject" name="subject">
         </label>
       </half1>
 
