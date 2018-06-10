@@ -1,7 +1,6 @@
 <?php
 
-  //global vars
-  global $title;  global $icon; 
+  session_start(); 
 
   /*
       L.R.Prescott
@@ -38,8 +37,10 @@
 
     //if error message isnt empty, exit
     if(!empty($message)) {
-      header("Location: error.php");
-      exit;
+      $_SESSION['sessionMessage'] = $message;
+      $_SESSION['sessionTitle'] = $title;
+      $_SESSION['sessionIcon'] = $icon;
+      header("Location: submit.php");
     } 
 
     $varSubject = "";
@@ -83,8 +84,11 @@
       $message .= "Your message has sent successfully.";
       $icon .= "success";
 
-      header("Location: success.php");
-      exit;
+      $_SESSION['sessionMessage'] = $message;
+      $_SESSION['sessionTitle'] = $title;
+      $_SESSION['sessionIcon'] = $icon;
+
+      header("Location: submit.php");
 
     } else{
       //error
@@ -92,8 +96,11 @@
       $title .= "Error!";
       $icon .= "error";
 
-      header("Location: error.php");  
-      exit; 
+      $_SESSION['sessionMessage'] = $message;
+      $_SESSION['sessionTitle'] = $title;
+      $_SESSION['sessionIcon'] = $icon;
+
+      header("Location: submit.php");  
     }
   }
 ?>

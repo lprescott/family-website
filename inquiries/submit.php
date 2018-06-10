@@ -1,4 +1,14 @@
-<?php ?>
+<?php 
+
+  session_start(); 
+
+  require 'contact.php';
+
+  $submitTitle = $_SESSION['sessionTitle'];
+  $submitMessage = $_SESSION['sessionMessage'];
+  $submitIcon = $_SESSION['sessionIcon'];
+  
+?>
 
 <!doctype html>
 <html class="no-js" lang="eng">
@@ -226,12 +236,13 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script>
     window.onload = function () {
-      
+
       swal({
-        title: "Success!",
-        text: "Your message was sent.",
-        icon: "success",
+        title: "<?php echo $submitTitle ?>",
+        text: "<?php echo $submitMessage ?>",
+        icon: "<?php echo $submitIcon ?>",
       });
+
     }
 
   </script>
