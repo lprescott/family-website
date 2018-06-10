@@ -129,21 +129,7 @@ body {
     -webkit-flex-flow: column-reverse;
     flex-flow: column-reverse;
   }
-  /* Order */
-  #main>rightside {
-    -webkit-order: 1;
-    order: 1;
-  }
-  #main>aside {
-    -webkit-order: 1;
-    order: 1;
-  }
-  #main>leftside,
-    {
-    -webkit-order: -1;
-    order: -1;
-  }
-  /* Margin and order*/
+ /* Margin and order*/
   #main>leftside,
   #main>aside,
   #main>rightside {
@@ -153,16 +139,17 @@ body {
     margin-right: 0px;
   }
   #main>upperhalf {
-    margin: 0px;
+    margin-bottom: 10px;
     order: 2;
   }
   #main>lowerhalf {
     margin: 0px;
-    order: 0;
+    order: 1;
   }
   #main>middle {
     order: 1;
     margin-top: 10px;
+    margin-bottom: 0px;
   }
   /* inquiry-button */
   .inquiry-button {
