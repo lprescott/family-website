@@ -21,7 +21,7 @@
         //if error message isnt empty print error and exit after redirect
         if(!empty($errorMessage)) {
             echo $errorMessage;
-            header('Location: /../form/inquiries/failure.html');  
+            header('Location: /../inquiries/failure.html');  
             exit;
         } 
 
@@ -68,7 +68,7 @@
         }
 
         //success here
-        header('Location: /../form/inquiries/success.html');  
+        header('Location: /../inquiries/success.html');  
         exit;
     }
 ?>
