@@ -1,13 +1,11 @@
 <?php 
+session_start(); 
 
-  session_start(); 
+require 'contact.php';
 
-  require 'contact.php';
-
-  $submitTitle = $_SESSION['sessionTitle'];
-  $submitMessage = $_SESSION['sessionMessage'];
-  $submitIcon = $_SESSION['sessionIcon'];
-  
+$submitTitle = $_SESSION['sessionTitle'];
+$submitMessage = $_SESSION['sessionMessage'];
+$submitIcon = $_SESSION['sessionIcon'];
 ?>
 
 <!doctype html>
