@@ -43,9 +43,7 @@ $submitIcon = $_SESSION['sessionIcon'];
   <link rel="stylesheet" href="../css/inquiries-flex.css">
   <link rel="stylesheet" href="../css/form.css">
 
-
   <script src='https://www.google.com/recaptcha/api.js'></script>
-
 
 </head>
 
