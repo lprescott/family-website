@@ -134,7 +134,7 @@ $submitIcon = $_SESSION['sessionIcon'];
     <form id='main' class="main-col" method="POST" action="" id="contact-form">
       <half1 id='main' class="main-row outer-flex-box-no-bottom" style="padding:0; background: none; box-shadow: none;">
         <half1 id='main' class="main-col outer-flex-box-no-bottom after" style="background: none; box-shadow: none; margin: 0 20px 0 0; padding: 0;">
-          <half1 class="inner-flex-box" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 0 10px 0;">
+          <half1 class="inner-flex-box" style="background: rgb(250, 250, 250); padding: 5px 0 0 0; margin: 0 0 20px 0;">
             <label for="name" id="name-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
               Name
               <input type="text" id="name" name="name" required>
@@ -164,7 +164,7 @@ $submitIcon = $_SESSION['sessionIcon'];
         </half2>
       </half1>
 
-      <half1 class="outer-flex-box-no-top" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 10px 0 10px;">
+      <half1 class="outer-flex-box-no-top" style="background: rgb(250, 250, 250); padding:5px 0 0 0; margin: 0 10px 10px 10px;">
         <label for="subject" id="subject-label" style="padding-left: 14px; line-height: 2; font-size: 16px;">
           Subject
           <input type="text" id="subject" name="subject">
