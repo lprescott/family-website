@@ -271,21 +271,19 @@ if ($_POST['formSubmit'] == "Send Message") {
       </half1>
 
       <half2 class="outer-flex-box-no-bottom" style="padding: 0; overflow: hidden;">
-        <label for="comment" id="comment-label">
-          <textarea name="comment" id="comment"></textarea>
-          <script>
-            ClassicEditor
-              .create(document.querySelector('#comment'), {
-                toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote',
-                  'undo', 'redo'
-                ]
-              })
-              .catch(error => {
-                console.log(error);
-              });
+        <textarea name="comment" id="comment"></textarea>
+        <script>
+          ClassicEditor
+            .create(document.querySelector('#comment'), {
+              toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote',
+                'undo', 'redo'
+              ]
+            })
+            .catch(error => {
+              console.log(error);
+            });
 
-          </script>
-        </label>
+        </script>
       </half2>
     </form>
 

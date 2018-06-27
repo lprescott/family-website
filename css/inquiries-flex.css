@@ -58,6 +58,10 @@
   box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+half2.outer-flex-box-no-bottom {
+  min-height: 550px;
+}
+
 /* Mobile view */
 
 @media all and (max-width: 1000px) {
