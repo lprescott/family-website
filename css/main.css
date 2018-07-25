@@ -252,7 +252,7 @@ ul {
   font-size: 0;
 }
 
-ul li {
+nav ul li {
   font-size: 20px;
   font-weight: 500;
   display: inline-block;
