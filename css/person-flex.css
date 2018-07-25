@@ -132,10 +132,10 @@ blockquote:after {
   color: #7a7a7a;
 }
 
-.LI-badge-container-horizontal-light, .LI-badge-container{
+.LI-badge-container-horizontal-light{
   width: 100% !important;
-  min-width: 330px;
-  height: 100% !important;
-
 }
 
+
+LI-badge-container{  
+}
