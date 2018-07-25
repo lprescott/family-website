@@ -84,7 +84,7 @@ $submitIcon = $_SESSION['sessionIcon'];
                   <a href="../people/barbaraprescott.html">Barbara Prescott</a>
                 </li>
                 <li>
-                  <a href="../people/lukeprescott.html">Luke Prescott</a>
+                  <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
               </ul>
             </div>
@@ -194,7 +194,7 @@ $submitIcon = $_SESSION['sessionIcon'];
         Powered by
         <a class="link-style" href="https://p5js.org/">p5.js</a> and started with
         <a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>. </br> General questions, comments, or concerns?
-        <a class="link-style" href="mailto:info@presport.us?subject=General%20question,%20comment,%20or%20concern."> Contact us!</a>
+        <a class="link-style" href="http://presport.us/inquiries/contact.php"> Contact us!</a>
         This website was designed and built by Luke Prescott.
         </br> Any and all trademarks or logos used throughout this website are the property of their respective owners.
       </div>

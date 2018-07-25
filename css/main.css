@@ -212,6 +212,16 @@ footer {
   text-decoration: underline;
 }
 
+.link-style-image {
+  color: rgb(59, 59, 59);
+  text-decoration: none
+}
+
+.link-style-image:hover {
+  color: #86a3d5;
+}
+
+
 /* ==========================================================================
   titles
     ========================================================================== */
