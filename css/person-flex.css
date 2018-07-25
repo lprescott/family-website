@@ -1,6 +1,5 @@
 #main {
   margin: 0px;
-  padding: 0px;
   display: -webkit-flex;
   display: flex;
 }
@@ -72,6 +71,10 @@
   }
   .outer-flex-box {
     margin: 5px 0 5px 0 !important;
+  }
+
+  .outer-flex-box-top {
+    margin: 5px 0 10px 0 !important;
   }
   .outer-flex-box-no-bottom {
     margin: 5px 0 0 0 !important;
