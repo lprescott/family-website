@@ -402,6 +402,12 @@ nav>ul>li>div ul>li>div ul>li>a {
 nav>ul>li>div ul>li:hover>a {
   /** Color of hover on drop down */
   background-color: rgb(131, 153, 192);
+ 
+}
+
+nav>ul>li>div ul>li.bottom:hover>a{
+  border-bottom-left-radius: 4pt;
+  border-bottom-right-radius: 4pt;
 }
 
 .inquiry-button {

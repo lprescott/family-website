@@ -182,7 +182,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <li>
                   <a href="../people/barbaraprescott.html">Barbara Prescott</a>
                 </li>
-                <li>
+                <li class="bottom">
                   <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
               </ul>
@@ -202,7 +202,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <li>
                   <a href="../property/outside.html">Outside</a>
                 </li>
-                <li>
+                <li class="bottom">
                   <a href="../property/location.html">Location</a>
                 </li>
               </ul>
