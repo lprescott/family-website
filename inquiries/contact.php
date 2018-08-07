@@ -319,7 +319,8 @@ if ($_POST['formSubmit'] == "Send Message") {
     };
     ga.q = [];
     ga.l = +new Date;
-    ga('create', 'UA-111332341-1', 'auto');
+    //UA-111332341-1
+    ga('create', 'UA-XXXXX-Y', 'auto');
     ga('send', 'pageview')
 
   </script>
