@@ -115,12 +115,6 @@ if ($_POST['formSubmit'] == "Send Message") {
   <meta name="description" content="Prescott family website.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <script src="../js/p5.min.js"></script>
-  <script src="../js/addons/p5.dom.min.js"></script>
-  <script src="../js/addons/p5.sound.min.js"></script>
-  <script src="../js/ckeditor.js"></script>
-
-
   <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/x-icon" sizes="32x32" href="../img/icons/favicon-32x32.png">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="../img/icons/favicon-16x16.png">
@@ -133,16 +127,14 @@ if ($_POST['formSubmit'] == "Send Message") {
 
   <link rel="manifest" href="../site.webmanifest">
 
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/inquiries-flex.css">
   <link rel="stylesheet" href="../css/form.css">
-
-
+ 
   <script src='https://www.google.com/recaptcha/api.js'></script>
-
 
 </head>
 
