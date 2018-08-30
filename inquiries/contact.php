@@ -228,7 +228,7 @@ if ($_POST['formSubmit'] == "Send Message") {
           </li>
 
           <!-- mobile menu button -->
-          <li id="mobile-button">
+          <li id="mobile-button" style="display: none;">
             <a><i style=" color:rgb(75, 75, 75);" class="fas fa-bars"></i></a>
             <div>
               <ul>

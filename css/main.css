@@ -503,7 +503,7 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
   }
 
   #mobile-button {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 
