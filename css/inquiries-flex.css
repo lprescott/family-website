@@ -5,7 +5,6 @@
   display: flex;
 }
 
-
 #main>half2 {
   margin: 10px;
   background: white;
@@ -59,55 +58,79 @@
 }
 
 /* Mobile view */
-
 @media all and (max-width: 1000px) {
+
   #main,
   #page {
     -webkit-flex-flow: column;
     flex-flow: column;
   }
+
   input[type=text],
   input[type=email] {
     min-height: 65px !important;
   }
+
   /* inquiry-button */
   .inquiry-button {
     float: none;
   }
+
   .outer-flex-box {
     margin: 5px 0 5px 0 !important;
   }
+
   .outer-flex-box-no-bottom {
     margin: 5px 0 0 0 !important;
   }
+
   .outer-flex-box-no-top {
     margin: 0 0 5px 0 !important;
   }
+
   .inner-flex-box {
     margin: 0 0 10px 0 !important;
   }
+
   .before {
     order: 1 !important;
   }
+
   .after {
     order: 2 !important;
   }
+
   #form-message {
     -webkit-flex: 1 1 25% !important;
     flex: 1 1 25%;
   }
+
   input[type=text],
   input[type=email] {
     min-height: 150px
   }
+
   #top-flex-container {
     margin: 0 !important;
   }
-  header{
-    margin: 0 0px 5px 0 !important; 
-  }
-  footer{
-    margin: 10px 0px 0 0 !important; 
 
+  header {
+    margin: 0 0px 5px 0 !important;
+  }
+
+  footer {
+    margin: 10px 0px 0 0 !important;
   }
 }
+
+.ck.ck-toolbar {
+  border: none !important;
+}
+
+.ck.ck-editor__editable_inline{
+  border: none !important;
+}
+
+.ck.ck-toolbar__separator{
+  display: none !important;
+} 

@@ -22,7 +22,7 @@ input[type=submit] {
   color: rgb(78, 78, 78);
   padding: 12px 20px;
   border: none;
-  border-radius: 2pt;
+  border-radius: 4pt;
   cursor: pointer;
   height: 74px;
   width: 302px;

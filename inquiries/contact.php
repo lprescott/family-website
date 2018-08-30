@@ -136,6 +136,9 @@ if ($_POST['formSubmit'] == "Send Message") {
  
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
+  <script src="../ckeditor5-build-classic/ckeditor.js"></script>
+  
+
 </head>
 
 <body>
@@ -262,7 +265,7 @@ if ($_POST['formSubmit'] == "Send Message") {
         </label>
       </half1>
 
-      <half2 class="outer-flex-box-no-bottom" style="padding: 0; overflow: hidden;">
+      <half2 class="outer-flex-box-no-bottom" style="padding: 0; overflow: hidden !important;">
         <textarea name="comment" id="comment"></textarea>
         <script>
           ClassicEditor
