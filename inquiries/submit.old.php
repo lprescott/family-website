@@ -1,108 +1,11 @@
-<?php
-session_start();
-/*
-L.R.Prescott
-A PHP script to collect a client side form submission and email it to info@presport.us.
-6/9/2018
-*/
+<?php 
+session_start(); 
 
-if ($_POST['formSubmit'] == "Send Message") {
-	$message = "";
-	$title = "";
-	$icon = "";
+require 'contact.php';
 
-	// if google recaptcha is empty or name, email or comment werent supplied set error message
-
-	if (!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
-		$message = "Empty Google recaptcha.";
-		$title = "Error!";
-		$icon = "error";
-	}
-	else
-	if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['comment'])) {
-		$message = "Required information missing.";
-		$title = "Error!";
-		$icon = "error";
-	}
-
-	// check google recaptcha, if bot
-
-	$recaptchaResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcTgV0UAAAAADTU_7kiaFHUA6GI2Aq4JrsR6bLa&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
-	if ($recaptchaResponse . success == false) {
-		$message = "Recaptcha failed to authenticate.";
-		$title = "Error!";
-		$icon = "error";
-	}
-
-	// if error message isnt empty, exit
-
-	if (!empty($message)) {
-		$_SESSION['sessionMessage'] = $message;
-		$_SESSION['sessionTitle'] = $title;
-		$_SESSION['sessionIcon'] = $icon;
-		header("Location: submit.php");
-		exit;
-	}
-
-	$varSubject = "";
-
-	// store supplied info
-
-	$varName = $_POST['name'];
-	$varEmail = $_POST['email'];
-	$varSubject = $_POST['subject'];
-	$varComment = $_POST['comment'];
-
-	// if subject message isnt empty, set
-
-	if (empty($varSubject)) {
-		$varSubject = "PresPort Contact Form";
-	}
-
-	// dest
-
-	$to = "info@presport.us";
-
-	// today
-
-	$varToday = date("F j, Y, g:i a");
-	/* start message with header */
-	$varMessage = "<i>Automatically generated header</i><br />" . "From: " . $varName . " (" . $varEmail . ")<br />" . "Sent: " . $varToday . "<br />" . "To: " . $to . " (PresPort)<br />" . "Subject: " . $varSubject . "<br /><hr>";
-
-	// create headers for mail func
-
-	$headers = "From: " . $varEmail . "\r\n";
-	$headers.= "Reply-To: " . $varEmail . "\r\n";
-	$headers.= "MIME-Version: 1.0\r\n";
-	$headers.= "Content-Type: text/html; charset=UTF-8\r\n";
-	$varMessage.= $varComment;
-	if (mail($to, $varSubject, $varMessage, $headers)) {
-
-		// success here
-
-		$title = "Success!";
-		$message = "Your message has sent successfully.";
-		$icon = "success";
-		$_SESSION['sessionMessage'] = $message;
-		$_SESSION['sessionTitle'] = $title;
-    $_SESSION['sessionIcon'] = $icon;
-    header("Location: submit.php");
-		exit;
-	}
-	else {
-
-		// error
-
-		$message = "Could not send email.";
-		$title = "Error!";
-		$icon = "error";
-		$_SESSION['sessionMessage'] = $message;
-		$_SESSION['sessionTitle'] = $title;
-    $_SESSION['sessionIcon'] = $icon;
-    header("Location: submit.php");
-		exit;
-	}
-}
+$submitTitle = $_SESSION['sessionTitle'];
+$submitMessage = $_SESSION['sessionMessage'];
+$submitIcon = $_SESSION['sessionIcon'];
 ?>
 
 <!doctype html>
@@ -133,9 +36,8 @@ if ($_POST['formSubmit'] == "Send Message") {
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/inquiries-flex.css">
   <link rel="stylesheet" href="../css/form.css">
- 
+
   <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
 
 </head>
 
@@ -263,7 +165,7 @@ if ($_POST['formSubmit'] == "Send Message") {
         </label>
       </half1>
 
-      <half2 class="outer-flex-box-no-bottom" style="padding: 0; overflow: hidden !important;">
+      <half2 class="outer-flex-box-no-bottom" style="padding: 0; overflow: hidden;">
         <textarea name="comment" id="comment"></textarea>
         <script>
           ClassicEditor
@@ -318,6 +220,21 @@ if ($_POST['formSubmit'] == "Send Message") {
 
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <!-- Sweetalert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    window.onload = function () {
+
+      swal({
+        title: "<?php echo $submitTitle ?>",
+        text: "<?php echo $submitMessage ?>",
+        icon: "<?php echo $submitIcon ?>",
+      });
+
+    }
+
+  </script>
 
 </body>
 
