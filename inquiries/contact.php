@@ -160,7 +160,7 @@ if ($_POST['formSubmit'] == "Send Message") {
 
           <!-- Home Button -->
           <li>
-            <a title="Home" href="index.html">
+            <a title="Home" href="../index.html">
               <img border="0" alt="Home" src="/img/Home.png" height="40">
             </a>
           </li>
@@ -173,19 +173,19 @@ if ($_POST['formSubmit'] == "Send Message") {
             <div>
               <ul>
                 <li>
-                  <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                  <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
                 </li>
                 <li>
-                  <a href="/people/karenprescott.html">Karen Prescott</a>
+                  <a href="../people/karenprescott.html">Karen Prescott</a>
                 </li>
                 <li>
                   <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
                 </li>
                 <li>
-                  <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                  <a href="../people/barbaraprescott.html">Barbara Prescott</a>
                 </li>
                 <li class="bottom">
-                  <a href="/people/lprescott.html">Luke Prescott</a>
+                  <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
               </ul>
             </div>
@@ -199,13 +199,13 @@ if ($_POST['formSubmit'] == "Send Message") {
             <div>
               <ul>
                 <li>
-                  <a href="/property/inside.html">Inside</a>
+                  <a href="../property/inside.html">Inside</a>
                 </li>
                 <li>
-                  <a href="/property/outside.html">Outside</a>
+                  <a href="../property/outside.html">Outside</a>
                 </li>
                 <li class="bottom">
-                  <a href="/property/location.html">Location</a>
+                  <a href="../property/location.html">Location</a>
                 </li>
               </ul>
             </div>
@@ -224,7 +224,7 @@ if ($_POST['formSubmit'] == "Send Message") {
 
           <!-- floating inquiry button-->
           <li class="inquiry-button">
-            <a href="inquiries/contact.php">Inquiries</a>
+            <a href="../inquiries/contact.php">Inquiries</a>
           </li>
 
           <!-- mobile menu button -->
@@ -233,37 +233,37 @@ if ($_POST['formSubmit'] == "Send Message") {
             <div>
               <ul>
                 <li>
-                  <a href="inquiries/contact.php">Inquiries</a>
+                  <a href="../inquiries/contact.php">Inquiries</a>
                 </li>
                 <li style="background-color: #88a1ce;">
                   <a>People</a>
                 </li>
                 <li>
-                  <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                  <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
                 </li>
                 <li>
-                  <a href="/people/karenprescott.html">Karen Prescott</a>
+                  <a href="../people/karenprescott.html">Karen Prescott</a>
                 </li>
                 <li>
                   <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
                 </li>
                 <li>
-                  <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                  <a href="../people/barbaraprescott.html">Barbara Prescott</a>
                 </li>
                 <li class="bottom">
-                  <a href="/people/lprescott.html">Luke Prescott</a>
+                  <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
                 <li style="background-color: #88a1ce;">
                   <a>Property</a>
                 </li>
                 <li>
-                  <a href="/property/inside.html">Inside</a>
+                  <a href="../property/inside.html">Inside</a>
                 </li>
                 <li>
-                  <a href="/property/outside.html">Outside</a>
+                  <a href="../property/outside.html">Outside</a>
                 </li>
                 <li class="bottom">
-                  <a href="/property/location.html">Location</a>
+                  <a href="../property/location.html">Location</a>
                 </li>
 
               </ul>
@@ -272,7 +272,6 @@ if ($_POST['formSubmit'] == "Send Message") {
         </ul>
       </nav>
     </header>
-
 
     <!-- outer most flex container -->
     <form id='main' class="main-col" method="POST" action="" id="contact-form">
