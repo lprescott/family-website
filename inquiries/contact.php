@@ -235,8 +235,8 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <li>
                   <a href="../inquiries/contact.php">Inquiries</a>
                 </li>
-                <li style="background-color: #88a1ce;">
-                  <a>People</a>
+                <li class="nohover">
+                    <a><u>People</u></a>
                 </li>
                 <li>
                   <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
@@ -253,8 +253,8 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <li class="bottom">
                   <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
-                <li style="background-color: #88a1ce;">
-                  <a>Property</a>
+                <li class="nohover">
+                  <a><u>Property</u></a>
                 </li>
                 <li>
                   <a href="../property/inside.html">Inside</a>

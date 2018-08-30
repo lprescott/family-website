@@ -398,7 +398,7 @@ nav>ul>li>div ul>li>div ul>li>a {
   text-decoration: none;
 }
 
-nav>ul>li>div ul>li:hover>a {
+nav>ul>li>div ul>li:not(.nohover):hover>a {
   /** Color of hover on drop down */
   background-color: #88a1ce;
 }
