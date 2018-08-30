@@ -412,6 +412,16 @@ nav>ul>li>div ul>li.bottom:hover>a {
   float: right;
 }
 
+.mobile-button {
+  float: right;
+  display: none;
+  
+}
+
+nav>ul>li.mobile-button>div,
+nav>ul>li.mobile-button>div ul>li.mobile-button>div {
+  right: 0px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -501,8 +511,19 @@ nav>ul>li>div ul>li.bottom:hover>a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 700px) {
   /* Style adjustments for viewports that meet the condition */
+  .dropdown{
+    display: none;
+  }
+
+  .inquiry-button{
+    display: none;
+  }
+
+  .mobile-button{
+    display: inline-block;
+  }
 }
 
 @media print,

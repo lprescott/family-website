@@ -122,15 +122,3 @@
     margin: 10px 0px 0 0 !important;
   }
 }
-
-.ck.ck-toolbar {
-  border: none !important;
-}
-
-.ck.ck-editor__editable_inline{
-  border: none !important;
-}
-
-.ck.ck-toolbar__separator{
-  display: none !important;
-} 

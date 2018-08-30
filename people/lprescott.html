@@ -38,80 +38,123 @@
 
     <!-- heading/navbar-->
     <header>
-      <nav>
-        <ul>
-
-          <!-- Home Button -->
-          <li>
-            <a title="Home" href="../index.html">
-              <img border="0" alt="Home" src="../img/Home.png" height="40">
-            </a>
-          </li>
-
-          <!-- people dropdown -->
-          <li>
-            <a>People
-              <span class="caret"></span>
-            </a>
-            <div>
-              <ul>
-                <li>
-                  <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
-                </li>
-                <li>
-                  <a href="../people/karenprescott.html">Karen Prescott</a>
-                </li>
-                <li>
-                  <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
-                </li>
-                <li>
-                  <a href="../people/barbaraprescott.html">Barbara Prescott</a>
-                </li>
-                <li class="bottom">
-                  <a href="../people/lprescott.html">Luke Prescott</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <!-- property dropdown-->
-          <li>
-            <a>Property
-              <span class="caret"></span>
-            </a>
-            <div>
-              <ul>
-                <li>
-                  <a href="../property/inside.html">Inside</a>
-                </li>
-                <li>
-                  <a href="../property/outside.html">Outside</a>
-                </li>
-                <li class="bottom">
-                  <a href="../property/location.html">Location</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <!-- projects dropdown-->
-          <li>
-            <a>Projects
-              <span class="caret"></span>
-            </a>
-            <div>
-              <ul>
-              </ul>
-            </div>
-          </li>
-
-          <!-- floating inquiry button-->
-          <li class="inquiry-button">
-            <a href="../inquiries/contact.php">Inquiries</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <nav>
+          <ul>
+  
+            <!-- Home Button -->
+            <li>
+              <a title="Home" href="index.html">
+                <img border="0" alt="Home" src="/img/Home.png" height="40">
+              </a>
+            </li>
+  
+            <!-- people dropdown -->
+            <li class="dropdown">
+              <a>People
+                <span class="caret"></span>
+              </a>
+              <div>
+                <ul>
+                  <li>
+                    <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                  </li>
+                  <li>
+                    <a href="/people/karenprescott.html">Karen Prescott</a>
+                  </li>
+                  <li>
+                    <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
+                  </li>
+                  <li>
+                    <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                  </li>
+                  <li class="bottom">
+                    <a href="/people/lprescott.html">Luke Prescott</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+  
+            <!-- property dropdown-->
+            <li class="dropdown">
+              <a>Property
+                <span class="caret"></span>
+              </a>
+              <div>
+                <ul>
+                  <li>
+                    <a href="/property/inside.html">Inside</a>
+                  </li>
+                  <li>
+                    <a href="/property/outside.html">Outside</a>
+                  </li>
+                  <li class="bottom">
+                    <a href="/property/location.html">Location</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+  
+            <!-- projects dropdown-->
+            <li class="dropdown">
+              <a>Projects
+                <span class="caret"></span>
+              </a>
+              <div>
+                <ul>
+                </ul>
+              </div>
+            </li>
+  
+            <!-- floating inquiry button-->
+            <li class="inquiry-button">
+              <a href="inquiries/contact.php">Inquiries</a>
+            </li>
+  
+            <!-- mobile menu button -->
+            <li class="mobile-button">
+              <a><i style=" color:rgb(75, 75, 75);" class="fas fa-ellipsis-v"></i></a>
+              <div>
+                <ul>
+                  <li>
+                    <a href="inquiries/contact.php">Inquiries</a>
+                  </li>
+                  <li style="background-color: #88a1ce;">
+                    <a>People</a>
+                  </li>
+                  <li>
+                    <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                  </li>
+                  <li>
+                    <a href="/people/karenprescott.html">Karen Prescott</a>
+                  </li>
+                  <li>
+                    <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
+                  </li>
+                  <li>
+                    <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                  </li>
+                  <li class="bottom">
+                    <a href="/people/lprescott.html">Luke Prescott</a>
+                  </li>
+                  <li style="background-color: #88a1ce;">
+                    <a>Property</a>
+                  </li>
+                  <li>
+                    <a href="/property/inside.html">Inside</a>
+                  </li>
+                  <li>
+                    <a href="/property/outside.html">Outside</a>
+                  </li>
+                  <li class="bottom">
+                    <a href="/property/location.html">Location</a>
+                  </li>
+  
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
 
     <!-- outer most flex container -->
@@ -124,10 +167,10 @@
               Prescott</a>
           </div>
         </half1>
-        <half2 id='main' class='main-col outer-flex-box before' style="order: 2;padding-left: 60px; padding-right: 60px; margin: 0 0 0 0;">
+        <half2 id='main' class='main-col outer-flex-box before' style="order: 9; padding-left: 60px; padding-right: 60px; margin: 0 0 0 0;">
           <section class="parent-center">
             <div class="child-center">
-              Please feel free to check out my links below. You can send me an email
+              Hi! Please feel free to check out my links below. You can send me an email
               <a class="link-style" href="mailto:luke.prescott@presport.us">here</a> or use the inquiries page with any
               questions. You can also contact me through my various social media.
               Thank you!
@@ -141,10 +184,7 @@
                   </a> &ensp;
                   <a class="link-style-image" href="https://www.facebook.com/Luke.Robert.Prescott">
                     <i class="fab fa-facebook-f"></i>
-                  </a> &ensp;
-                  <a class="link-style-image" href="https://www.facebook.com/Luke.Robert.Prescott">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
+                  </a> 
                 </font>
               </p>
             </div>
@@ -152,12 +192,14 @@
         </half2>
       </half1>
 
-      <half1 id='main' class="main-col outer-flex-box">
-        <div style="padding: 10px 50px 10px 50px;">
+      <half1 id='main' class="main-col outer-flex-box" style="order: 3;">
+        <div id='person-description' style="padding: 0px 15px 10px 15px;  width: 90%; margin: 0 auto;">
+
+          <h3>About</h3>
 
           <p>
-            I am a undergraduate at SUNY Albany pursuing a Bachelor of Science in Computer Science and applied
-            mathematics.
+            I am a undergraduate at SUNY Albany pursuing a Bachelor of Science in Computer Science and Applied
+            Mathematics.
             Currently my interests have me implementing simple machine learning techniques -- various mathematical and
             visual libraries -- projects leading to full-stack development; see my GitHub.
           </p>
@@ -171,7 +213,7 @@
             love
             the real world applications and driven style of mathematics. I love how there is always more to learn!
           </p>
-          
+
         </div>
       </half1>
     </div>
