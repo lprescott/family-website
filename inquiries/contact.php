@@ -228,15 +228,15 @@ if ($_POST['formSubmit'] == "Send Message") {
           </li>
 
           <!-- mobile menu button -->
-          <li class="mobile-button">
-            <a><i style=" color:rgb(75, 75, 75);" class="fas fa-ellipsis-v"></i></a>
+          <li id="mobile-button">
+            <a><i style=" color:rgb(75, 75, 75);" class="fas fa-bars"></i></a>
             <div>
               <ul>
                 <li>
                   <a href="../inquiries/contact.php">Inquiries</a>
                 </li>
                 <li class="nohover">
-                    <a><u>People</u></a>
+                    <a>People&nbsp;<i class="fas fa-caret-down"></i></a>
                 </li>
                 <li>
                   <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
@@ -254,7 +254,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                   <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
                 <li class="nohover">
-                  <a><u>Property</u></a>
+                  <a>Property&nbsp;<i class="fas fa-caret-down"></i></a>
                 </li>
                 <li>
                   <a href="../property/inside.html">Inside</a>

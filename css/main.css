@@ -1,15 +1,12 @@
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
   color: #222;
   font-size: 1em;
@@ -25,7 +22,6 @@ html {
  *
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -39,7 +35,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -54,7 +49,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
@@ -67,7 +61,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -77,7 +70,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
   resize: vertical;
 }
@@ -85,7 +77,6 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -96,14 +87,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 /* ==========================================================================
    Flexbox layout
    Based on:
    https://codepen.io/cchambers/pen/KdBpa
    https://codepen.io/sdthornton/pen/wBZdXq
    ========================================================================== */
-
 footer {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -144,21 +133,29 @@ footer {
 }
 
 /* Mobile view */
-
 @media all and (max-width: 640px) {
+
   /* header and footer */
   footer {
     padding: 15px 15px 15px 15px;
   }
+
   header,
   footer {
     margin: 0;
   }
+
   footer {
     margin-top: 10px;
   }
+
   header {
     size: 12px !important;
+  }
+
+  nav>ul>li#mobile-button>div,
+  nav>ul>li#mobile-button>div ul>li#mobile-button>div {
+    right: 5px !important;
   }
 }
 
@@ -196,7 +193,6 @@ footer {
 /* ==========================================================================
     Links
     ========================================================================== */
-
 .link-style {
   color: #86a3d5;
   text-decoration: none
@@ -224,7 +220,6 @@ footer {
 /* ==========================================================================
   titles
     ========================================================================== */
-
 h2 {
   font-weight: 500;
   font-size: 28px;
@@ -249,14 +244,6 @@ b {
    Navbar
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
-
-@media all and (max-width: 640px) {
-  nav>ul>li>div,
-  nav>ul>li>div ul>li>div {
-    box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-  }
-}
-
 ul {
   font-size: 0;
 }
@@ -338,11 +325,11 @@ nav>ul>li:hover {
 }
 
 nav>ul>li:hover>a {
-  color: rgb( 255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 nav>ul>li:hover>a>.caret {
-  border-top-color: rgb( 255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
 }
 
 nav>ul>li>div ul>li:hover>a>.caret {
@@ -412,24 +399,22 @@ nav>ul>li>div ul>li.bottom:hover>a {
   float: right;
 }
 
-.mobile-button {
+#mobile-button {
   float: right;
   display: none;
-  
 }
 
-nav>ul>li.mobile-button>div,
-nav>ul>li.mobile-button>div ul>li.mobile-button>div {
-  right: 0px;
+nav>ul>li#mobile-button>div,
+nav>ul>li#mobile-button>div ul>li#mobile-button>div {
+  right: 15px;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden {
   display: none;
 }
@@ -442,7 +427,6 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -461,7 +445,6 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -476,7 +459,6 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
   visibility: hidden;
 }
@@ -492,7 +474,6 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -510,18 +491,18 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (max-width: 700px) {
+
   /* Style adjustments for viewports that meet the condition */
-  .dropdown{
+  .dropdown {
     display: none;
   }
 
-  .inquiry-button{
+  .inquiry-button {
     display: none;
   }
 
-  .mobile-button{
+  #mobile-button {
     display: inline-block;
   }
 }
@@ -538,8 +519,8 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
+
   *,
   *:before,
   *:after {
@@ -550,16 +531,20 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
     box-shadow: none;
     text-shadow: none;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -568,14 +553,17 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -583,16 +571,19 @@ nav>ul>li.mobile-button>div ul>li.mobile-button>div {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
