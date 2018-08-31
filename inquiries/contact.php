@@ -218,6 +218,12 @@ if ($_POST['formSubmit'] == "Send Message") {
             </a>
             <div>
               <ul>
+                <li>
+                  <a href="../projects/OAP.html">Ocular Audiobook Player</a>
+                </li>
+                <li>
+                  <a href="../projects/pre-Sportus.html">pre-Sport us!</a>
+                </li>
               </ul>
             </div>
           </li>
@@ -228,7 +234,7 @@ if ($_POST['formSubmit'] == "Send Message") {
           </li>
 
           <!-- mobile menu button -->
-          <li id="mobile-button" style="display: none;">
+          <li id="mobile-button">
             <a><i style=" color:rgb(75, 75, 75);" class="fas fa-bars"></i></a>
             <div>
               <ul>
@@ -236,36 +242,35 @@ if ($_POST['formSubmit'] == "Send Message") {
                   <a href="../inquiries/contact.php">Inquiries</a>
                 </li>
                 <li class="nohover">
-                    <a>People&nbsp;<i class="fas fa-caret-down"></i></a>
+                  <a href="#" onclick="showContent('person', 'show');">People&nbsp;<i class="fas fa-caret-down"></i></a>
                 </li>
-                <li>
+                <li class="person">
                   <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
                 </li>
-                <li>
+                <li class="person">
                   <a href="../people/karenprescott.html">Karen Prescott</a>
                 </li>
                 <li>
                   <!-- <a href="/people/drewprescottjr.html">Drew Prescott, Jr.</a> -->
                 </li>
-                <li>
+                <li class="person">
                   <a href="../people/barbaraprescott.html">Barbara Prescott</a>
                 </li>
-                <li class="bottom">
+                <li class="person">
                   <a href="../people/lprescott.html">Luke Prescott</a>
                 </li>
                 <li class="nohover">
-                  <a>Property&nbsp;<i class="fas fa-caret-down"></i></a>
+                  <a href="#" onclick="showContent('property', 'show'); return false;">Property&nbsp;<i class="fas fa-caret-down"></i></a>
                 </li>
-                <li>
+                <li class="property">
                   <a href="../property/inside.html">Inside</a>
                 </li>
-                <li>
+                <li class="property">
                   <a href="../property/outside.html">Outside</a>
                 </li>
-                <li class="bottom">
+                <li class="property bottom">
                   <a href="../property/location.html">Location</a>
                 </li>
-
               </ul>
             </div>
           </li>

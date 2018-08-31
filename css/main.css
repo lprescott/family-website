@@ -385,15 +385,15 @@ nav>ul>li>div ul>li>div ul>li>a {
   text-decoration: none;
 }
 
-nav>ul>li>div ul>li:not(.nohover):hover>a {
-  /** Color of hover on drop down */
-  background-color: #88a1ce;
+nav>ul>li>div ul>li.input>a {
+  display: none;
 }
 
-nav>ul>li>div ul>li.bottom:hover>a {
-  border-bottom-left-radius: 4pt;
-  border-bottom-right-radius: 4pt;
+nav>ul>li>div ul>li.input:checked>a {
+  display: inline-block;
 }
+
+
 
 .inquiry-button {
   float: right;
@@ -407,6 +407,32 @@ nav>ul>li>div ul>li.bottom:hover>a {
 nav>ul>li#mobile-button>div,
 nav>ul>li#mobile-button>div ul>li#mobile-button>div {
   right: 15px;
+  z-index: 1;
+}
+
+/*
+
+.collapse{
+  cursor: pointer;
+}
+.collapse > input{
+  display: none; 
+}
+.collapse > input > div{
+  display:none;
+}
+.collapse > input:checked > div{
+  display:block;
+}
+
+*/
+
+.person, .property{
+  display: none;
+}
+
+.show{
+  display: block;
 }
 
 /* ==========================================================================
