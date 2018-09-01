@@ -276,7 +276,8 @@ if ($_POST['formSubmit'] == "Send Message") {
           </li>
         </ul>
       </nav>
-    </header>
+    </header>    
+    <!-- /navbar-->
 
     <!-- outer most flex container -->
     <form id='main' class="main-col" method="POST" action="" id="contact-form">

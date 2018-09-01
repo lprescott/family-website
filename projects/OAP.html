@@ -10,7 +10,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>K. Prescott</title>
+  <title>Ocular Audiobook Player</title>
   <meta name="description" content="Presport is the Prescott family hub – geographically located the capital district of New York State. The Prescott family has a total of 20 years (and counting) in upper-level education, leading to expertise in a plethora of areas; they include: information technology, program management consulting services, creative writing, secondary education in English language arts, medicine, nursing,computer science, and mathematics.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,12 +27,13 @@
   <link rel="manifest" href="../site.webmanifest">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/person-flex.css">
+
 
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
@@ -165,41 +166,30 @@
           </li>
         </ul>
       </nav>
-    </header>    
+    </header>
     <!-- /navbar-->
 
     <!-- outer most flex container -->
     <div id='main' class="main-col">
-      <half1 id='main' class="main-row outer-flex-box-no-bottom" style="padding:0; background: none; box-shadow: none;">
-        <half1 id='main' class="main-col outer-flex-box-top after" style=" overflow: hidden; -webkit-flex: 1 1 45%; flex: 1 1 45%; order: 1  ; margin: 0 20px 0 0; padding: 0 0 0 0px;">
-
-          <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
-            data-theme="light" data-vanity="karen-prescott-60134768">
-            <a class="LI-simple-link" href='https://www.linkedin.com/in/karen-prescott-60134768?trk=profile-badge'>Karen
-              Prescott</a>
-          </div>
-
-        </half1>
-        <half2 id='main' class='main-col outer-flex-box before' style="order: 2;padding-left: 60px; padding-right: 60px; margin: 0 0 0 0;">
-          <section class="parent-center">
-            <div class="child-center">
-              Please feel free to check out my links below. You can send me a message
-              <a class="link-style" href="../inquiries/contact.php">here</a> with
-              any questions. You can also contact me through my various social media.
-              Thank you!
-              <p>
-                <font size="6">
-                  <a class="link-style-image" href="https://www.linkedin.com/in/karen-prescott-60134768/">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a> &ensp;
-                  <a class="link-style-image" href="https://www.facebook.com/karenwalczyk.prescott">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </font>
-              </p>
-            </div>
-          </section>
-        </half2>
+      <half1>
+        <div>
+          <audio controls>
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <hr>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+          Select audio to upload:
+          <input type="file" name="audioToUpload" id="audioToUpload">
+          <input type="submit" value="Upload Audio" name="submit">
+          <hr>
+          Select book to upload:
+          <input type="file" name="bookToUpload" id="bookToUpload">
+          <input type="submit" value="Upload Book" name="submit">
+        </form>
+      </half1>
+      <half1>
+        Test
       </half1>
     </div>
 

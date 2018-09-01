@@ -40,7 +40,6 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
   padding: 0;
 }
 
@@ -241,6 +240,11 @@ b {
 }
 
 /* ==========================================================================
+  Dropdown animations
+   ========================================================================== */
+
+
+/* ==========================================================================
    Navbar
    Based on: https://codepen.io/lawnch/pen/lHoce
    ========================================================================== */
@@ -408,6 +412,7 @@ nav>ul>li#mobile-button>div,
 nav>ul>li#mobile-button>div ul>li#mobile-button>div {
   right: 15px;
   z-index: 1;
+  min-width: 214px !important;
 }
 
 /*

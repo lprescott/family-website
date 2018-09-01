@@ -119,10 +119,7 @@ body {
 /* Mobile view */
 
 @media all and (max-width: 640px) {
-  nav>ul>li>div,
-  nav>ul>li>div ul>li>div {
-    box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
+
   #main,
   #page {
     -webkit-flex-flow: column-reverse;

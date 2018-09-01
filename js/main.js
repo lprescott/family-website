@@ -4,11 +4,12 @@
 */
 
 function showContent(matchClass, content) {
-    var elems = document.getElementsByTagName('*'), i;
-    for (i in elems) {
-        if((' ' + elems[i].className + ' ').indexOf(' ' + matchClass + ' ')
-                > -1) {
-            elems[i].className = content;
-        }
+  var elems = document.getElementsByTagName('*'),
+    i;
+  for (i in elems) {
+    if ((' ' + elems[i].className + ' ').indexOf(' ' + matchClass + ' ') >
+      -1) {
+      elems[i].className = content;
     }
+  }
 }
