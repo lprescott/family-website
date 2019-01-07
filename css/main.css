@@ -14,7 +14,7 @@ html {
   color: rgb(61, 61, 61);
   font-size: 1em;
   line-height: 1.6;
-  background: #F9ECDE;
+  background: rgb(255, 244, 233);
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
 }
@@ -177,18 +177,19 @@ footer {
 }
 
 .link-style:hover {
-  color: rgb(0, 83, 151) !important;
-  text-decoration: bold;
+  color: rgb(0, 140, 255) !important;
+  text-decoration: underline;
 }
 
 .link-style:visited {
-  color: rgb(0, 83, 151) !important;
+  color: rgb(0, 108, 196) !important;
 }
 
-.spacer {
-  margin-top: 20px;
-}
 
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+ 
 /* ==========================================================================
    Helper classes
    ========================================================================== */

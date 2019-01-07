@@ -44,18 +44,17 @@
 
   <!-- Start site/application content here -->
   <div id="main">
-    <header class="rounded-corners padded shadow-hover margin-all">
-      Hello World!
+    <header class="rounded-corners shadow-hover margin-all padded">
+      Hello, World!
     </header>
-
-    <div id="spacer"></div>
+    <!-- /navbar-->
 
     <footer class="rounded-corners padded shadow-hover margin-left margin-right">
       Powered by
       <a class="link-style" href="https://www.javascript.com/">javascript</a> and started with
       <a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>.
       <br> General questions, comments, or concerns?
-      <a class="link-style" href="http://presport.us/inquiries/contact.php"> Contact us!</a>
+      <a class="link-style" href="../inquiries/contact.php"> Contact us!</a>
       This website was designed and built by Luke Prescott.
       <br> Any and all trademarks or logos used throughout this website are the property of their respective owners.
     </footer>
@@ -84,6 +83,7 @@
 
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
 </body>
 
 </html>
