@@ -1,16 +1,22 @@
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
-  color: #222;
+  color: rgb(61, 61, 61);
   font-size: 1em;
-  line-height: 1.61;
+  line-height: 1.6;
+  background: #F9ECDE;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
 }
 
 /*
@@ -22,6 +28,7 @@ html {
  *
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -35,11 +42,13 @@ html {
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
+  margin: 1em 0;
   padding: 0;
 }
 
@@ -48,6 +57,7 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
 iframe,
@@ -60,6 +70,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -69,6 +80,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
   resize: vertical;
 }
@@ -76,378 +88,117 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: #ADADAD;
   padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* ==========================================================================
-   Flexbox layout
-   Based on:
-   https://codepen.io/cchambers/pen/KdBpa
-   https://codepen.io/sdthornton/pen/wBZdXq
-   ========================================================================== */
-footer {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  padding: 5px;
+
+#main {
+  margin: auto;
+  max-width: 1550px;
 }
 
 header {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-header:hover {
-  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-footer:hover {
-  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-header,
-footer {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 4pt;
   background: white;
 }
 
-header {
-  min-height: 60px
-}
-
 footer {
-  min-height: 120px;
-  padding: 5px;
-}
-
-/* Mobile view */
-@media all and (max-width: 640px) {
-
-  /* header and footer */
-  footer {
-    padding: 15px 15px 15px 15px;
-  }
-
-  header,
-  footer {
-    margin: 0;
-  }
-
-  footer {
-    margin-top: 10px;
-  }
-
-  header {
-    size: 12px !important;
-  }
-
-  nav>ul>li#mobile-button>div,
-  nav>ul>li#mobile-button>div ul>li#mobile-button>div {
-    right: 5px !important;
-  }
-}
-
-.main-col {
-  -webkit-flex-flow: column;
-  flex-flow: column;
-}
-
-.main-row {
-  -webkit-flex-flow: row;
-  flex-flow: row;
-}
-
-#main-container {
-  margin: 0 auto;
-  max-width: 1550px;
-  min-width: 300px;
-  word-break: break;
-}
-
-.center-image {
+  background: white;
   text-align: center;
 }
 
-.crest-style {
-  text-decoration: none;
+.padded {
+  padding: 10px 20px 10px 20px;
 }
 
-.footer-container {
-  text-align: center;
-  size: 14px;
-  padding-top: 20px;
+.rounded-corners {
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 5px;
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 5px;
+
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 5px;
 }
 
-/* ==========================================================================
-    Links
-    ========================================================================== */
+.margin-all {
+  margin: 20px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.shadow-no-hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  -moz-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .link-style {
-  color: #86a3d5;
-  text-decoration: none
+  color: rgb(0, 140, 255) !important;
+  text-decoration: none;
 }
 
 .link-style:hover {
-  color: #4c80da;
-  text-decoration: underline;
+  color: rgb(0, 83, 151) !important;
+  text-decoration: bold;
 }
 
 .link-style:visited {
-  color: #4c80da;
-  text-decoration: underline;
+  color: rgb(0, 83, 151) !important;
 }
 
-.link-style-image {
-  color: rgb(59, 59, 59);
-  text-decoration: none
-}
-
-.link-style-image:hover {
-  color: #86a3d5;
-}
-
-/* ==========================================================================
-  titles
-    ========================================================================== */
-h2 {
-  font-weight: 500;
-  font-size: 28px;
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-h4 {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-b {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-/* ==========================================================================
-  Dropdown animations
-   ========================================================================== */
-
-
-/* ==========================================================================
-   Navbar
-   Based on: https://codepen.io/lawnch/pen/lHoce
-   ========================================================================== */
-ul {
-  font-size: 0;
-}
-
-nav ul li {
-  font-size: 20px;
-  font-weight: 500;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-}
-
-body {
-  background-color: #EBE8E4;
-  color: #222;
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-nav {
-  background-color: #fff;
-  color: #888;
-  display: block;
-  overflow: hidden;
-  border-radius: 4pt;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-nav>ul>li>a>.caret,
-nav>ul>li>div ul>li>a>.caret {
-  border-top: 4px solid #aaa;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  content: "";
-  display: inline-block;
-  height: 0;
-  width: 0;
-  vertical-align: middle;
-  -webkit-transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
-  transition: color 0.1s linear;
-}
-
-nav>ul>li>div ul>li>a>.caret {
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-left: 4px solid #f2f2f2;
-  margin: 0 0 0 8px;
-}
-
-nav>ul>li>a {
-  color: rgb(75, 75, 75);
-  /** Font color for nav bar */
-  display: block;
-  line-height: 60px;
-  padding: 0 24px;
-  text-decoration: none;
-}
-
-nav>ul>li:hover {
-  background-color: #abc3ec;
-}
-
-nav>ul>li:hover>a {
-  color: rgb(255, 255, 255);
-}
-
-nav>ul>li:hover>a>.caret {
-  border-top-color: rgb(255, 255, 255);
-}
-
-nav>ul>li>div ul>li:hover>a>.caret {
-  border-left-color: rgb(255, 255, 255);
-}
-
-nav>ul>li>div,
-nav>ul>li>div ul>li>div {
-  background-color: #9cb0d3;
-  border-top: 0;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-  display: none;
-  margin: 0;
-  opacity: 0;
-  position: absolute;
-  min-width: 142.27px;
-  visibility: hidden;
-  transition: opacity 0.2s;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-  border-radius: 0 0 4pt 4pt;
-  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
-}
-
-nav>ul>li>div ul>li>div {
-  background-color: #768fb9;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-  margin-top: -44px;
-  right: -162px;
-}
-
-nav>ul>li:hover>div,
-nav>ul>li>div ul>li:hover>div {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-nav>ul>li>div ul>li,
-nav>ul>li>div ul>li>div ul>li {
-  display: block;
-  position: relative;
-}
-
-nav>ul>li>div ul>li>a,
-nav>ul>li>div ul>li>div ul>li>a {
-  color: #fff;
-  display: block;
-  padding: 12px 24px;
-  text-decoration: none;
-}
-
-nav>ul>li>div ul>li.input>a {
-  display: none;
-}
-
-nav>ul>li>div ul>li.input:checked>a {
-  display: inline-block;
-}
-
-
-
-.inquiry-button {
-  float: right;
-}
-
-#mobile-button {
-  float: right;
-  display: none;
-}
-
-nav>ul>li#mobile-button>div,
-nav>ul>li#mobile-button>div ul>li#mobile-button>div {
-  right: 15px;
-  z-index: 1;
-  min-width: 214px !important;
-}
-
-/*
-
-.collapse{
-  cursor: pointer;
-}
-.collapse > input{
-  display: none; 
-}
-.collapse > input > div{
-  display:none;
-}
-.collapse > input:checked > div{
-  display:block;
-}
-
-*/
-
-.person, .property{
-  display: none;
-}
-
-.show{
-  display: block;
+.spacer {
+  margin-top: 20px;
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 /*
  * Hide visually and from screen readers
  */
+
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /*
@@ -458,6 +209,7 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -476,6 +228,7 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -490,6 +243,7 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
+
 .invisible {
   visibility: hidden;
 }
@@ -505,6 +259,7 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -522,20 +277,9 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (max-width: 700px) {
 
+@media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-  .dropdown {
-    display: none;
-  }
-
-  .inquiry-button {
-    display: none;
-  }
-
-  #mobile-button {
-    display: inline-block !important;
-  }
 }
 
 @media print,
@@ -550,17 +294,18 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 @media print {
 
   *,
   *:before,
   *:after {
-    background: transparent;
-    color: #000;
+    background: transparent !important;
+    color: #000 !important;
     /* Black prints faster */
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
 
   a,
@@ -580,13 +325,14 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
+
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
   pre {
-    white-space: pre-wrap;
+    white-space: pre-wrap !important;
   }
 
   pre,
@@ -599,6 +345,7 @@ nav>ul>li#mobile-button>div ul>li#mobile-button>div {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
   thead {
     display: table-header-group;
   }
