@@ -44,10 +44,80 @@
 
   <!-- Start site/application content here -->
   <div id="main">
-    <header class="rounded-corners shadow-hover margin-all padded">
-      Hello, World!
+    <header class="rounded-corners shadow-hover margin-all">
+      <nav class="nav">
+        <ul>
+          <!--
+          <li>
+            <a title="Home" href="index.html">
+              <img alt="Home" src="/img/Home.png" height="40">
+            </a>
+          </li>
+          -->
+          <!-- people dropdown -->
+          <li class="dropdown">
+            <a>People
+              <span class="caret"></span>
+            </a>
+            
+              <ul>
+                <li>
+                  <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                </li>
+                <li>
+                  <a href="/people/karenprescott.html">Karen Prescott</a>
+                </li>
+                <li>
+                  <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                </li>
+                <li class="bottom">
+                  <a href="/people/lprescott.html">Luke Prescott</a>
+                </li>
+              </ul>
+            
+          </li>
+
+          <!-- property dropdown-->
+          <li class="dropdown">
+            <a>Property
+              <span class="caret"></span>
+            </a>
+            
+              <ul>
+                <li>
+                  <a href="/property/inside.html">Inside</a>
+                </li>
+                <li>
+                  <a href="/property/outside.html">Outside</a>
+                </li>
+                <li class="bottom">
+                  <a href="/property/location.html">Location</a>
+                </li>
+              </ul>
+            
+          </li>
+
+          <!-- projects dropdown-->
+          <li class="dropdown">
+            <a>Projects
+              <span class="caret"></span>
+            </a>
+           
+              <ul>
+                <li>
+                  <a href="../projects/OAP.html">Ocular Audiobook Player</a>
+                </li>
+                <li>
+                  <a href="../projects/pre-Sportus.html">pre-Sport us!</a>
+                </li>
+              </ul>
+            
+          </li>
+          
+        </ul>
+      </nav>
     </header>
-    <!-- /navbar-->
+
 
     <footer class="rounded-corners padded shadow-hover margin-left margin-right">
       Powered by
