@@ -103,6 +103,7 @@ textarea {
 #main {
   margin: auto;
   max-width: 1550px;
+  min-width: 320px;
 }
 
 header {
@@ -116,6 +117,7 @@ footer {
 
 .padded {
   padding: 10px 20px 10px 20px;
+  overflow: hidden;
 }
 
 .rounded-corners {
@@ -163,6 +165,8 @@ footer {
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   -moz-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+  position: relative
 }
 
 .shadow-hover:hover {
@@ -195,6 +199,7 @@ footer {
   margin: 0;
   padding: 0;
   background: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 .nav ul:before,
@@ -214,24 +219,84 @@ footer {
 
 .nav a {
   display: block;
-  padding: 10px 20px;
-  line-height: 1.2em;
+  padding: 15px;
+  line-height: 1.4em;
 }
 
 .nav ul li:hover {
   background-color: #70a1c9;
+  color: white;
+
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.nav ul li.home-button:hover {
+  background-color: #70a1c9;
+  color: white;
+
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.nav ul li.contact-button {
+  float: right;
+}
+
+.nav ul li.contact-button:hover {
+  color: #70a1c9;
+
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.nav ul li.mobile-button {
+  opacity: 0;
+  visibility: hidden;
+  float: right;
+}
+
+.nav ul li.mobile-button:hover {
+  background-color: #70a1c9;
+}
+
+.nav ul li.top-dropdown-item:hover {
+  -webkit-box-shadow: inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
+}
+
+.nav ul li.bottom-dropdown-item:hover {
+  border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
 }
 
 .nav li ul {
   background: #70a1c9;
+
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+
+  box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 29px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.23), inset 0px 20px 25px -25px rgba(0, 0, 0, 0.75);
 }
 
 .nav li ul li {
-  width: 200px;
+  width: auto;
 }
 
 .nav li ul a {
   border: none;
+  color: white;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .nav li ul a:hover {
@@ -240,8 +305,7 @@ footer {
 
 .nav li ul {
   position: absolute;
-  left: 0;
-  top: 36px;
+  top: 58px;
   z-index: 1;
 }
 
@@ -255,8 +319,27 @@ footer {
 }
 
 .nav ul>li:hover ul li {
-  height: 36px;
+  height: 58px;
+  font-size: 20px;
 }
+
+.dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==========================================================================
+   Mobile Navbar
+   ========================================================================== */
+
+.sub-item {
+  display: none;
+}
+
+.show{
+  display: initial;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -347,8 +430,52 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 620px) {
+
   /* Style adjustments for viewports that meet the condition */
+  .dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+  }
+
+  .nav ul li.mobile-button {
+    float: right;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+  }
+
+  .nav li ul {
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+
+  /* Style adjustments for viewports that meet the condition */
+  .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+
+  /* Style adjustments for viewports that meet the condition */
+  .desktop-button {
+    display: none;
+  }
 }
 
 @media print,
