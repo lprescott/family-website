@@ -183,7 +183,7 @@
         <h2>Who are we?</h2>
         <!-- drew prescott sr-->
         <p>
-          <b>Drew Prescott Sr.</b> is a certified project management professional PMP
+          <b style="font-weight: 600;">Drew Prescott Sr.</b> is a certified project management professional PMP
           <img style="margin: 0 auto 5px;" src="/img/PMPCredential.jpg" alt="PMP Credential Logo" title="PMP Credential Logo"
             width="auto" height="15" />, CSM in information technology, systems development, and a skilled computer
           services consultant with over two decades of industry experience. He attended Clarkson University and
@@ -194,7 +194,7 @@
 
         <!-- karen prescott -->
         <p>
-          <b>Karen Prescott</b>, a certified NYS secondary school English teacher and technologist, is a highly
+          <b style="font-weight: 600;">Karen Prescott</b>, a certified NYS secondary school English teacher and technologist, is a highly
           creative and dedicated professional with over thirty years of combined technical sales, writing and teaching
           experience in corporate and educational settings. She is a graduate of SUNY Potsdam, R.P.I. and SUNY
           Albany.
@@ -204,7 +204,7 @@
 
         <!-- barbara prescott -->
         <p>
-          <b>Barbara Prescott</b>, a registered nurse, is currently attending Duke Graduate School with the goal of
+          <b style="font-weight: 600;">Barbara Prescott</b>, a registered nurse, is currently attending Duke Graduate School with the goal of
           becoming a registered nurse practitioner. She graduated magna cum laude at the University at Buffalo, SUNY.
         </p>
 
@@ -212,7 +212,7 @@
 
         <!-- luke prescott-->
         <p>
-          <b>Luke Prescott</b> is a senior at the University at Albany, SUNY, with an intended Bachelor of Science in
+          <b style="font-weight: 600;">Luke Prescott</b> is a senior at the University at Albany, SUNY, with an intended Bachelor of Science in
           Computer Science and Applied Mathematics. He is expected to graduate in the spring of 2019.
         </p>
 

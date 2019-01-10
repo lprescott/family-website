@@ -375,16 +375,8 @@ footer {
   word-wrap: break-word;
 }
 
-.center-image {
-  text-align: center;
-}
-
-.crest-style {
-  text-decoration: none;
-}
-
-.icon:hover {
-  color: #70a1c9;
+h2{
+  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -610,8 +602,6 @@ footer {
   .flex-container {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-basis: 100% !important;
-
   }
 
   .item{
