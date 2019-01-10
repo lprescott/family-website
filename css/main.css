@@ -346,6 +346,9 @@ footer {
    ========================================================================== */
 
 .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -353,10 +356,16 @@ footer {
 }
 
 .column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .left-column {
@@ -369,17 +378,26 @@ footer {
   height: 100px;
 }
 
-.container{
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
 
 .container .left-column,
-.container .right-column
-  {
-  flex: 1;
+.container .right-column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -498,11 +516,11 @@ footer {
     right: 0;
   }
 
-  .row{
+  .row {
     flex-direction: column;
   }
 
-  .container>.row>.column>.left-column{
+  .container>.row>.column>.left-column {
     margin-bottom: 20px;
   }
 }
@@ -510,14 +528,14 @@ footer {
 
 @media only screen and (min-width: 620px) {
 
-  .container>.row>.column>.left-column{
+  .container>.row>.column>.left-column {
     margin-right: 20px;
   }
 
   /* 
     Style adjustments for viewports that meet the condition
     Large screen.
-  */  
+  */
   .dropdown {
     opacity: 1;
     visibility: visible;
