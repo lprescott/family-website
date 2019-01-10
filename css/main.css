@@ -399,12 +399,22 @@ footer {
 
 .left-column {
   background-color: white;
-  height: 100px;
+  min-height: 100px;
+  -webkit-transition:1s all;
+	-moz-transition:1s all;
+	-ms-transition:1s all;
+	transition:1s all;
+	overflow:hidden;
 }
 
 .right-column {
   background-color: white;
-  height: 100px;
+  min-height: 100px;
+  -webkit-transition:1s all;
+	-moz-transition:1s all;
+	-ms-transition:1s all;
+	transition:1s all;
+	overflow:hidden;
 }
 
 .container {
@@ -557,7 +567,7 @@ footer {
 
 @media only screen and (min-width: 620px) {
 
-  .container>.row>.column>.left-column {
+  .container>.row>.column#left {
     margin-right: 20px;
   }
 

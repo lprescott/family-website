@@ -180,12 +180,12 @@
 
     <div class="container margin-all">
       <div class='row'>
-        <div class='column'>
+        <div id="left" class='column'>
           <div class='left-column rounded-corners shadow-hover'>
             Some Text in Column One
           </div>
         </div>
-        <div class='column '>
+        <div id="right" class='column'>
           <div class='right-column rounded-corners shadow-hover'>
             Some Text in Column Two
           </div>
