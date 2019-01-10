@@ -132,7 +132,7 @@
 
             <ul>
               <li id="people" class="top-dropdown-item" style="width: 270px;">
-                <a href="#" onclick="toggleMenu('person', 'projects', 'mobile-menu-1');">People
+                <a title="Click to toggle." href="../customErrors/PleaseEnableJavascript.html" onclick="toggleMenu('person', 'projects', 'mobile-menu-1');return false;">People
                   <i id="mobile-menu-1" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
@@ -149,7 +149,7 @@
                 <a href="/people/lprescott.html">Luke Prescott</a>
               </li>
               <li id="property" style="width: 270px;">
-                <a href="#" onclick="toggleMenu('property', 'projects', 'mobile-menu-2');">Property
+                <a title="Click to toggle." href="../customErrors/PleaseEnableJavascript.html" onclick="toggleMenu('property', 'projects', 'mobile-menu-2');return false;">Property
                   <i id="mobile-menu-2" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
@@ -163,7 +163,7 @@
                 <a href="/property/location.html">Location</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 270px;">
-                <a href="#" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');">Projects
+                <a title="Click to toggle." href="../customErrors/PleaseEnableJavascript.html" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects
                   <i id="mobile-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
