@@ -163,7 +163,7 @@
                 <a href="/property/location.html">Location</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 270px;">
-               <a href="#" onclick="showOrHide('project', 'projects');">Projects
+                <a href="#" onclick="showOrHide('project', 'projects');">Projects
                   <i style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
@@ -174,15 +174,29 @@
                 <a href="../projects/pre-Sportus.html">pre-Sport us!</a>
               </li>
 
-             </ul>
+            </ul>
 
           </li>
         </ul>
       </nav>
     </header>
 
+    <div class="container margin-all">
+      <div class='row'>
+        <div class='column'>
+          <div class='left-column rounded-corners shadow-hover'>
+            Some Text in Column One
+          </div>
+        </div>
+        <div class='column '>
+          <div class='right-column rounded-corners shadow-hover'>
+            Some Text in Column Two
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer class="rounded-corners padded shadow-hover margin-left margin-right">
+    <footer class="rounded-corners padded shadow-hover margin-all">
       Powered by
       <a class="link-style" href="https://www.javascript.com/">javascript</a> and started with
       <a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>.

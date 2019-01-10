@@ -101,9 +101,10 @@ textarea {
    ========================================================================== */
 
 #main {
-  margin: auto;
   max-width: 1550px;
   min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
@@ -336,11 +337,49 @@ footer {
   display: none;
 }
 
-.show{
+.show {
   display: initial;
 }
 
+/* ==========================================================================
+   Flexboxes
+   ========================================================================== */
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left-column {
+  background-color: white;
+  height: 100px;
+}
+
+.right-column {
+  background-color: white;
+  height: 100px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container .left-column,
+.container .right-column
+  {
+  flex: 1;
+  display: flex;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -432,7 +471,10 @@ footer {
 
 @media only screen and (max-width: 620px) {
 
-  /* Style adjustments for viewports that meet the condition */
+  /* 
+    Style adjustments for viewports that meet the condition
+    Small screen.
+  */
   .dropdown {
     opacity: 0;
     visibility: hidden;
@@ -455,11 +497,27 @@ footer {
   .nav li ul {
     right: 0;
   }
+
+  .row{
+    flex-direction: column;
+  }
+
+  .container>.row>.column>.left-column{
+    margin-bottom: 20px;
+  }
 }
+
 
 @media only screen and (min-width: 620px) {
 
-  /* Style adjustments for viewports that meet the condition */
+  .container>.row>.column>.left-column{
+    margin-right: 20px;
+  }
+
+  /* 
+    Style adjustments for viewports that meet the condition
+    Large screen.
+  */  
   .dropdown {
     opacity: 1;
     visibility: visible;
@@ -468,6 +526,7 @@ footer {
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
   }
+
 }
 
 @media only screen and (max-width: 570px) {

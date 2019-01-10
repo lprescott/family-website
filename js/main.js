@@ -10,6 +10,7 @@ function showOrHide(matchClass, bottomElementID) {
   for (i in elems) {
     if ((' ' + elems[i].className + ' ').indexOf(' ' + matchClass + ' ') >
       -1) {
+
       if (elems[i].style.display === "none") {
         elems[i].style.display = "block";
         document.getElementById(bottomElementID).classList.remove("bottom-dropdown-item");
