@@ -132,8 +132,8 @@
 
             <ul>
               <li id="people" class="top-dropdown-item" style="width: 270px;">
-                <a href="#" onclick="toggleMenu('person', 'projects');">People
-                  <i style="font-size: 12px;" class="fas fa-angle-down"></i>
+                <a href="#" onclick="toggleMenu('person', 'projects', 'mobile-menu-1');">People
+                  <i id="mobile-menu-1" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
@@ -149,8 +149,8 @@
                 <a href="/people/lprescott.html">Luke Prescott</a>
               </li>
               <li id="property" style="width: 270px;">
-                <a href="#" onclick="toggleMenu('property', 'projects');">Property
-                  <i style="font-size: 12px;" class="fas fa-angle-down"></i>
+                <a href="#" onclick="toggleMenu('property', 'projects', 'mobile-menu-2');">Property
+                  <i id="mobile-menu-2" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
@@ -163,8 +163,8 @@
                 <a href="/property/location.html">Location</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 270px;">
-                <a href="#" onclick="toggleMenu('project', 'projects');">Projects
-                  <i style="font-size: 12px;" class="fas fa-angle-down"></i>
+                <a href="#" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');">Projects
+                  <i id="mobile-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
               <li class="sub-item project" style="display: none; width: 270px;">
