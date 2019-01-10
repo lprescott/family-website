@@ -31,3 +31,19 @@ function toggleMenu(subMenuClass, bottomElementID, menuID) {
     }
   }
 }
+
+/*
+  The changeCaret functions flips the caret of any meny on mouse over.
+*/
+function changeCaret(menuID, boolOver){
+
+  if(boolOver == 1){
+    var MenuItem = document.getElementById(menuID);
+    MenuItem.classList.remove("fa-angle-down");
+    MenuItem.classList.add("fa-angle-up");
+  } else{
+    var MenuItem = document.getElementById(menuID);
+    MenuItem.classList.remove("fa-angle-up");
+    MenuItem.classList.add("fa-angle-down");
+  }
+}

@@ -39,6 +39,7 @@
 
 <body>
   <!--[if lte IE 9]>
+  onmouseout="changeCaret('desktop-menu-1', 0)"
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
@@ -55,22 +56,22 @@
           </li>
 
           <!-- people dropdown -->
-          <li class="dropdown desktop-button">
-            <a>People
-              <i style="font-size: 12px;" class="fas fa-angle-down"></i>
+          <li class="dropdown desktop-button" >
+            <a onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" >People
+              <i id="desktop-menu-1" style="font-size: 12px;" class="fas fa-angle-down"></i>
             </a>
 
-            <ul>
-              <li class="top-dropdown-item" style="width: 200px;">
+            <ul >
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item" style="width: 200px;">
                 <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
               </li>
-              <li style="width: 200px;">
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)"style="width: 200px;">
                 <a href="/people/karenprescott.html">Karen Prescott</a>
               </li>
-              <li style="width: 200px;">
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)"style="width: 200px;">
                 <a href="/people/barbaraprescott.html">Barbara Prescott</a>
               </li>
-              <li class="bottom-dropdown-item" style="width: 200px;">
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)"class="bottom-dropdown-item" style="width: 200px;">
                 <a href="/people/lprescott.html">Luke Prescott</a>
               </li>
             </ul>
@@ -79,18 +80,18 @@
 
           <!-- property dropdown-->
           <li class="dropdown desktop-button">
-            <a>Property
-              <i style="font-size: 12px;" class="fas fa-angle-down"></i>
+            <a onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)">Property
+              <i id="desktop-menu-2" style="font-size: 12px;" class="fas fa-angle-down"></i>
             </a>
 
             <ul>
-              <li class="top-dropdown-item" style="width: 123.77px;">
+              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item" style="width: 123.77px;">
                 <a href="/property/inside.html">Inside</a>
               </li>
-              <li style="width: 123.77px;">
+              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" style="width: 123.77px;">
                 <a href="/property/outside.html">Outside</a>
               </li>
-              <li class="bottom-dropdown-item" style="width: 123.77px;">
+              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item" style="width: 123.77px;">
                 <a href="/property/location.html">Location</a>
               </li>
             </ul>
@@ -99,15 +100,15 @@
 
           <!-- projects dropdown-->
           <li class="dropdown desktop-button">
-            <a>Projects
-              <i style="font-size: 12px;" class="fas fa-angle-down"></i>
+            <a onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)">Projects
+              <i id="desktop-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
             </a>
 
             <ul>
-              <li class="top-dropdown-item" style="width: 270px;">
+              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item" style="width: 270px;">
                 <a href="../projects/OAP.html">Ocular Audiobook Player</a>
               </li>
-              <li class="bottom-dropdown-item" style="width: 270px;">
+              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item" style="width: 270px;">
                 <a href="../projects/pre-Sportus.html">pre-Sport us!</a>
               </li>
             </ul>
