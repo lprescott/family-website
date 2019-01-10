@@ -101,7 +101,6 @@ textarea {
 
 #main {
   max-width: 1550px;
-  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -370,7 +369,7 @@ footer {
   word-wrap: break-word;
 }
 
-h2{
+h2 {
   font-weight: 600;
 }
 
@@ -599,11 +598,11 @@ h2{
     -ms-flex-wrap: wrap;
   }
 
-  .item{
+  .item {
     flex-basis: 100% !important;
   }
 
-  .container{
+  .container {
     flex-basis: 100% !important;
   }
 
@@ -639,14 +638,27 @@ h2{
     right: 0;
   }
 
-
   .container {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
   }
+}
 
+@media only screen and (max-width: 320px) {
+  div.flex-container {
+    padding: 0px !important;
+  }
 
+  header,
+  footer {
+    margin: 0px !important;
+  }
+}
 
+@media only screen and (max-width: 280px) {
+  .item {
+    margin: 0px !important;
+  }
 }
 
 
