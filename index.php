@@ -35,6 +35,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="js/ckeditor5/ckeditor.js"></script>
+
 </head>
 
 <body>
@@ -55,22 +61,24 @@
           </li>
 
           <!-- people dropdown -->
-          <li class="dropdown desktop-button" >
-            <a onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" >People
+          <li class="dropdown desktop-button">
+            <a onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)">People
               <i id="desktop-menu-1" style="font-size: 12px;" class="fas fa-angle-down"></i>
             </a>
 
-            <ul >
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item" style="width: 200px;">
+            <ul>
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
+                style="width: 200px;">
                 <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
               </li>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)"style="width: 200px;">
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
                 <a href="/people/karenprescott.html">Karen Prescott</a>
               </li>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)"style="width: 200px;">
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
                 <a href="/people/barbaraprescott.html">Barbara Prescott</a>
               </li>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)"class="bottom-dropdown-item" style="width: 200px;">
+              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="bottom-dropdown-item"
+                style="width: 200px;">
                 <a href="/people/lprescott.html">Luke Prescott</a>
               </li>
             </ul>
@@ -84,13 +92,15 @@
             </a>
 
             <ul>
-              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item" style="width: 123.77px;">
+              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item"
+                style="width: 123.77px;">
                 <a href="/property/inside.html">Inside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" style="width: 123.77px;">
                 <a href="/property/outside.html">Outside</a>
               </li>
-              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item" style="width: 123.77px;">
+              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item"
+                style="width: 123.77px;">
                 <a href="/property/location.html">Location</a>
               </li>
             </ul>
@@ -104,23 +114,27 @@
             </a>
 
             <ul>
-              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item" style="width: 270px;">
+              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item"
+                style="width: 270px;">
                 <a href="/projects/OAP.html">Ocular Audiobook Player</a>
               </li>
-              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item" style="width: 270px;">
+              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item"
+                style="width: 270px;">
                 <a href="/projects/pre-Sportus.html">pre-Sport us!</a>
               </li>
             </ul>
 
           </li>
 
-          <li class="contact-button">
-            <a title="Contact Us" href="inquiries/contact.php">
+
+          <a title="Contact Us" href="../customErrors/PleaseEnableJavascript.html" onclick="toggleContact(); return false;">
+            <li class="contact-button">
               <span style="font-size: 25px; color: rgb(75,75,75);">
                 <i class="fas fa-mail-bulk"></i>
               </span>
-            </a>
-          </li>
+            </li>
+          </a>
+
 
           <li class="dropdown mobile-button">
             <a title="Menu">
@@ -178,7 +192,51 @@
       </nav>
     </header>
 
-    <div class="flex-row flex-container">
+    <form method="POST" id="contact-form" class="flex-col flex-container" style="display: none;">
+      <div class="item form-input">
+        <label for="name" id="name-label">
+          Name
+          <input type="text" id="name" name="name" required>
+        </label>
+      </div>
+      <div class="item form-input">
+        <label for="email" id="email-label">
+          E-mail
+          <input type="email" id="email" name="email" required>
+        </label>
+      </div>
+      <div class="item form-input">
+        <label for="subject" id="subject-label">
+          Subject
+          <input type="text" id="subject" name="subject">
+        </label>
+      </div>
+      <div class="item" style="padding: 0px; overflow: hidden;">
+        <textarea name="comment" id="comment"></textarea>
+        <script>
+          ClassicEditor
+            .create(document.querySelector('#comment'), {
+              toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote',
+                'undo', 'redo'
+              ]
+            })
+            .catch(error => {
+              console.log(error);
+            });
+
+        </script>
+      </div>
+      <div class="flex-row container">
+        <div class="item nobackground form-recaptcha" style="flex-basis: 50%; text-align: center;">
+          <div class="g-recaptcha" style="display: inline-block;" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
+        </div>
+        <div class="item nobackground form-submit" style="flex-basis: 50%; text-align: center;">
+          <input style="display: inline-block;" type="submit" id="submit" name="formSubmit" value="Send Message" >
+        </div>
+      </div>
+    </form>
+
+    <div id="page-content" class="flex-row flex-container">
       <div class="item who" style="flex-basis: 40%;">
         <h2>Who are we?</h2>
         <!-- drew prescott sr-->
@@ -194,7 +252,8 @@
 
         <!-- karen prescott -->
         <p>
-          <b style="font-weight: 600;">Karen Prescott</b>, a certified NYS secondary school English teacher and technologist, is a highly
+          <b style="font-weight: 600;">Karen Prescott</b>, a certified NYS secondary school English teacher and
+          technologist, is a highly
           creative and dedicated professional with over thirty years of combined technical sales, writing and teaching
           experience in corporate and educational settings. She is a graduate of SUNY Potsdam, R.P.I. and SUNY
           Albany.
@@ -204,7 +263,8 @@
 
         <!-- barbara prescott -->
         <p>
-          <b style="font-weight: 600;">Barbara Prescott</b>, a registered nurse, is currently attending Duke Graduate School with the goal of
+          <b style="font-weight: 600;">Barbara Prescott</b>, a registered nurse, is currently attending Duke Graduate
+          School with the goal of
           becoming a registered nurse practitioner. She graduated magna cum laude at the University at Buffalo, SUNY.
         </p>
 
@@ -212,11 +272,12 @@
 
         <!-- luke prescott-->
         <p>
-          <b style="font-weight: 600;">Luke Prescott</b> is a senior at the University at Albany, SUNY, with an intended Bachelor of Science in
+          <b style="font-weight: 600;">Luke Prescott</b> is a senior at the University at Albany, SUNY, with an
+          intended Bachelor of Science in
           Computer Science and Applied Mathematics. He is expected to graduate in the spring of 2019.
         </p>
-
       </div>
+
       <div class="container flex-column" style="flex-basis: 60%;">
         <div class="container flex-row">
           <div class="item mission">
@@ -260,7 +321,8 @@
       <a class="link-style" href="https://www.javascript.com/">javascript</a> and started with
       <a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>.
       <br> General questions, comments, or concerns?
-      <a class="link-style" href="../inquiries/contact.php"> Contact us!</a>
+      <a class="link-style" href="mailto:info@presport.us?subject=General%20questions%2C%20comments%2C%20or%20concerns.&body=">
+        Contact us!</a>
       This website was designed and built by Luke Prescott.
       <br> Any and all trademarks or logos used throughout this website are the property of their respective owners.
     </footer>

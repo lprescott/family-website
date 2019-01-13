@@ -15,8 +15,9 @@ html {
   font-size: 1em;
   line-height: 1.6;
   background: rgb(255, 244, 233);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -103,6 +104,7 @@ textarea {
   max-width: 1550px;
   margin-right: auto;
   margin-left: auto;
+  height: 100%;
 }
 
 header {
@@ -373,6 +375,76 @@ h2 {
   font-weight: 600;
 }
 
+
+/* ==========================================================================
+   Contact Form
+   ========================================================================== */
+
+.ck-editor__editable {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ck-dropdown,
+.ck-heading-dropdown {
+  font-size: 1.5em !important;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.ck.ck-toolbar {
+  border: none !important;
+}
+
+.ck.ck-editor__editable_inline {
+  border: none !important;
+}
+
+.ck.ck-toolbar__separator {
+  display: none !important;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 4pt;
+  border-bottom-right-radius: 4pt;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+  background-color: #ffffff;
+  line-height: 1.6;
+  font-size: 1.5em;
+}
+
+input[type=submit] {
+  height: 75px; 
+  width: 304px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  
+}
+
+label{
+  font-size: 18px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+.ck.ck-button .ck-button__label, a.ck.ck-button .ck-button__label{
+  font-size: 18px !important;
+}
+
 /* ==========================================================================
    Mobile Navbar
    ========================================================================== */
@@ -470,6 +542,35 @@ h2 {
 
   flex-grow: 0;
   flex-shrink: 1;
+}
+
+form .item.nobackground{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+form .item.form-input{
+  padding: 10px 0px 0px 0px;
+  background-color: rgb(250,250,250);
+ 
+}
+
+
+form .item.form-recaptcha{
+  padding: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+
+}
+
+form .item.form-submit{
+  padding: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+
+  height: 75px;
+  width: 304px;
 }
 
 .item:hover {
@@ -602,7 +703,7 @@ h2 {
     flex-basis: 100% !important;
   }
 
-  .container#contact-racaptcha-send {
+  .container.contact_info {
     flex-wrap: wrap !important;
     -ms-flex-wrap: wrap !important;
   }
@@ -610,7 +711,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 680px) {
 
   /* 
     Style adjustments for viewports that meet the condition
@@ -647,6 +748,10 @@ h2 {
 
 @media only screen and (max-width: 320px) {
   div.flex-container {
+    padding: 0px !important;
+  }
+
+  form.flex-container {
     padding: 0px !important;
   }
 
