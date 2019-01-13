@@ -407,8 +407,6 @@ h2 {
 
   flex-grow: 0;
   flex-shrink: 1;
-
-
 }
 
 .flex-container {
@@ -430,8 +428,6 @@ h2 {
   -ms-flex: 1;
   -webkit-flex: 1;
   flex: 1;
-
-
 }
 
 .flex-row {
@@ -604,6 +600,11 @@ h2 {
 
   .container {
     flex-basis: 100% !important;
+  }
+
+  .container#contact-racaptcha-send {
+    flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
   }
 
 }
