@@ -49,7 +49,7 @@
         <ul class="rounded-corners">
 
           <li class="center home-button">
-            <a style="padding: 10px 10px 10px 10px !important; " title="Home" href="index.php">
+            <a style="padding: 10px 10px 10px 10px !important; " title="Home" href="../index.php">
               <img alt="Home" src="/img/Home.png" height="40px">
             </a>
           </li>
@@ -63,17 +63,17 @@
             <ul>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a href="/people/karenprescott.html">Karen Prescott</a>
+                <a href="../people/karenprescott.html">Karen Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                <a href="../people/barbaraprescott.html">Barbara Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="bottom-dropdown-item"
                 style="width: 200px;">
-                <a href="/people/lprescott.html">Luke Prescott</a>
+                <a href="../people/lprescott.html">Luke Prescott</a>
               </li>
             </ul>
 
@@ -88,14 +88,14 @@
             <ul>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item"
                 style="width: 123.77px;">
-                <a href="/property/inside.html">Inside</a>
+                <a href="../property/inside.html">Inside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" style="width: 123.77px;">
-                <a href="/property/outside.html">Outside</a>
+                <a href="../property/outside.html">Outside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item"
                 style="width: 123.77px;">
-                <a href="/property/location.html">Location</a>
+                <a href="../property/location.html">Location</a>
               </li>
             </ul>
 
@@ -121,7 +121,7 @@
           </li>
 
           <li class="contact-button">
-            <a title="Contact Us" href="inquiries/contact.php">
+            <a title="Contact Us" href="contact.php">
               <span style="font-size: 25px; color: rgb(75,75,75);">
                 <i class="fas fa-mail-bulk"></i>
               </span>
@@ -142,16 +142,16 @@
                 </a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                <a href="../people/drewprescottsr.html">Drew Prescott, Sr.</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="/people/karenprescott.html">Karen Prescott</a>
+                <a href="../people/karenprescott.html">Karen Prescott</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                <a href="../people/barbaraprescott.html">Barbara Prescott</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="/people/lprescott.html">Luke Prescott</a>
+                <a href="../people/lprescott.html">Luke Prescott</a>
               </li>
               <li id="property" style="width: 270px;">
                 <a title="Click to toggle." href="../customErrors/PleaseEnableJavascript.html" onclick="toggleMenu('property', 'projects', 'mobile-menu-2');return false;">Property
@@ -159,13 +159,13 @@
                 </a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
-                <a href="/property/inside.html">Inside</a>
+                <a href="../property/inside.html">Inside</a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
-                <a href="/property/outside.html">Outside</a>
+                <a href="../property/outside.html">Outside</a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
-                <a href="/property/location.html">Location</a>
+                <a href="../property/location.html">Location</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 270px;">
                 <a title="Click to toggle." href="../customErrors/PleaseEnableJavascript.html" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects

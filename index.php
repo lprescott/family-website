@@ -105,10 +105,10 @@
 
             <ul>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item" style="width: 270px;">
-                <a href="../projects/OAP.html">Ocular Audiobook Player</a>
+                <a href="/projects/OAP.html">Ocular Audiobook Player</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item" style="width: 270px;">
-                <a href="../projects/pre-Sportus.html">pre-Sport us!</a>
+                <a href="/projects/pre-Sportus.html">pre-Sport us!</a>
               </li>
             </ul>
 
