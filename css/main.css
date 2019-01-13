@@ -429,6 +429,7 @@ input[type=submit] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  background-color: white;
 }
 
 input[type=submit]:hover {
@@ -743,6 +744,10 @@ form .item.form-submit{
   .container {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
+  }
+
+  #recaptcha-container, #submit-container{
+    text-align: center !important;
   }
 }
 
