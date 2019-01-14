@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-require 'index.php';
+require 'contact.php';
 $submitTitle = $_SESSION['sessionTitle'];
 $submitMessage = $_SESSION['sessionMessage'];
 $submitIcon = $_SESSION['sessionIcon'];

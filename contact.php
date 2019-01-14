@@ -136,7 +136,7 @@ if ($_POST['formSubmit'] == "Send Message") {
         <ul class="rounded-corners">
 
           <li class="center home-button">
-            <a style="padding: 10px 10px 10px 10px !important; " title="Home" href="index.php">
+            <a style="padding: 10px 10px 10px 10px !important; " title="Home" href="index.html">
               <img alt="Home" src="/img/Home.png" height="40px">
             </a>
           </li>
@@ -204,7 +204,7 @@ if ($_POST['formSubmit'] == "Send Message") {
             </ul>
           </li>
 
-          <a title="Contact Us" href="../customErrors/PleaseEnableJavascript.html" onclick="toggleContact(); return false;">
+          <a title="Contact Us" href="contact.php">
             <li class="contact-button">
               <span style="font-size: 25px; color: rgb(75,75,75);">
                 <i class="fas fa-mail-bulk"></i>
@@ -268,7 +268,7 @@ if ($_POST['formSubmit'] == "Send Message") {
       </nav>
     </header>
 
-    <form method="POST" id="contact-form" class="flex-col flex-container" style="display: none;">
+    <form method="POST" id="contact-form" class="flex-col flex-container">
       <div class="item form-input">
         <label for="name" id="name-label">
           Name
@@ -302,7 +302,7 @@ if ($_POST['formSubmit'] == "Send Message") {
 
         </script>
       </div>
-      <div class="flex-row container">
+      <div class="flex-row container rounded-corners nobackground" style="margin: 10px;">
         <div id="recaptcha-container" class="item nobackground form-recaptcha" style="flex-basis: 50%; text-align: right;">
           <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
         </div>
@@ -311,86 +311,6 @@ if ($_POST['formSubmit'] == "Send Message") {
         </div>
       </div>
     </form>
-
-    <div id="page-content" class="flex-row flex-container">
-      <div class="item who" style="flex-basis: 40%;">
-        <h2>Who are we?</h2>
-        <!-- drew prescott sr-->
-        <p>
-          <b style="font-weight: 600;">Drew Prescott Sr.</b> is a certified project management professional PMP
-          <img style="margin: 0 auto 5px;" src="/img/PMPCredential.jpg" alt="PMP Credential Logo" title="PMP Credential Logo"
-            width="auto" height="15" />, CSM in information technology, systems development, and a skilled computer
-          services consultant with over two decades of industry experience. He attended Clarkson University and
-          earned his Bachelor of Science from Excelsior College while on active duty in the U.S. Navy.
-        </p>
-
-        <hr>
-
-        <!-- karen prescott -->
-        <p>
-          <b style="font-weight: 600;">Karen Prescott</b>, a certified NYS secondary school English teacher and
-          technologist, is a highly
-          creative and dedicated professional with over thirty years of combined technical sales, writing and teaching
-          experience in corporate and educational settings. She is a graduate of SUNY Potsdam, R.P.I. and SUNY
-          Albany.
-        </p>
-
-        <hr>
-
-        <!-- barbara prescott -->
-        <p>
-          <b style="font-weight: 600;">Barbara Prescott</b>, a registered nurse, is currently attending Duke Graduate
-          School with the goal of
-          becoming a registered nurse practitioner. She graduated magna cum laude at the University at Buffalo, SUNY.
-        </p>
-
-        <hr>
-
-        <!-- luke prescott-->
-        <p>
-          <b style="font-weight: 600;">Luke Prescott</b> is a senior at the University at Albany, SUNY, with an
-          intended Bachelor of Science in
-          Computer Science and Applied Mathematics. He is expected to graduate in the spring of 2019.
-        </p>
-      </div>
-
-      <div class="container flex-column" style="flex-basis: 60%;">
-        <div class="container flex-row">
-          <div class="item mission">
-            <h2>Our mission</h2>
-            <p>
-              PresPort's mission is to better businesses, public and private, in the capital region of New York State,
-              and the United States of America through shared learnings and technical accessibility, while following
-              our personal values.
-            </p>
-          </div>
-          <div class="item values">
-            <h2>Our values</h2>
-            <p>
-              PresPort's values are grounded in our genuine desire to help others reach their fullest potential in
-              their personal and/or professional lives in a moral, ethical, and professional manner.
-            </p>
-          </div>
-        </div>
-        <div class="item about">
-          <h2>About PresPort</h2>
-          <p>
-            Presport is the Prescott family hub – geographically located the capital district of New York State. The
-            Prescott family has a total of 20 years (and counting) in upper-level education, leading to expertise in a
-            plethora of areas; they include: information technology, program management consulting services, creative
-            writing, secondary education in English language arts, medicine, nursing,computer science, and mathematics.
-          </p>
-          <p>
-            The name PresPort was created by combining core family values with technology. The surname Prescott, an
-            English name that translates to "priest's cottage", forms the basis for family and a focus on a tradition
-            of excellence. Port is a technical term: a pathway into and out of the computer, or some network device. A
-            port is also a safe harbor and an opening, a door or pathway to an exchange of information. Whether you
-            select PresPort for creative writing endeavors, technology, project management or health services, you
-            may be assured that we will safely guide you.
-          </p>
-        </div>
-      </div>
-    </div>
 
     <footer class="rounded-corners padded shadow-hover margin-footer">
       Powered by

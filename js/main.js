@@ -47,17 +47,3 @@ function changeCaret(menuID, boolOver) {
     MenuItem.classList.add("fa-angle-down");
   }
 }
-
-function toggleContact() {
-
-  var contact = document.getElementById("contact-form");
-  var content = document.getElementById("page-content");
-
-  if (contact.style.display === "none") {
-    contact.style.display = "flex";
-    content.style.display = "none";
-  } else {
-    contact.style.display = "none";
-    content.style.display = "flex";
-  }
-}
