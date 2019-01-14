@@ -311,8 +311,8 @@ if ($_POST['formSubmit'] == "Send Message") {
         <div id="recaptcha-container" class="item nobackground form-recaptcha" style="flex-basis: 50%; text-align: right;">
           <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
         </div>
-        <div id="submit-container"  class="item nobackground form-submit" style="flex-basis: 50%; text-align: left;">
-          <input style="display: inline-block;" type="submit" id="submit" name="formSubmit" value="Send Message" >
+        <div id="submit-container" class="item nobackground form-submit" style="flex-basis: 50%; text-align: left;">
+          <input class="shadow-hover" style="display: inline-block;" type="submit" id="submit" name="formSubmit" value="Send Message">
         </div>
       </div>
     </form>

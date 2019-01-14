@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-require 'contact.php';
+require 'index.php';
 $submitTitle = $_SESSION['sessionTitle'];
 $submitMessage = $_SESSION['sessionMessage'];
 $submitIcon = $_SESSION['sessionIcon'];
@@ -43,6 +43,7 @@ $submitIcon = $_SESSION['sessionIcon'];
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -57,6 +58,7 @@ $submitIcon = $_SESSION['sessionIcon'];
         icon: "<?php echo $submitIcon ?>",
       });
     }
+
   </script>
 
 </body>
