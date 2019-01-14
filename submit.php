@@ -33,7 +33,6 @@ $submitIcon = $_SESSION['sessionIcon'];
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 

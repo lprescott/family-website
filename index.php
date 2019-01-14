@@ -150,13 +150,13 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                <a href="/people/dprescottsr.html">Drew Prescott, Sr.</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a href="/people/karenprescott.html">Karen Prescott</a>
+                <a href="/people/kprescott.html">Karen Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                <a href="/people/bprescott.html">Barbara Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="bottom-dropdown-item"
                 style="width: 200px;">
@@ -195,11 +195,11 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a href="/projects/matrix.html">The Matrix</a>
+                <a href="/projects/matrix.html">Matrix</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item"
                 style="width: 200px;">
-                <a href="/projects/mandelbrot.html">The Mandelbrot</a>
+                <a href="/projects/mandelbrot.html">Mandelbrot Set</a>
               </li>
             </ul>
           </li>
