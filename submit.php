@@ -57,7 +57,6 @@ $submitIcon = $_SESSION['sessionIcon'];
         icon: "<?php echo $submitIcon ?>",
       });
     }
-
   </script>
 
 </body>
