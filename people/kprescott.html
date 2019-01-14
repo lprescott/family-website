@@ -33,6 +33,9 @@
   <script src="../sweetalert2/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="../sweetalert2/dist/sweetalert2.min.css">
 
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
 </head>
 
 <body>
@@ -47,7 +50,7 @@
         <ul class="rounded-corners">
 
           <li class="center home-button">
-            <a style="padding: 10px 10px 10px 10px !important; " title="Home" href="index.html">
+            <a style="padding: 10px 10px 10px 10px !important; " title="Home" href="../index.html">
               <img alt="Home" src="../img/Home.png" height="40px">
             </a>
           </li>
@@ -115,7 +118,7 @@
             </ul>
           </li>
 
-          <a title="Contact Us" href="../customErrors/PleaseEnableJavascript.html" onclick="toggleContact(); return false;">
+          <a title="Contact Us" href="../contact.php">
             <li class="contact-button">
               <span style="font-size: 25px; color: rgb(75,75,75);">
                 <i class="fas fa-mail-bulk"></i>
@@ -167,17 +170,47 @@
                   <i id="mobile-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
-              <li class="sub-item project" style="display: none; width: 270px;">
-                <a href="..../projects/matrix.html">p5.js The Matrix</a>
+              <li class="sub-item project" style="display: none; width: 200px;">
+                <a href="../projects/matrix.html">Matrix</a>
               </li>
-              <li class="sub-item bottom-dropdown-item project" style="display: none; width: 270px;">
-                <a href="..../projects/mandelbrot.html">p5.js The Mandelbrot Set</a>
+              <li class="sub-item bottom-dropdown-item project" style="display: none; width: 200px;">
+                <a href="../projects/mandelbrot.html">Mandelbrot Set</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
+
+    <div class="flex-container flex-column" style="flex-wrap: wrap;">
+      <div class="container flex-row">
+        <div class="item" style="flex-basis: 40%; padding: 0px;">
+          <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
+            data-theme="light" data-vanity="karen-prescott-60134768">
+            <a class="LI-simple-link" href='https://www.linkedin.com/in/karen-prescott-60134768?trk=profile-badge'>Karen
+              Prescott</a>
+          </div>
+        </div>
+        <div class="item center-flex" style="flex-basis: 60%; text-align:center;">
+          <div>
+            Please feel free to check out my links below. You can send me a message
+            <a class="link-style" href="../inquiries/contact.php">here</a> with
+            any questions. You can also contact me through my various social media.
+            Thank you!
+            <p>
+              <font size="6">
+                <a class="link-style-image" href="https://www.linkedin.com/in/karen-prescott-60134768/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a> &ensp;
+                <a class="link-style-image" href="https://www.facebook.com/karenwalczyk.prescott">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </font>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="rounded-corners padded shadow-hover margin-footer">
       Powered by
