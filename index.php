@@ -185,7 +185,6 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <a href="/property/location.html">Location</a>
               </li>
             </ul>
-
           </li>
 
           <!-- projects dropdown-->
@@ -193,20 +192,17 @@ if ($_POST['formSubmit'] == "Send Message") {
             <a onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)">Projects
               <i id="desktop-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
             </a>
-
             <ul>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item"
-                style="width: 270px;">
-                <a href="/projects/OAP.html">Ocular Audiobook Player</a>
+                style="width: 200px;">
+                <a href="/projects/matrix.html">The Matrix</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item"
-                style="width: 270px;">
-                <a href="/projects/pre-Sportus.html">pre-Sport us!</a>
+                style="width: 200px;">
+                <a href="/projects/mandelbrot.html">The Mandelbrot</a>
               </li>
             </ul>
-
           </li>
-
 
           <a title="Contact Us" href="../customErrors/PleaseEnableJavascript.html" onclick="toggleContact(); return false;">
             <li class="contact-button">
@@ -215,7 +211,6 @@ if ($_POST['formSubmit'] == "Send Message") {
               </span>
             </li>
           </a>
-
 
           <li class="dropdown mobile-button">
             <a title="Menu">
@@ -262,10 +257,10 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item project" style="display: none; width: 270px;">
-                <a href="../projects/OAP.html">Ocular Audiobook Player</a>
+                <a href="../projects/matrix.html">p5.js The Matrix</a>
               </li>
               <li class="sub-item bottom-dropdown-item project" style="display: none; width: 270px;">
-                <a href="../projects/pre-Sportus.html">pre-Sport us!</a>
+                <a href="../projects/mandelbrot.html">p5.js The Mandelbrot Set</a>
               </li>
             </ul>
           </li>
@@ -420,7 +415,6 @@ if ($_POST['formSubmit'] == "Send Message") {
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. (111332341-1) -->
-  <!--
   <script>
     window.ga = function () {
       ga.q.push(arguments)
@@ -432,8 +426,6 @@ if ($_POST['formSubmit'] == "Send Message") {
 
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  -->
-
 
 </body>
 
