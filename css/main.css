@@ -629,6 +629,7 @@ form .item.form-submit {
 
 .LI-badge-container.horizontal.light {
   width: 100% !important;
+  min-width: 300px !important;
 
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
