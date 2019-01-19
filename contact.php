@@ -150,7 +150,7 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a class="incomplete" href="customErrors/under_construction.html">Drew Prescott, Sr.</a>
+                <a class="incomplete" href="/people/dprescottsr.html">Drew Prescott, Sr.</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
                 <a href="/people/kprescott.html">Karen Prescott</a>
@@ -226,7 +226,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="customErrors/under_construction.html">Drew Prescott, Sr.</a>
+                <a href="/people/dprescottsr.html">Drew Prescott, Sr.</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
                 <a href="/people/karenprescott.html">Karen Prescott</a>
