@@ -94,7 +94,7 @@ if ($_POST['formSubmit'] == "Send Message") {
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>PresPort</title>
+  <title>Contact Us</title>
   <meta name="description" content="Presport is the Prescott family hub – geographically located the capital district of New York State. The Prescott family has a total of 20 years (and counting) in upper-level education, leading to expertise in a plethora of areas; they include: information technology, program management consulting services, creative writing, secondary education in English language arts, medicine, nursing,computer science, and mathematics.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -131,7 +131,7 @@ if ($_POST['formSubmit'] == "Send Message") {
 
   <!-- Start site/application content here -->
   <div id="main">
-    <header class="rounded-corners shadow-hover margin-header">
+  <header class="rounded-corners shadow-hover margin-header">
       <nav class="nav">
         <ul class="rounded-corners">
 
@@ -150,13 +150,13 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a href="/people/dprescottsr.html">Drew Prescott, Sr.</a>
+                <a class="incomplete" href="customErrors/under_construction.html">Drew Prescott, Sr.</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
                 <a href="/people/kprescott.html">Karen Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a href="/people/bprescott.html">Barbara Prescott</a>
+                <a class="incomplete" href="customErrors/under_construction.html">Barbara Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="bottom-dropdown-item"
                 style="width: 200px;">
@@ -175,14 +175,14 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item"
                 style="width: 123.77px;">
-                <a href="/property/inside.html">Inside</a>
+                <a class="incomplete" href="customErrors/under_construction.html">Inside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" style="width: 123.77px;">
-                <a href="/property/outside.html">Outside</a>
+                <a class="incomplete" href="customErrors/under_construction.html">Outside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item"
                 style="width: 123.77px;">
-                <a href="/property/location.html">Location</a>
+                <a class="incomplete" href="customErrors/under_construction.html">Location</a>
               </li>
             </ul>
           </li>
@@ -226,13 +226,13 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="/people/drewprescottsr.html">Drew Prescott, Sr.</a>
+                <a href="customErrors/under_construction.html">Drew Prescott, Sr.</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
                 <a href="/people/karenprescott.html">Karen Prescott</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
-                <a href="/people/barbaraprescott.html">Barbara Prescott</a>
+                <a href="customErrors/under_construction.html">Barbara Prescott</a>
               </li>
               <li class="sub-item person" style="display: none; width: 270px;">
                 <a href="/people/lprescott.html">Luke Prescott</a>
@@ -243,24 +243,24 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
-                <a href="/property/inside.html">Inside</a>
+                <a href="customErrors/under_construction.html">Inside</a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
-                <a href="/property/outside.html">Outside</a>
+                <a href="customErrors/under_construction.html">Outside</a>
               </li>
               <li class="sub-item property" style="display: none; width: 270px;">
-                <a href="/property/location.html">Location</a>
+                <a href="customErrors/under_construction.html">Location</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 270px;">
                 <a title="Click to toggle." href="../customErrors/PleaseEnableJavascript.html" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects
                   <i id="mobile-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
                 </a>
               </li>
-              <li class="sub-item project" style="display: none; width: 270px;">
-                <a href="../projects/matrix.html">p5.js The Matrix</a>
+              <li class="sub-item project" style="display: none; width: 200px;">
+                <a href="../projects/matrix.html">Matrix</a>
               </li>
-              <li class="sub-item bottom-dropdown-item project" style="display: none; width: 270px;">
-                <a href="../projects/mandelbrot.html">p5.js The Mandelbrot Set</a>
+              <li class="sub-item bottom-dropdown-item project" style="display: none; width: 200px;">
+                <a href="../projects/mandelbrot.html">Mandelbrot Set</a>
               </li>
             </ul>
           </li>
@@ -313,14 +313,16 @@ if ($_POST['formSubmit'] == "Send Message") {
     </form>
 
     <footer class="rounded-corners padded shadow-hover margin-footer">
-      Powered by
-      <a class="link-style" href="https://www.javascript.com/">javascript</a> and started with
-      <a class="link-style" href="https://html5boilerplate.com/" target="_blank" rel="noopener">html5boilerplate</a>.
-      <br> General questions, comments, or concerns?
-      <a class="link-style" href="mailto:info@presport.us?subject=General%20questions%2C%20comments%2C%20or%20concerns.&body=">
-        Contact us!</a>
+      Powered by javascript, and
+      <a class="link-style" href="technologies.html">these</a> technologies.
+      <br>  
+      General questions, comments, or concerns? Contact us
+      <a class="link-style" href="contact.php">here</a>
+      , or by 
+      <a class="link-style" href="mailto:info@presport.us">email</a>.
       This website was designed and built by Luke Prescott.
-      <br> Any and all trademarks or logos used throughout this website are the property of their respective owners.
+      <br> 
+      Any and all trademarks or logos used throughout this website are the property of their respective owners.
     </footer>
   </div> <!-- end main -->
 

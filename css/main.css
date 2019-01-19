@@ -12,7 +12,7 @@
 
 html {
   color: rgb(61, 61, 61);
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.6;
   background: rgb(255, 244, 233);
   font-family: 'Open Sans', sans-serif;
@@ -381,13 +381,13 @@ h2 {
    ========================================================================== */
 
 .ck-editor__editable {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
 }
 
 .ck-dropdown,
 .ck-heading-dropdown {
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
   font-family: 'Open Sans', sans-serif;
 
 }
@@ -420,7 +420,7 @@ textarea {
   resize: vertical;
   background-color: #ffffff;
   line-height: 1.6;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 input[type=submit] {
@@ -615,6 +615,10 @@ form .item.form-submit {
 
 .link-style-image:hover {
   color: #86a3d5;
+}
+
+.extra-padding{
+  padding: 50px !important;
 }
 
 /* ==========================================================================
