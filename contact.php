@@ -287,7 +287,7 @@ if ($_POST['formSubmit'] == "Send Message") {
           <input type="text" id="subject" name="subject">
         </label>
       </div>
-      <div class="item" style="padding: 0px; overflow: hidden;">
+      <div class="item " style="padding: 0px; overflow: hidden;">
         <textarea name="comment" id="comment"></textarea>
         <script>
           ClassicEditor
@@ -313,16 +313,18 @@ if ($_POST['formSubmit'] == "Send Message") {
     </form>
 
     <footer class="rounded-corners padded shadow-hover margin-footer">
-      Powered by javascript, and
-      <a class="link-style" href="technologies.html">these</a> technologies.
-      <br>  
-      General questions, comments, or concerns? Contact us
-      <a class="link-style" href="contact.php">here</a>
-      , or by 
-      <a class="link-style" href="mailto:info@presport.us">email</a>.
-      This website was designed and built by Luke Prescott.
-      <br> 
-      Any and all trademarks or logos used throughout this website are the property of their respective owners.
+      <div class="footer-spacing">
+        Powered by javascript, and
+        <a class="link-style" href="technologies.html">these</a> technologies.
+        <br>
+        General questions, comments, or concerns? Contact us
+        <a class="link-style" href="contact.php">here</a>
+        , or by
+        <a class="link-style" href="mailto:info@presport.us">email</a>.
+        This website was designed and built by Luke Prescott.
+        <br>
+        Any and all trademarks or logos used throughout this website are the property of their respective owners.
+      </div>
     </footer>
   </div> <!-- end main -->
 

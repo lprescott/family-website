@@ -12,7 +12,7 @@
 
 html {
   color: rgb(61, 61, 61);
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6;
   background: rgb(255, 244, 233);
   font-family: 'Open Sans', sans-serif;
@@ -190,6 +190,7 @@ footer {
 .link-style {
   color: rgb(0, 140, 255) !important;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .link-style:hover {
@@ -375,8 +376,20 @@ h2 {
   font-weight: 600;
 }
 
+.text-spacing-large{
+  padding: 10px 40px 10px 40px;
+}
 
-/* ==========================================================================
+.text-spacing{
+  padding: 5px 20px 5px 20px;
+}
+
+.footer-spacing{
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+/* ===========================21===============================================
    Contact Form
    ========================================================================== */
 
@@ -542,8 +555,6 @@ a.ck.ck-button .ck-button__label {
 
   margin: 10px;
   background-color: white;
-
-  padding: 5px 20px 5px 20px;
 
   flex-grow: 0;
   flex-shrink: 1;
@@ -794,6 +805,10 @@ form .item.form-submit {
   #recaptcha-container,
   #submit-container {
     text-align: center !important;
+  }
+
+  .text-spacing-large{
+    padding: 15px 25px 15px 25px;
   }
 }
 

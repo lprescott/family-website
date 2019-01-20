@@ -182,52 +182,8 @@
       </nav>
     </header>
 
-    <form method="POST" id="contact-form" class="flex-col flex-container" style="display: none;">
-      <div class="item form-input">
-        <label for="name" id="name-label">
-          Name
-          <input type="text" id="name" name="name" required>
-        </label>
-      </div>
-      <div class="item form-input">
-        <label for="email" id="email-label">
-          E-mail
-          <input type="email" id="email" name="email" required>
-        </label>
-      </div>
-      <div class="item form-input">
-        <label for="subject" id="subject-label">
-          Subject
-          <input type="text" id="subject" name="subject">
-        </label>
-      </div>
-      <div class="item" style="padding: 0px; overflow: hidden;">
-        <textarea name="comment" id="comment"></textarea>
-        <script>
-          ClassicEditor
-            .create(document.querySelector('#comment'), {
-              toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote',
-                'undo', 'redo'
-              ]
-            })
-            .catch(error => {
-              console.log(error);
-            });
-
-        </script>
-      </div>
-      <div class="flex-row container rounded-corners" style="background-color: white; margin: 10px;">
-        <div id="recaptcha-container" class="item nobackground form-recaptcha" style="flex-basis: 50%; text-align: right;">
-          <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
-        </div>
-        <div id="submit-container" class="item nobackground form-submit" style="flex-basis: 50%; text-align: left;">
-          <input class="shadow-hover" style="display: inline-block;" type="submit" id="submit" name="formSubmit" value="Send Message">
-        </div>
-      </div>
-    </form>
-
     <div class="flex-row flex-container">
-      <div class="item who" style="flex-basis: 40%;">
+      <div class="item who text-spacing" style="flex-basis: 40%;">
         <h2>Who are we?</h2>
         <!-- drew prescott sr-->
         <p>
@@ -270,7 +226,7 @@
 
       <div class="container flex-column" style="flex-basis: 60%;">
         <div class="container flex-row">
-          <div class="item mission">
+          <div class="item mission text-spacing">
             <h2>Our mission</h2>
             <p>
               PresPort's mission is to better businesses, public and private, in the capital region of New York State,
@@ -278,7 +234,7 @@
               our personal values.
             </p>
           </div>
-          <div class="item values">
+          <div class="item values text-spacing">
             <h2>Our values</h2>
             <p>
               PresPort's values are grounded in our genuine desire to help others reach their fullest potential in
@@ -286,7 +242,7 @@
             </p>
           </div>
         </div>
-        <div class="item about">
+        <div class="item about text-spacing">
           <h2>About PresPort</h2>
           <p>
             Presport is the Prescott family hub – geographically located the capital district of New York State. The
@@ -307,16 +263,18 @@
     </div>
 
     <footer class="rounded-corners padded shadow-hover margin-footer">
-      Powered by javascript, and
-      <a class="link-style" href="technologies.html">these</a> technologies.
-      <br>  
-      General questions, comments, or concerns? Contact us
-      <a class="link-style" href="contact.php">here</a>
-      , or by 
-      <a class="link-style" href="mailto:info@presport.us">email</a>.
-      This website was designed and built by Luke Prescott.
-      <br> 
-      Any and all trademarks or logos used throughout this website are the property of their respective owners.
+      <div class="footer-spacing">
+        Powered by javascript, and
+        <a class="link-style" href="technologies.html">these</a> technologies.
+        <br>
+        General questions, comments, or concerns? Contact us
+        <a class="link-style" href="contact.php">here</a>
+        , or by
+        <a class="link-style" href="mailto:info@presport.us">email</a>.
+        This website was designed and built by Luke Prescott.
+        <br>
+        Any and all trademarks or logos used throughout this website are the property of their respective owners.
+      </div>
     </footer>
   </div> <!-- end main -->
 
@@ -339,6 +297,7 @@
     ga.l = +new Date;
     ga('create', 'UA-111332341-1', 'auto');
     ga('send', 'pageview')
+
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
