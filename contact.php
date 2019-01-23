@@ -108,7 +108,6 @@ if ($_POST['formSubmit'] == "Send Message") {
   <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="manifest" href="site.webmanifest">
 
   <link href="css/open-sans.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">

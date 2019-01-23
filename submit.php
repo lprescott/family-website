@@ -26,7 +26,6 @@ $submitIcon = $_SESSION['sessionIcon'];
   <meta name="msapplication-config" content="img/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="manifest" href="site.webmanifest">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
