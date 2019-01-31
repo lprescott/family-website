@@ -228,7 +228,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <a href="/people/dprescottsr.html">Drew Prescott, Sr.</a>
               </li>
               <li class="sub-item person" style="display: none; width: 200px;">
-                <a href="/people/karenprescott.html">Karen Prescott</a>
+                <a href="/people/kprescott.html">Karen Prescott</a>
               </li>
               <li class="sub-item person" style="display: none; width: 200px;">
                 <a href="customErrors/under_construction.html">Barbara Prescott</a>
