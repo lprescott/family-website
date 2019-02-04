@@ -108,7 +108,6 @@ if ($_POST['formSubmit'] == "Send Message") {
   <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="manifest" href="site.webmanifest">
 
   <link href="css/open-sans.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
@@ -229,7 +228,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 <a href="/people/dprescottsr">Drew Prescott, Sr.</a>
               </li>
               <li class="sub-item person" style="display: none; width: 200px;">
-                <a href="/people/karenprescott">Karen Prescott</a>
+                <a href="/people/kprescott">Karen Prescott</a>
               </li>
               <li class="sub-item person" style="display: none; width: 200px;">
                 <a href="customErrors/underConstruction">Barbara Prescott</a>
