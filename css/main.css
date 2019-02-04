@@ -649,8 +649,11 @@ form .item.form-submit {
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
   border-radius: 5px !important;
-  
+
   border-color: white !important;
+
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 
