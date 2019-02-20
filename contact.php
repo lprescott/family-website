@@ -215,7 +215,7 @@ if ($_POST['formSubmit'] == "Send Message") {
             </li>
           </a>
 
-          <li class="dropdown mobile-button">
+          <li class="dropdown mobile-button" onclick="">
             <a title="Menu">
               <span style="font-size: 30px; color: rgb(75,75,75);">
                 <i class="fas fa-bars"></i>
