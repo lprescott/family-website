@@ -18,6 +18,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+} 
 
 /*
  * Remove text-shadow in selection highlight:
@@ -770,6 +771,12 @@ form .item.form-submit {
 
 }
 
+
+@media only screen and (max-width: 690px) {
+  #contact-form{
+    display: inline-block;
+  }
+}
 
 @media only screen and (max-width: 680px) {
 
