@@ -5,6 +5,7 @@
 // Declared Global Variables
 var cellSize = 10;      // The length of one square side in pixels.
 var fps = 10;           // The speed of the animation in frames/second.
+var controlsWidth = 150;// The width of the left bar.
 
 // Initialized Global Variables
 var numCol;             
@@ -19,6 +20,7 @@ var stasisColor;
 var unstableColor;
 var lonelyColor;
 var backgroundColor;
+var outlineColor;
 
 var running = true;
 
@@ -38,6 +40,7 @@ function setup() {
     unstableColor = color(255,0,0);
     lonelyColor = color(29,85,216);
     backgroundColor = color(0,0,0);
+    outlineColor = color(0,0,0);
     
     // Specifies the number of frames to be displayed 
     // every second. 
@@ -47,12 +50,12 @@ function setup() {
     // Creates a canvas element in the document, and 
     // sets the dimensions of it in pixels. 
     // createCanvas(): https://p5js.org/reference/#/p5/createCanvas
-    canvas = createCanvas(innerWidth-160, innerHeight);
-    canvas.position(160,0);
+    canvas = createCanvas(innerWidth-controlsWidth, innerHeight);
+    canvas.position(controlsWidth,0);
     canvas.style('z-index', '-1');
 
     // Find the number of cols and rows, and round it
-    numCol = round((innerWidth-160)/cellSize);
+    numCol = round((innerWidth-controlsWidth)/cellSize);
     numRow = round(innerHeight/cellSize);
 
     // Create a 2D array of the columns as an x-axis
@@ -94,9 +97,14 @@ function setup() {
     sizeInput.input(setSizeOnInput);
 
     // Background color
-    createDiv('<br><br>&nbsp;Background Color:'); 
+    createDiv('<br>&nbsp;Background:'); 
     backgroundColorInput = createColorPicker('#000000');
     backgroundColorInput.input(setBackgroundColor);
+
+    // New color
+    createDiv('<br>&nbsp;Outline:'); 
+    outlineColorInput = createColorPicker('#000000');
+    outlineColorInput.input(setOutlineColor);
 
     // New color
     createDiv('<br>&nbsp;New:'); 
@@ -122,10 +130,19 @@ function setup() {
     createDiv('<br>&nbsp;Toggle Outline:'); 
     outlineCheckbox = createCheckbox('', true);
 
+    // Checkbox for pause on edit
+    createDiv('<br>&nbsp;Toggle Multiple Edits:'); 
+    editsCheckbox = createCheckbox('', false);
+
+    // Checkbox for pause on edit
+    createDiv('<br>&nbsp;Toggle Pause on Edit:'); 
+    pauseCheckbox = createCheckbox('', true);
+
     // Controls
     createDiv('<br>&nbsp;Controls:'); 
     createDiv('&nbsp;- L-Alt: restart'); 
     createDiv('&nbsp;- SPACE: play/pause');
+    createDiv('&nbsp;- ESC: clear grid');
 
     // Call initialize to fill the grid randomly
     initialize();
@@ -162,7 +179,7 @@ function draw() {
             // around shapes.
             // stroke(): https://p5js.org/reference/#/p5/stroke 
             if (outlineCheckbox.checked()){
-                stroke(backgroundColor);
+                stroke(outlineColor);
             } else {
                 noStroke();
             }
@@ -262,10 +279,9 @@ function generation() {
 
                 // Check whether stasis is at life or death and
                 // color accordingly
-                if(grid[x][y] == 1) {
+                if(nextGeneration[x][y] == 1 && grid[x][y] == 1) {
                     colors[x][y] = stasisColor;
                 } else {
-                    
                     colors[x][y] = backgroundColor;
                 }
               
@@ -293,23 +309,34 @@ function keyPressed() {
     else if (keyCode == 18) {
         initialize();
     }
+
+    // Clear on ESC
+    else if (keyCode == 27) {
+        for(var x = 0; x < numCol; x++) {
+            for(var y = 0; y < numRow; y++) {
+                grid[x][y] = 0;
+                nextGeneration[x][y] = 0;
+                colors[x][y] = black;
+            }
+        }
+    }
 }
 
 function setSizeOnInput() {
 
-    if(this.value() > 5){
+    if(this.value() >= 5){
         
         cellSize = this.value();
         
         // Creates a canvas element in the document, and 
         // sets the dimensions of it in pixels. 
         // createCanvas(): https://p5js.org/reference/#/p5/createCanvas
-        canvas = createCanvas(innerWidth-150, innerHeight);
-        canvas.position(150,0);
+        canvas = createCanvas(innerWidth-controlsWidth, innerHeight);
+        canvas.position(controlsWidth,0);
         canvas.style('z-index', '-1');
 
         // Find the number of cols and rows, and round it
-        numCol = round((innerWidth-150)/cellSize);
+        numCol = round((innerWidth-controlsWidth)/cellSize);
         numRow = round(innerHeight/cellSize);
 
         // Create a 2D array of the columns as an x-axis
@@ -358,6 +385,11 @@ function setBackgroundColor() {
     }
 }
 
+// outlineColor is stored with the color picker's result.
+function setOutlineColor() {
+    outlineColor = outlineColorInput.color();
+}
+
 // newColor is stored with the color picker's result.
 function setNewColor() {
     newColor = newbornColorInput.color();
@@ -376,4 +408,52 @@ function setUnstableColor() {
 // lonelyColor is stored with the color picker's result.
 function setLonelyColor() {
     lonelyColor = lonelyColorInput.color();
+}
+
+// The mousePressed() function is called once after every time 
+// a mouse button is pressed over the element. 
+//
+// Here, when the mouse is pressed, the simulation is paused and
+// the selected automata's bit is set to true. One generation is 
+// then executed.
+function mousePressed() {
+
+    // If the mouse is not over the controls
+    if (mouseX > 0) {
+
+        // Start if paused
+        running = true;
+
+        // Find the index of the selected automata
+        var automataXIndex = floor(mouseX / cellSize);
+        var automataYIndex = floor(mouseY / cellSize);
+
+        // Left side, and top
+        if (automataXIndex == 0 || automataYIndex == 0 || automataXIndex == numCol-1 || automataYIndex == numRow-1) {
+            return;
+        } 
+        // Set the selected automata to life or death
+        else if(grid[automataXIndex][automataYIndex] == 0) { 
+            grid[automataXIndex][automataYIndex] = 1;
+            colors[automataXIndex][automataYIndex] = stasisColor;
+            nextGeneration[automataXIndex][automataYIndex] = 1;
+            
+        } else {
+            grid[automataXIndex][automataYIndex] = 0;
+            colors[automataXIndex][automataYIndex] = black;
+            nextGeneration[automataXIndex][automataYIndex] = 0;
+        }
+    
+        // If multiple edits is not checked, force a new generation
+        if (!editsCheckbox.checked()){
+            // Draw and start a new generation
+            draw(); 
+        } 
+
+        // If pause toggle is checked
+        if (pauseCheckbox.checked()){
+            // Pause after generation
+            running = false;
+        } 
+    }   
 }
