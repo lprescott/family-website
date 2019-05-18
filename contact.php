@@ -149,7 +149,7 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a class="incomplete" href="/people/dprescott">Drew Prescott</a>
+                <a href="/people/dprescott">Drew Prescott</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
                 <a href="/people/kprescott">Karen Prescott</a>
@@ -174,14 +174,14 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item"
                 style="width: 123.77px;">
-                <a class="incomplete" href="customErrors/underConstruction">Inside</a>
+                <a href="property/home.html#inside">Inside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" style="width: 123.77px;">
-                <a class="incomplete" href="customErrors/underConstruction">Outside</a>
+                <a href="property/home.html#outside">Outside</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item"
                 style="width: 123.77px;">
-                <a class="incomplete" href="customErrors/underConstruction">Location</a>
+                <a href="property/home.html#location">Location</a>
               </li>
             </ul>
           </li>
@@ -194,7 +194,7 @@ if ($_POST['formSubmit'] == "Send Message") {
             <ul>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item"
                 style="width: 200px;">
-                <a href="/projects/matrix">Matrix</a>
+                <a href="/projects/matrix">Digital Rain</a>
               </li>
               <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="middle-dropdown-item"
                 style="width: 200px;">
@@ -246,13 +246,13 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="customErrors/underConstruction">Inside</a>
+                <a href="property/home.html#inside">Inside</a>
               </li>
               <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="customErrors/underConstruction">Outside</a>
+                <a href="property/home.html#outside">Outside</a>
               </li>
               <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="customErrors/underConstruction">Location</a>
+                <a href="property/home.html#location">Location</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 200px;">
                 <a title="Click to toggle." href="../customErrors/pleaseEnableJavascript" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects
@@ -260,7 +260,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item project" style="display: none; width: 200px;">
-                <a href="../projects/matrix">Matrix</a>
+                <a href="../projects/matrix">Digital Rain</a>
               </li>
               <li class="sub-item bottom-dropdown-item project" style="display: none; width: 200px;">
                 <a href="../projects/mandelbrot">Mandelbrot Set</a>
@@ -324,8 +324,7 @@ if ($_POST['formSubmit'] == "Send Message") {
         <a class="link-style" href="technologies">these</a> technologies.
         <br>
         General questions, comments, or concerns? Contact us
-        <a class="link-style" href="contact">here</a>
-        , or by
+        <a class="link-style" href="contact">here</a>, or by
         <a class="link-style" href="mailto:info@presport.us">email</a>.
         This website was designed and built by Luke Prescott.
         <br>
