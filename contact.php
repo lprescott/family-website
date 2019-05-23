@@ -172,16 +172,9 @@ if ($_POST['formSubmit'] == "Send Message") {
             </a>
 
             <ul>
-              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item"
+              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item bottom-dropdown-item"
                 style="width: 123.77px;">
-                <a href="property/home.html#inside">Inside</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" style="width: 123.77px;">
-                <a href="property/home.html#outside">Outside</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="bottom-dropdown-item"
-                style="width: 123.77px;">
-                <a href="property/home.html#location">Location</a>
+                <a href="property/home">Home</a>
               </li>
             </ul>
           </li>
@@ -246,13 +239,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="property/home.html#inside">Inside</a>
-              </li>
-              <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="property/home.html#outside">Outside</a>
-              </li>
-              <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="property/home.html#location">Location</a>
+                <a href="property/home">Home</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 200px;">
                 <a title="Click to toggle." href="../customErrors/pleaseEnableJavascript" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects
