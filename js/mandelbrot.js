@@ -1,3 +1,8 @@
+/*
+  @author: lprescott 
+  https://github.com/lprescott/
+*/
+
 var scalar = 5;
 var xTranslate = 5;
 var yTranslate;
@@ -18,8 +23,6 @@ function setup() {
   canvas = createCanvas(width, height);
   canvas.position(controlsWidth, 0);
   canvas.style('z-index', '-1');
-
-  pixelDensity(1);
 
   // Number of iterations
   createDiv('&nbsp;# of iterations');
