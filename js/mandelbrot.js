@@ -4,12 +4,11 @@
 */
 
 // Initialized global variables
-var scalar = 5;
-var xTranslate = 5;
-var yTranslate; 
-var controlsWidth = 170; // The width of the left bar.
-var running = true;
-var fps = 10;           // The speed of the animation in frames/second.
+var scalar = 5;           // The initial value of zoom speed modifier
+var xTranslate = 5;       // The initial value of x-axis zoom speed
+var controlsWidth = 170;  // The width of the left bar.
+var running = true;       // Boolean affecting runtime
+var fps = 10;             // The speed of the animation in frames/second.
 
 
 // Declared global variables
@@ -18,13 +17,17 @@ var width;
 var speedSlider;
 var xoffset;
 var yoffset;
+var yTranslate; 
 
+// These variables affect the red green blue coloring of the
+// sketch
 var redshift;
 var greenshift;
 var blueshift;
 
 function setup() {
 
+  // Set height and width of sketch
   height = innerHeight;
   width = innerWidth-controlsWidth;
 
@@ -68,8 +71,8 @@ function setup() {
   createDiv('<br><br>&nbsp;Controls:'); 
   createDiv('&nbsp;- SPACE: stop');
 
+  // Initialize yTranslate (zoom speed)
   yTranslate = (height / 2 - width / 2) - yoffset.value();
-  //(1 / scalar) * (width * xoffset.value());
 }
 
 function draw() {
@@ -80,6 +83,7 @@ function draw() {
   //The maximum number of iterations to the below loop
   var maxIterations = iterations.value();
 
+  // Set yTranslate (zoom speed)
   yTranslate = (height / 2 - width / 2) + yoffset.value();
 
   loadPixels();
@@ -121,10 +125,12 @@ function draw() {
         n++;
       }
 
+      // Find RGB values
       var red = map(sin(n * 0.25), -1, 1, 0, 145);
       var green = map(cos(n * 0.25), -1, 1, 170, 0);
       var blue = map(sin(n * 0.25), -1, 1, 150, 0);
 
+      // Set pixel color
       var pix = (x + y * width) * 4;
       pixels[pix + 0] = red * redshift.value();
       pixels[pix + 1] = green * greenshift.value();
@@ -133,6 +139,8 @@ function draw() {
     }
   }
   updatePixels();
+
+  //Update zoom, and xTranslate zoom speed
   scalar *= speedSlider.value();
   xTranslate = (1 / scalar) * (width * -xoffset.value());
 }
@@ -143,10 +151,12 @@ function keyPressed() {
 
   // Play/pause on space
   if (keyCode == 32 ) {
-      running = false;
+    running = false;
   } 
 }
 
-function setColorShift() {
-
+// The mousePressed() function is called once after every time 
+// a mouse button is pressed over the element. .
+function mousePressed() {
+  scale(2);
 }
