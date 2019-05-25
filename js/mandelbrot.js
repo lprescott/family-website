@@ -38,9 +38,9 @@ function setup() {
   canvas.position(controlsWidth, 0);
   canvas.style('z-index', '-1');
 
-  // Label for fps slider
+  // Label for speed slider
   createDiv('&nbsp;Fast Zoom ------- Stop');
-  // Slider for fps
+  // Slider for speed
   speedSlider = createSlider(0.5, 1, 0.99, 0.001);
 
   // Number of iterations
