@@ -6,7 +6,7 @@
 // Initialized global variables
 var scalar = 5;           // The initial value of zoom speed modifier
 var xTranslate = 5;       // The initial value of x-axis zoom speed
-var controlsWidth = 170;  // The width of the left bar.
+var controlsWidth = 150;  // The width of the left bar.
 var running = true;       // Boolean affecting runtime
 var fps = 10;             // The speed of the animation in frames/second.
 
@@ -38,21 +38,23 @@ function setup() {
   canvas.position(controlsWidth, 0);
   canvas.style('z-index', '-1');
 
+  pixelDensity(1);
+
   // Label for speed slider
-  createDiv('&nbsp;Fast Zoom ------- Stop');
+  createDiv('&nbsp;Zoom speed:');
   // Slider for speed
   speedSlider = createSlider(0.5, 1, 0.99, 0.001);
 
   // Number of iterations
-  createDiv('<br>&nbsp;10 iterations ---- 1000');
+  createDiv('<br>&nbsp;Num. of iterations:');
   iterations = createSlider(0,1000,20,10);
 
   // x offset
-  createDiv('<br><br>&nbsp;X-Offset:');
+  createDiv('<br><br>&nbsp;x-Offset:');
   xoffset = createSlider(-1,1,-0.805,0.01);
 
   // y offset
-  createDiv('<br>&nbsp;Y-Offset:');
+  createDiv('<br>&nbsp;y-Offset:');
   yoffset = createSlider(-250,250,0,1);
 
   // red

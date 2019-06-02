@@ -18,8 +18,6 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-} 
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -198,7 +196,6 @@ footer {
 .link-style:visited {
   color: rgb(0, 108, 196) !important;
 }
-
 
 /* ==========================================================================
    Navbar
