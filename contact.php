@@ -173,8 +173,8 @@ if ($_POST['formSubmit'] == "Send Message") {
 
             <ul>
               <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item bottom-dropdown-item"
-                style="width: 123.77px;">
-                <a href="property/home">Home</a>
+                style="width: 167px;">
+                <a href="property/listing">Mohawk Road</a>
               </li>
             </ul>
           </li>
@@ -239,7 +239,7 @@ if ($_POST['formSubmit'] == "Send Message") {
                 </a>
               </li>
               <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="property/home">Home</a>
+                <a href="property/listing">Mohawk Road</a>
               </li>
               <li id="projects" class="bottom-dropdown-item" style="width: 200px;">
                 <a title="Click to toggle." href="../customErrors/pleaseEnableJavascript" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects
@@ -280,7 +280,7 @@ if ($_POST['formSubmit'] == "Send Message") {
           <input type="text" id="subject" name="subject">
         </label>
       </div>
-      <div class="item " style="padding: 0px; overflow: hidden;">
+      <div class="item" style="padding: 0px; overflow: hidden;">
         <textarea name="comment" id="comment"></textarea>
         <script>
           ClassicEditor
