@@ -1,0 +1,11 @@
+a#matrix:hover{
+    background-image: url(https://i.gyazo.com/56c54b11f37ec8a51f7fba20cae029d7.gif) !important;
+}
+
+a#gameoflife:hover{
+    background-image: url(https://i.gyazo.com/d772111b72f21dac50a06125a9cb9b1c.gif) !important;
+}
+
+a#mandelbrot:hover{
+    background-image: url(https://i.gyazo.com/24b1f742a996e6994d3ef25d83e9850f.gif) !important;
+}
