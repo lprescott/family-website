@@ -53,67 +53,7 @@
               <img alt="Home" src="/img/Home.png" height="40px">
             </a>
           </li>
-
-          <!-- people dropdown -->
-          <li class="dropdown desktop-button">
-            <a onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)">People
-              <i id="desktop-menu-1" style="font-size: 12px;" class="fas fa-angle-down"></i>
-            </a>
-
-            <ul>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="top-dropdown-item"
-                style="width: 200px;">
-                <a href="/people/dprescott">Drew Prescott</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a href="/people/kprescott">Karen Prescott</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" style="width: 200px;">
-                <a class="incomplete" href="customErrors/underConstruction">Barbara Prescott</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-1', 1)" onmouseout="changeCaret('desktop-menu-1', 0)" class="bottom-dropdown-item"
-                style="width: 200px;">
-                <a href="/people/lprescott">Luke Prescott</a>
-              </li>
-            </ul>
-
-          </li>
-
-          <!-- property dropdown-->
-          <li class="dropdown desktop-button">
-            <a onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)">Property
-              <i id="desktop-menu-2" style="font-size: 12px;" class="fas fa-angle-down"></i>
-            </a>
-
-            <ul>
-              <li onmouseover="changeCaret('desktop-menu-2', 1)" onmouseout="changeCaret('desktop-menu-2', 0)" class="top-dropdown-item bottom-dropdown-item"
-                style="width: 167px;">
-                <a href="property/listing">Mohawk Road</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- projects dropdown-->
-          <li class="dropdown desktop-button">
-            <a onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)">Projects
-              <i id="desktop-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
-            </a>
-            <ul>
-              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="top-dropdown-item"
-                style="width: 200px;">
-                <a href="/projects/matrix">Digital Rain</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="middle-dropdown-item"
-                style="width: 200px;">
-                <a href="/projects/mandelbrot">Mandelbrot Set</a>
-              </li>
-              <li onmouseover="changeCaret('desktop-menu-3', 1)" onmouseout="changeCaret('desktop-menu-3', 0)" class="bottom-dropdown-item"
-                style="width: 200px;">
-                <a href="/projects/gameoflife">Game of Life</a>
-              </li>
-            </ul>
-          </li>
-
+          
           <a title="Contact Us" href="contact">
             <li class="contact-button">
               <span style="font-size: 25px; color: rgb(75,75,75);">
@@ -121,56 +61,6 @@
               </span>
             </li>
           </a>
-
-          <li class="dropdown mobile-button" onclick="">
-            <a title="Menu">
-              <span style="font-size: 30px; color: rgb(75,75,75);">
-                <i class="fas fa-bars"></i>
-              </span>
-            </a>
-
-            <ul>
-              <li id="people" class="top-dropdown-item" style="width: 200px;">
-                <a title="Click to toggle." href="../customErrors/pleaseEnableJavascript" onclick="toggleMenu('person', 'projects', 'mobile-menu-1');return false;">People
-                  <i id="mobile-menu-1" style="font-size: 12px;" class="fas fa-angle-down"></i>
-                </a>
-              </li>
-              <li class="sub-item person" style="display: none; width: 200px;">
-                <a href="/people/dprescott">Drew Prescott</a>
-              </li>
-              <li class="sub-item person" style="display: none; width: 200px;">
-                <a href="/people/kprescott">Karen Prescott</a>
-              </li>
-              <li class="sub-item person" style="display: none; width: 200px;">
-                <a href="customErrors/underConstruction">Barbara Prescott</a>
-              </li>
-              <li class="sub-item person" style="display: none; width: 200px;">
-                <a href="/people/lprescott">Luke Prescott</a>
-              </li>
-              <li id="property" style="width: 200px;">
-                <a title="Click to toggle." href="../customErrors/pleaseEnableJavascript" onclick="toggleMenu('property', 'projects', 'mobile-menu-2');return false;">Property
-                  <i id="mobile-menu-2" style="font-size: 12px;" class="fas fa-angle-down"></i>
-                </a>
-              </li>
-              <li class="sub-item property" style="display: none; width: 200px;">
-                <a href="property/listing">Mohawk Road</a>
-              </li>
-              <li id="projects" class="bottom-dropdown-item" style="width: 200px;">
-                <a title="Click to toggle." href="../customErrors/pleaseEnableJavascript" onclick="toggleMenu('project', 'projects', 'mobile-menu-3');return false;">Projects
-                  <i id="mobile-menu-3" style="font-size: 12px;" class="fas fa-angle-down"></i>
-                </a>
-              </li>
-              <li class="sub-item project" style="display: none; width: 200px;">
-                <a href="../projects/matrix">Digital Rain</a>
-              </li>
-              <li class="sub-item bottom-dropdown-item project" style="display: none; width: 200px;">
-                <a href="../projects/mandelbrot">Mandelbrot Set</a>
-              </li>
-              <li class="sub-item bottom-dropdown-item project" style="display: none; width: 200px;">
-                <a href="../projects/gameoflife">Game of Life</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
     </header>
