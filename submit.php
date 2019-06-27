@@ -10,10 +10,14 @@ $submitIcon = $_SESSION['sessionIcon'];
 <html class="no-js" lang="eng">
 
 <head>
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="prescott, presport, presport.us, 1169, Mohawk, Road, House, For, Sale, Niskayuna">
+
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>PresPort</title>
-  <meta name="description" content="Prescott family website.">
+  <title>Contact Us</title>
+  <meta name="description"
+    content="1169 Mohawk Road is a newly listed property for sale in the Capital region of New York State. More specifically, it is is Niskayuna. This cape cod style structure boasts a beatiful private property, pool, deck, large lawns and around 3000 square feet of furnished living space. Contact info@presport.us for details and inquires.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">

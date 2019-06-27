@@ -90,12 +90,13 @@ if ($_POST['formSubmit'] == "Send Message") {
 <head>
 
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="prescott, presport, presport.us, information technology, program management consulting services, creative writing, secondary education in English language arts, medicine, nursing, computer science, mathematics">
+  <meta name="keywords" content="prescott, presport, presport.us, 1169, Mohawk, Road, House, For, Sale, Niskayuna">
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Contact Us</title>
-  <meta name="description" content="Presport is the Prescott family hub – geographically located the capital district of New York State. The Prescott family has a total of 20 years (and counting) in upper-level education, leading to expertise in a plethora of areas; they include: information technology, program management consulting services, creative writing, secondary education in English language arts, medicine, nursing,computer science, and mathematics.">
+  <meta name="description"
+    content="1169 Mohawk Road is a newly listed property for sale in the Capital region of New York State. More specifically, it is is Niskayuna. This cape cod style structure boasts a beatiful private property, pool, deck, large lawns and around 3000 square feet of furnished living space. Contact info@presport.us for details and inquires.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
@@ -130,7 +131,7 @@ if ($_POST['formSubmit'] == "Send Message") {
 
   <!-- Start site/application content here -->
   <div id="main">
-  <header class="rounded-corners shadow-hover margin-header">
+    <header class="rounded-corners shadow-hover margin-header">
       <nav class="nav">
         <ul class="rounded-corners">
 
@@ -186,11 +187,14 @@ if ($_POST['formSubmit'] == "Send Message") {
         </script>
       </div>
       <div class="flex-row container rounded-corners nobackground" style="margin: 10px;">
-        <div id="recaptcha-container" class="item nobackground form-recaptcha" style="flex-basis: 50%; text-align: right;">
-          <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
+        <div id="recaptcha-container" class="item nobackground form-recaptcha"
+          style="flex-basis: 50%; text-align: right;">
+          <div style="display: inline-block;" class="g-recaptcha"
+            data-sitekey="6LcTgV0UAAAAAChaBvDs9rlYtpXPUeGJRF3Xzsrs"></div>
         </div>
         <div id="submit-container" class="item nobackground form-submit" style="flex-basis: 50%; text-align: left;">
-          <input class="shadow-hover" style="display: inline-block;" type="submit" id="submit" name="formSubmit" value="Send Message">
+          <input class="shadow-hover" style="display: inline-block;" type="submit" id="submit" name="formSubmit"
+            value="Send Message">
         </div>
       </div>
     </form>
