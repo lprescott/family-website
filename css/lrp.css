@@ -9,3 +9,11 @@ a#gameoflife:hover{
 a#mandelbrot:hover{
     background-image: url(https://i.gyazo.com/24b1f742a996e6994d3ef25d83e9850f.gif) !important;
 }
+
+.prettyprint{
+    height: 300px;
+}
+
+.gist-it-gist{
+    max-width: 755px;
+}
