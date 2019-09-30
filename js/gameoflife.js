@@ -3,8 +3,8 @@
 // Conway's Game of Life
 
 // Declared Global Variables
-var cellSize = 10;      // The length of one square side in pixels.
-var fps = 10;           // The speed of the animation in frames/second.
+var cellSize = 30;      // The length of one square side in pixels.
+var fps = 1;           // The speed of the animation in frames/second.
 var controlsWidth = 170;// The width of the left bar.
 
 // Initialized Global Variables
@@ -87,7 +87,7 @@ function setup() {
     createDiv('&nbsp;(1-30 fps):');
 
     // Slider for fps
-    fpsSlider = createSlider(1, 30, cellSize, 1);
+    fpsSlider = createSlider(1, 30, 1, 1);
 
     // Label for size input
     createDiv('<br>&nbsp;Size of automata');
