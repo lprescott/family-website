@@ -23,7 +23,8 @@ if ($_POST['formSubmit'] == "Send Message") {
 	}
 	// check google recaptcha, if bot
 	$recaptchaResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcTgV0UAAAAADTU_7kiaFHUA6GI2Aq4JrsR6bLa&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
-	if ($recaptchaResponse . success == false) {
+  
+  if ($recaptchaResponse["success"] == '0' || $recaptchaResponse["action"] != $_POST["action"] || $recaptchaResponse <= 0.5) {
 		$message = "Recaptcha failed to authenticate.";
 		$title = "Error!";
 		$icon = "error";
